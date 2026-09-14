@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Maths - Chapter 8</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:0;
+    color:#dbeafe;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+.info{
+    background:#fff;
+    border-left:6px solid #2563eb;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:#fff;
+    padding:13px 17px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:14px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:7px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:8px;
+}
+
+.answer{
+    display:none;
+    margin-top:13px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.drag{
+    border:2px dashed #64748b;
+    background:#f8fafc;
+}
+
+.drag .option{
+    background:#eef2ff;
+}
+
+.match-intro{
+    background:#eff6ff;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.match-row strong{
+    display:block;
+    margin-bottom:8px;
+}
+
+.note{
+    color:#475569;
+    font-weight:600;
+    line-height:1.6;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+    box-shadow:0 8px 25px #0004;
+}
+
+.score-number{
+    font-size:30px;
+    margin-top:8px;
+}
+
+.quiz{
+    counter-reset:score;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+/* Normal questions */
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* Match scoring: all 4 rows must be correct */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Class 7 Mathematics</h1>
+<p>Chapter 8 — Predicting What Comes Next: Exploring Sequences and Progressions</p>
+</header>
+
+<div class="wrap">
+
+<div class="info">
+<strong>Half-Yearly Examination Practice</strong><br><br>
+Total Questions: 55 &nbsp; | &nbsp; Total Marks: 55<br>
+Select one answer for every question. Your answer and explanation will appear immediately.
+</div>
+
+<div class="quiz">
+
+<!-- ===================================================== -->
+<!-- SECTION A : MCQ 15 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section A — Multiple Choice Questions</h2>
+
+<div class="question">
+<h3>Q1. What is the next term in the sequence 4, 9, 14, 19, ___?</h3>
+<label class="option"><input type="radio" name="q1">22</label>
+<label class="option"><input class="correct" type="radio" name="q1">24</label>
+<label class="option"><input type="radio" name="q1">25</label>
+<label class="option"><input type="radio" name="q1">29</label>
+<div class="answer">✓ Correct Answer: 24. Each term increases by 5.</div>
+</div>
+
+<div class="question">
+<h3>Q2. Which rule generates the sequence 3, 6, 12, 24, 48?</h3>
+<label class="option"><input type="radio" name="q2">Add 3 each time</label>
+<label class="option"><input class="correct" type="radio" name="q2">Multiply by 2 each time</label>
+<label class="option"><input type="radio" name="q2">Add 6 each time</label>
+<label class="option"><input type="radio" name="q2">Multiply by 3 each time</label>
+<div class="answer">✓ Correct Answer: Multiply by 2 each time.</div>
+</div>
+
+<div class="question">
+<h3>Q3. Find the missing term: 7, 11, 15, ___, 23.</h3>
+<label class="option"><input type="radio" name="q3">17</label>
+<label class="option"><input class="correct" type="radio" name="q3">19</label>
+<label class="option"><input type="radio" name="q3">20</label>
+<label class="option"><input type="radio" name="q3">21</label>
+<div class="answer">✓ Correct Answer: 19. The common difference is 4.</div>
+</div>
+
+<div class="question">
+<h3>Q4. Which number comes next: 2, 5, 10, 17, 26, ___?</h3>
+<label class="option"><input type="radio" name="q4">35</label>
+<label class="option"><input class="correct" type="radio" name="q4">37</label>
+<label class="option"><input type="radio" name="q4">38</label>
+<label class="option"><input type="radio" name="q4">39</label>
+<div class="answer">✓ Correct Answer: 37. The differences are 3, 5, 7, 9, so the next difference is 11.</div>
+</div>
+
+<div class="question">
+<h3>Q5. What is the 10th term of the sequence 5, 8, 11, 14, ...?</h3>
+<label class="option"><input type="radio" name="q5">29</label>
+<label class="option"><input class="correct" type="radio" name="q5">32</label>
+<label class="option"><input type="radio" name="q5">35</label>
+<label class="option"><input type="radio" name="q5">38</label>
+<div class="answer">✓ Correct Answer: 32. Starting from 5, add 3 nine times: 5 + 27 = 32.</div>
+</div>
+
+<div class="question">
+<h3>Q6. Which sequence has a constant difference?</h3>
+<label class="option"><input type="radio" name="q6">2, 4, 8, 16</label>
+<label class="option"><input class="correct" type="radio" name="q6">11, 15, 19, 23</label>
+<label class="option"><input type="radio" name="q6">1, 3, 6, 10</label>
+<label class="option"><input type="radio" name="q6">5, 10, 20, 40</label>
+<div class="answer">✓ Correct Answer: 11, 15, 19, 23. The difference is always 4.</div>
+</div>
+
+<div class="question">
+<h3>Q7. A pattern has 6 dots in Figure 1, 10 dots in Figure 2 and 14 dots in Figure 3. How many dots will Figure 8 have?</h3>
+<label class="option"><input type="radio" name="q7">30</label>
+<label class="option"><input type="radio" name="q7">32</label>
+<label class="correct option"><input class="correct" type="radio" name="q7">34</label>
+<label class="option"><input type="radio" name="q7">36</label>
+<div class="answer">✓ Correct Answer: 34. The pattern increases by 4, so Figure 8 = 6 + 7×4 = 34.</div>
+</div>
+
+<div class="question">
+<h3>Q8. What is the next term in 81, 27, 9, 3, ___?</h3>
+<label class="option"><input type="radio" name="q8">0</label>
+<label class="correct option"><input class="correct" type="radio" name="q8">1</label>
+<label class="option"><input type="radio" name="q8">2</label>
+<label class="option"><input type="radio" name="q8">6</label>
+<div class="answer">✓ Correct Answer: 1. Each term is divided by 3.</div>
+</div>
+
+<div class="question">
+<h3>Q9. The sequence 12, 17, 22, 27, ... follows which rule?</h3>
+<label class="option"><input type="radio" name="q9">Add 3</label>
+<label class="option"><input type="radio" name="q9">Subtract 5</label>
+<label class="correct option"><input class="correct" type="radio" name="q9">Add 5</label>
+<label class="option"><input type="radio" name="q9">Multiply by 5</label>
+<div class="answer">✓ Correct Answer: Add 5.</div>
+</div>
+
+<div class="question">
+<h3>Q10. Which term of the sequence 6, 10, 14, 18, ... is 42?</h3>
+<label class="option"><input type="radio" name="q10">8th</label>
+<label class="correct option"><input class="correct" type="radio" name="q10">10th</label>
+<label class="option"><input type="radio" name="q10">11th</label>
+<label class="option"><input type="radio" name="q10">12th</label>
+<div class="answer">✓ Correct Answer: 10th. 6 + 9×4 = 42.</div>
+</div>
+
+<div class="question">
+<h3>Q11. What is the next number in 1, 4, 9, 16, 25, ___?</h3>
+<label class="option"><input type="radio" name="q11">30</label>
+<label class="option"><input type="radio" name="q11">32</label>
+<label class="correct option"><input class="correct" type="radio" name="q11">36</label>
+<label class="option"><input type="radio" name="q11">49</label>
+<div class="answer">✓ Correct Answer: 36. These are the squares of 1, 2, 3, 4, 5, 6.</div>
+</div>
+
+<div class="question">
+<h3>Q12. A sequence begins 50, 45, 40, 35, ... What is its 7th term?</h3>
+<label class="option"><input type="radio" name="q12">15</label>
+<label class="correct option"><input class="correct" type="radio" name="q12">20</label>
+<label class="option"><input type="radio" name="q12">25</label>
+<label class="option"><input type="radio" name="q12">30</label>
+<div class="answer">✓ Correct Answer: 20. Subtract 5 six times: 50 − 30 = 20.</div>
+</div>
+
+<div class="question">
+<h3>Q13. Which number replaces the box? 4, 8, 16, □, 64.</h3>
+<label class="option"><input type="radio" name="q13">24</label>
+<label class="option"><input type="radio" name="q13">28</label>
+<label class="correct option"><input class="correct" type="radio" name="q13">32</label>
+<label class="option"><input type="radio" name="q13">48</label>
+<div class="answer">✓ Correct Answer: 32. Each term is twice the previous term.</div>
+</div>
+
+<div class="question">
+<h3>Q14. The first four terms of a pattern are 100, 90, 80, 70. Which expression describes the next term?</h3>
+<label class="option"><input type="radio" name="q14">70 + 10</label>
+<label class="option"><input type="radio" name="q14">70 × 2</label>
+<label class="correct option"><input class="correct" type="radio" name="q14">70 − 10</label>
+<label class="option"><input type="radio" name="q14">70 ÷ 10</label>
+<div class="answer">✓ Correct Answer: 70 − 10 = 60.</div>
+</div>
+
+<div class="question">
+<h3>Q15. A staircase pattern uses 3 blocks in Figure 1, 6 in Figure 2, 9 in Figure 3 and so on. How many blocks are needed for Figure 12?</h3>
+<label class="option"><input type="radio" name="q15">30</label>
+<label class="option"><input type="radio" name="q15">33</label>
+<label class="correct option"><input class="correct" type="radio" name="q15">36</label>
+<label class="option"><input type="radio" name="q15">39</label>
+<div class="answer">✓ Correct Answer: 36. Each figure uses 3 more blocks, so Figure 12 has 12 × 3 = 36 blocks.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION B : TRUE FALSE 10 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section B — True / False</h2>
+
+<div class="question">
+<h3>Q16. In the sequence 8, 13, 18, 23, the common difference is 5.</h3>
+<label class="option"><input class="correct" type="radio" name="q16">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q17. The sequence 2, 6, 10, 14 has a common difference of 3.</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input class="correct" type="radio" name="q17">False</label>
+<div class="answer">✓ Correct Answer: False. The common difference is 4.</div>
+</div>
+
+<div class="question">
+<h3>Q18. In the sequence 20, 17, 14, 11, each term is obtained by subtracting 3.</h3>
+<label class="option"><input class="correct" type="radio" name="q18">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q19. The sequence 1, 2, 4, 8, 16 is formed by adding 2 each time.</h3>
+<label class="option"><input type="radio" name="q19">True</label>
+<label class="option"><input class="correct" type="radio" name="q19">False</label>
+<div class="answer">✓ Correct Answer: False. Each term is multiplied by 2.</div>
+</div>
+
+<div class="question">
+<h3>Q20. The next term after 15, 20, 25, 30 is 35.</h3>
+<label class="option"><input class="correct" type="radio" name="q20">True</label>
+<label class="option"><input type="radio" name="q20">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q21. Every sequence must have a constant difference.</h3>
+<label class="option"><input type="radio" name="q21">True</label>
+<label class="option"><input class="correct" type="radio" name="q21">False</label>
+<div class="answer">✓ Correct Answer: False. Some sequences have changing differences or other rules.</div>
+</div>
+
+<div class="question">
+<h3>Q22. The first five square numbers are 1, 4, 9, 16 and 25.</h3>
+<label class="option"><input class="correct" type="radio" name="q22">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q23. In 30, 25, 20, 15, the sequence is increasing.</h3>
+<label class="option"><input type="radio" name="q23">True</label>
+<label class="option"><input class="correct" type="radio" name="q23">False</label>
+<div class="answer">✓ Correct Answer: False. The sequence is decreasing.</div>
+</div>
+
+<div class="question">
+<h3>Q24. If a pattern increases by 7, then the difference between consecutive terms is 7.</h3>
+<label class="option"><input class="correct" type="radio" name="q24">True</label>
+<label class="option"><input type="radio" name="q24">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q25. In the sequence 5, 10, 20, 40, the next term is 45.</h3>
+<label class="option"><input type="radio" name="q25">True</label>
+<label class="option"><input class="correct" type="radio" name="q25">False</label>
+<div class="answer">✓ Correct Answer: False. The next term is 80 because the terms are doubled.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION C : ASSERTION REASON 5 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section C — Assertion & Reasoning</h2>
+
+<p class="note">
+A = Both A and R are true and R explains A<br>
+B = Both A and R are true but R does not explain A<br>
+C = A is true but R is false<br>
+D = A is false but R is true
+</p>
+
+<div class="question">
+<h3>Q26. Assertion: The sequence 12, 16, 20, 24 has a common difference of 4.<br>
+Reason: 16 − 12 = 4 and the same difference occurs between consecutive terms.</h3>
+<label class="option"><input class="correct" type="radio" name="q26">A</label>
+<label class="option"><input type="radio" name="q26">B</label>
+<label class="option"><input type="radio" name="q26">C</label>
+<label class="option"><input type="radio" name="q26">D</label>
+<div class="answer">✓ Correct Answer: A. Both statements are true and the reason explains the common difference.</div>
+</div>
+
+<div class="question">
+<h3>Q27. Assertion: The next term of 3, 6, 12, 24 is 48.<br>
+Reason: Every term is obtained by multiplying the previous term by 2.</h3>
+<label class="option"><input class="correct" type="radio" name="q27">A</label>
+<label class="option"><input type="radio" name="q27">B</label>
+<label class="option"><input type="radio" name="q27">C</label>
+<label class="option"><input type="radio" name="q27">D</label>
+<div class="answer">✓ Correct Answer: A.</div>
+</div>
+
+<div class="question">
+<h3>Q28. Assertion: The sequence 9, 14, 19, 24 is decreasing.<br>
+Reason: Its common difference is 5.</h3>
+<label class="option"><input type="radio" name="q28">A</label>
+<label class="option"><input type="radio" name="q28">B</label>
+<label class="option"><input class="correct" type="radio" name="q28">C</label>
+<label class="option"><input type="radio" name="q28">D</label>
+<div class="answer">✓ Correct Answer: C. The assertion is false because the sequence is increasing; the reason is true.</div>
+</div>
+
+<div class="question">
+<h3>Q29. Assertion: In 40, 35, 30, 25, the next term is 20.<br>
+Reason: 40 − 5 = 35.</h3>
+<label class="option"><input type="radio" name="q29">A</label>
+<label class="correct option"><input class="correct" type="radio" name="q29">B</label>
+<label class="option"><input type="radio" name="q29">C</label>
+<label class="option"><input type="radio" name="q29">D</label>
+<div class="answer">✓ Correct Answer: B. Both are true, but the reason gives only the first step and does not fully establish the next term by itself.</div>
+</div>
+
+<div class="question">
+<h3>Q30. Assertion: The sequence 2, 5, 10, 17 can be continued by adding consecutive odd numbers.<br>
+Reason: The differences are 3, 5 and 7.</h3>
+<label class="option"><input class="correct" type="radio" name="q30">A</label>
+<label class="option"><input type="radio" name="q30">B</label>
+<label class="option"><input type="radio" name="q30">C</label>
+<label class="option"><input type="radio" name="q30">D</label>
+<div class="answer">✓ Correct Answer: A. The differences are consecutive odd numbers: 3, 5, 7.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION D : FILL 5 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section D — Fill in the Blanks</h2>
+
+<div class="question">
+<h3>Q31. The next term in 18, 24, 30, 36, ______ is 42.</h3>
+<label class="option"><input type="radio" name="q31">38</label>
+<label class="correct option"><input class="correct" type="radio" name="q31">42</label>
+<label class="option"><input type="radio" name="q31">44</label>
+<label class="option"><input type="radio" name="q31">48</label>
+<div class="answer">✓ Correct Answer: 42.</div>
+</div>
+
+<div class="question">
+<h3>Q32. In the sequence 64, 56, 48, 40, the common difference is ______.</h3>
+<label class="option"><input type="radio" name="q32">−4</label>
+<label class="correct option"><input class="correct" type="radio" name="q32">−8</label>
+<label class="option"><input type="radio" name="q32">8</label>
+<label class="option"><input type="radio" name="q32">−16</label>
+<div class="answer">✓ Correct Answer: −8.</div>
+</div>
+
+<div class="question">
+<h3>Q33. The 6th term of 7, 10, 13, 16, ... is ______.</h3>
+<label class="option"><input type="radio" name="q33">19</label>
+<label class="correct option"><input class="correct" type="radio" name="q33">22</label>
+<label class="option"><input type="radio" name="q33">23</label>
+<label class="option"><input type="radio" name="q33">25</label>
+<div class="answer">✓ Correct Answer: 22. Add 3 five times to the first term: 7 + 15 = 22.</div>
+</div>
+
+<div class="question">
+<h3>Q34. The sequence 1, 3, 6, 10, 15, ______ has next term ______.</h3>
+<label class="option"><input type="radio" name="q34">18</label>
+<label class="option"><input type="radio" name="q34">20</label>
+<label class="correct option"><input class="correct" type="radio" name="q34">21</label>
+<label class="option"><input type="radio" name="q34">24</label>
+<div class="answer">✓ Correct Answer: 21. The differences are 2, 3, 4, 5, so add 6.</div>
+</div>
+
+<div class="question">
+<h3>Q35. If the rule is “multiply by 3”, the term after 27 is ______.</h3>
+<label class="option"><input type="radio" name="q35">54</label>
+<label class="option"><input type="radio" name="q35">72</label>
+<label class="correct option"><input class="correct" type="radio" name="q35">81</label>
+<label class="option"><input type="radio" name="q35">90</label>
+<div class="answer">✓ Correct Answer: 81. 27 × 3 = 81.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION E : MATCH 5 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section E — Match the Following</h2>
+
+<div class="match-intro">
+For each row, select the matching answer.
+<strong>One complete Match question = 1 mark</strong>, only when all four rows are correct.
+</div>
+
+<!-- MATCH 1 -->
+
+<div class="question match m1">
+<h3>Q36. Match each sequence with its next term.</h3>
+
+<div class="match-row">
+<strong>A. 5, 10, 15, 20</strong>
+<label class="option"><input type="radio" name="m1a" class="m1a">22</label>
+<label class="option"><input class="correct" type="radio" name="m1a" class="m1a">25</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">30</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">35</label>
+</div>
+
+<div class="match-row">
+<strong>B. 7, 14, 21, 28</strong>
+<label class="option"><input type="radio" name="m1b" class="m1b">30</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">32</label>
+<label class="correct" class="option"><input type="radio" name="m1b" class="m1b correct">35</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">42</label>
+</div>
+
+<div class="match-row">
+<strong>C. 9, 18, 27, 36</strong>
+<label class="option"><input type="radio" name="m1c" class="m1c">40</label>
+<label class="correct option"><input type="radio" name="m1c" class="m1c correct">45</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">48</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">54</label>
+</div>
+
+<div class="match-row">
+<strong>D. 11, 22, 33, 44</strong>
+<label class="option"><input type="radio" name="m1d" class="m1d">50</label>
+<label class="option"><input type="radio" name="m1d" class="m1d correct">55</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">60</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">65</label>
+
+<div class="answer">✓ Correct Matches: A–25, B–35, C–45, D–55.</div>
+</div>
+
+<!-- MATCH 2 -->
+
+<div class="question match m2">
+<h3>Q37. Match the sequence with its common difference.</h3>
+
+<div class="match-row">
+<strong>A. 3, 8, 13, 18</strong>
+<label class="option"><input type="radio" name="m2a" class="m2a">3</label>
+<label class="correct option"><input type="radio" name="m2a" class="m2a correct">5</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">7</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">8</label>
+</div>
+
+<div class="match-row">
+<strong>B. 20, 26, 32, 38</strong>
+<label class="option"><input type="radio" name="m2b" class="m2b">4</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">5</label>
+<label class="correct option"><input type="radio" name="m2b" class="m2b correct">6</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">8</label>
+</div>
+
+<div class="match-row">
+<strong>C. 50, 43, 36, 29</strong>
+<label class="option"><input type="radio" name="m2c" class="m2c">−5</label>
+<label class="correct option"><input type="radio" name="m2c" class="m2c correct">−7</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">7</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">−9</label>
+</div>
+
+<div class="match-row">
+<strong>D. 100, 90, 80, 70</strong>
+<label class="option"><input type="radio" name="m2d" class="m2d">−5</label>
+<label class="correct option"><input type="radio" name="m2d" class="m2d correct">−10</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">10</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">−20</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–5, B–6, C–−7, D–−10.</div>
+</div>
+
+<!-- MATCH 3 -->
+
+<div class="question match m3">
+<h3>Q38. Match each sequence with the rule that generates it.</h3>
+
+<div class="match-row">
+<strong>A. 4, 8, 12, 16</strong>
+<label class="correct option"><input type="radio" name="m3a" class="m3a correct">Add 4</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Multiply by 4</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Subtract 4</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Add 8</label>
+</div>
+
+<div class="match-row">
+<strong>B. 2, 6, 18, 54</strong>
+<label class="option"><input type="radio" name="m3b" class="m3b">Add 4</label>
+<label class="correct option"><input type="radio" name="m3b" class="m3b correct">Multiply by 3</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">Multiply by 2</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">Add 3</label>
+</div>
+
+<div class="match-row">
+<strong>C. 30, 25, 20, 15</strong>
+<label class="option"><input type="radio" name="m3c" class="m3c">Add 5</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">Multiply by 5</label>
+<label class="correct option"><input type="radio" name="m3c" class="m3c correct">Subtract 5</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">Divide by 5</label>
+</div>
+
+<div class="match-row">
+<strong>D. 96, 48, 24, 12</strong>
+<label class="option"><input type="radio" name="m3d" class="m3d">Subtract 12</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">Multiply by 2</label>
+<label class="correct option"><input type="radio" name="m3d" class="m3d correct">Divide by 2</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">Subtract 24</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–Add 4, B–Multiply by 3, C–Subtract 5, D–Divide by 2.</div>
+</div>
+
+<!-- MATCH 4 -->
+
+<div class="question match m4">
+<h3>Q39. Match the figure number with the number of objects.</h3>
+
+<div class="match-row">
+<strong>A. Figure 1: 4 objects, increasing by 3</strong>
+<label class="option"><input type="radio" name="m4a" class="m4a">Figure 4 = 10</label>
+<label class="correct option"><input type="radio" name="m4a" class="m4a correct">Figure 4 = 13</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">Figure 4 = 14</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">Figure 4 = 16</label>
+</div>
+
+<div class="match-row">
+<strong>B. Figure 1: 6 objects, increasing by 2</strong>
+<label class="option"><input type="radio" name="m4b" class="m4b">Figure 5 = 12</label>
+<label class="correct option"><input type="radio" name="m4b" class="m4b correct">Figure 5 = 14</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">Figure 5 = 15</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">Figure 5 = 16</label>
+</div>
+
+<div class="match-row">
+<strong>C. Figure 1: 5 objects, increasing by 4</strong>
+<label class="option"><input type="radio" name="m4c" class="m4c">Figure 6 = 21</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">Figure 6 = 24</label>
+<label class="correct option"><input type="radio" name="m4c" class="m4c correct">Figure 6 = 25</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">Figure 6 = 29</label>
+</div>
+
+<div class="match-row">
+<strong>D. Figure 1: 10 objects, decreasing by 1</strong>
+<label class="option"><input type="radio" name="m4d" class="m4d">3</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">4</label>
+<label class="option"><input type="radio" name="m4d" class="m4d correct">5</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">6</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–13, B–14, C–25, D–5.</div>
+</div>
+
+<!-- MATCH 5 -->
+
+<div class="question match m5">
+<h3>Q40. Match each position with its value in the sequence.</h3>
+
+<div class="match-row">
+<strong>A. 4th term of 6, 9, 12, ...</strong>
+<label class="option"><input type="radio" name="m5a" class="m5a">12</label>
+<label class="correct option"><input type="radio" name="m5a" class="m5a correct">15</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">16</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">18</label>
+</div>
+
+<div class="match-row">
+<strong>B. 5th term of 2, 6, 10, ...</strong>
+<label class="option"><input type="radio" name="m5b" class="m5b">14</label>
+<label class="correct option"><input type="radio" name="m5b" class="m5b correct">18</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">20</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">22</label>
+</div>
+
+<div class="match-row">
+<strong>C. 6th term of 10, 15, 20, ...</strong>
+<label class="option"><input type="radio" name="m5c" class="m5c">30</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">32</label>
+<label class="correct option"><input type="radio" name="m5c" class="m5c correct">35</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">40</label>
+</div>
+
+<div class="match-row">
+<strong>D. 7th term of 1, 4, 7, ...</strong>
+<label class="option"><input type="radio" name="m5d" class="m5d">16</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">17</label>
+<label class="correct option"><input type="radio" name="m5d" class="m5d correct">19</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">21</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–15, B–18, C–35, D–19.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION F : DRAG STYLE 5 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section F — Drag & Drop Style</h2>
+
+<p class="note">
+CSS-only version: select the value you would drag into the highlighted box.
+</p>
+
+<div class="question drag">
+<h3>Q41. Drag the missing term into the box: 13, 18, 23, [ ? ], 33.</h3>
+<label class="option"><input type="radio" name="q41">25</label>
+<label class="correct option"><input class="correct" type="radio" name="q41">28</label>
+<label class="option"><input type="radio" name="q41">29</label>
+<label class="option"><input type="radio" name="q41">30</label>
+<div class="answer">✓ Correct Answer: 28. Add 5 each time.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Drag the next term: 4, 12, 36, 108, [ ? ].</h3>
+<label class="option"><input type="radio" name="q42">216</label>
+<label class="correct option"><input class="correct" type="radio" name="q42">324</label>
+<label class="option"><input type="radio" name="q42">432</label>
+<label class="option"><input type="radio" name="q42">540</label>
+<div class="answer">✓ Correct Answer: 324. Each term is multiplied by 3.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Drag the missing value: 60, 54, 48, [ ? ], 36.</h3>
+<label class="option"><input type="radio" name="q43">40</label>
+<label class="correct option"><input class="correct" type="radio" name="q43">42</label>
+<label class="option"><input type="radio" name="q43">43</label>
+<label class="option"><input type="radio" name="q43">44</label>
+<div class="answer">✓ Correct Answer: 42. Subtract 6 each time.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Drag the correct term: 3, 7, 11, 15, ... What is the 9th term?</h3>
+<label class="option"><input type="radio" name="q44">31</label>
+<label class="correct option"><input class="correct" type="radio" name="q44">35</label>
+<label class="option"><input type="radio" name="q44">37</label>
+<label class="option"><input type="radio" name="q44">39</label>
+<div class="answer">✓ Correct Answer: 35. Add 4 eight times: 3 + 32 = 35.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Drag the number that completes the pattern: 2, 6, 12, 20, [ ? ].</h3>
+<label class="option"><input type="radio" name="q45">28</label>
+<label class="option"><input type="radio" name="q45">29</label>
+<label class="correct option"><input class="correct" type="radio" name="q45">30</label>
+<label class="option"><input type="radio" name="q45">32</label>
+<div class="answer">✓ Correct Answer: 30. The differences are 4, 6, 8, so the next difference is 10.</div>
+</div>
+
+</section>
+
+<!-- ===================================================== -->
+<!-- SECTION G : HOTS 10 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section G — HOTS / Higher Order Thinking</h2>
+
+<div class="question">
+<h3>Q46. A sequence begins 11, 17, 23, 29, ... Which term is 71?</h3>
+<label class="option"><input type="radio" name="q46">9th</label>
+<label class="correct option"><input class="correct" type="radio" name="q46">11th</label>
+<label class="option"><input type="radio" name="q46">12th</label>
+<label class="option"><input type="radio" name="q46">13th</label>
+<div class="answer">✓ Correct Answer: 11th. From 11 to 71 is an increase of 60. Since each step adds 6, there are 10 steps, so it is the 11th term.</div>
+</div>
+
+<div class="question">
+<H3>Sqaure root of 9 is?</H3>
+<label class="option"><input type="radio" name="q47">77</label>
+<label class="option"><input class="correct" type="radio" name="q47">81</label>
+<label class="option"><input type="radio" name="q47">85</label>
+<label class="option"><input type="radio" name="q47">89</label>
+</div>
+
+<div class="question">
+<h3>Q48. A sequence follows the rule “start with 7 and add 4 each time.” What is the sum of the 3rd and 8th terms?</h3>
+<label class="option"><input class="correct" type="radio" name="q48">50</label>
+<label class="option"><input type="radio" name="q48">56</label>
+<label class="option"><input type="radio" name="q48">62</label>
+<label class="option"><input type="radio" name="q48">70</label>
+<div class="answer">✓ Correct Answer: 50. The 3rd term is 15 and the 8th term is 35. 15 + 35 = 50.</div>
+</div>
+
+<div class="question">
+<h3>Q49. A pattern has 2 tiles in Figure 1, 5 in Figure 2, 10 in Figure 3 and 17 in Figure 4. If the differences continue as 3, 5, 7, 9, what will Figure 5 contain?</h3>
+<label class="option"><input type="radio" name="q49">24</label>
+<label class="correct option"><input class="correct" type="radio" name="q49">26</label>
+<label class="option"><input type="radio" name="q49">27</label>
+<label class="option"><input type="radio" name="q49">28</label>
+<div class="answer">✓ Correct Answer: 26. Figure 5 = 17 + 9 = 26.</div>
+</div>
+
+<div class="question">
+<h3>Q50. Riya writes 100, 95, 90, 85, ... A friend says the 15th term is 35. Is the friend correct?</h3>
+<label class="option"><input class="correct" type="radio" name="q50">Yes, because 100 − 14×5 = 30, so the friend is not correct.</label>
+<label class="option"><input type="radio" name="q50">Yes, the 15th term is 35.</label>
+<label class="option"><input type="radio" name="q50">No, the 15th term is 40.</label>
+<label class="option"><input type="radio" name="q50">No, the 15th term is 45.</label>
+<div class="answer">✓ Correct Answer: The friend is not correct. The 15th term is 100 − 14×5 = 30.</div>
+</div>
+
+<div class="question">
+<h3>Q51. A sequence has first term 8 and common difference 7. Which term is 71?</h3>
+<label class="option"><input type="radio" name="q51">9th</label>
+<label class="correct option"><input class="correct" type="radio" name="q51">10th</label>
+<label class="option"><input type="radio" name="q51">11th</label>
+<label class="option"><input type="radio" name="q51">12th</label>
+<div class="answer">✓ Correct Answer: 10th. 8 + 9×7 = 71.</div>
+</div>
+
+<div class="question">
+<h3>Q52. A pattern begins 1, 4, 9, 16, 25. Another student claims the next term is 30 because 25 + 5 = 30. What is the correct next term and why?</h3>
+<label class="option"><input type="radio" name="q52">30, because 5 is added each time</label>
+<label class="correct option"><input class="correct" type="radio" name="q52">36, because the terms are consecutive square numbers</label>
+<label class="option"><input type="radio" name="q52">35, because 10 is added</label>
+<label class="option"><input type="radio" name="q52">40, because 15 is added</label>
+<div class="answer">✓ Correct Answer: 36. The terms are 1², 2², 3², 4², 5², so the next term is 6² = 36.</div>
+</div>
+
+<div class="question">
+<h3>Q53. A bus-stop display shows the sequence 6, 12, 18, 24, ... If the pattern continues, what is the total of the 7th and 9th terms?</h3>
+<label class="option"><input type="radio" name="q53">84</label>
+<label class="option"><input type="radio" name="q53">90</label>
+<label class="correct option"><input class="correct" type="radio" name="q53">96</label>
+<label class="option"><input type="radio" name="q53">102</label>
+<div class="answer">✓ Correct Answer: 96. The 7th term is 42 and the 9th term is 54. Their sum is 96.</div>
+</div>
+
+<div class="question">
+<h3>Q54. A number pattern starts at 3. Each new term is obtained by multiplying by 2 and then adding 1. What are the first five terms?</h3>
+<label class="option"><input type="radio" name="q54">3, 6, 12, 24, 48</label>
+<label class="correct option"><input class="correct" type="radio" name="q54">3, 7, 15, 31, 63</label>
+<label class="option"><input type="radio" name="q54">3, 8, 17, 36, 73</label>
+<label class="option"><input type="radio" name="q54">3, 5, 9, 17, 33</label>
+<div class="answer">✓ Correct Answer: 3, 7, 15, 31, 63. Starting with 3: 3×2+1=7, 7×2+1=15, and so on.</div>
+</div>
+
+<div class="question">
+<h3>Q55. Two students describe the sequence 10, 15, 20, 25, ... Student A says the 20th term is 105. Student B says it is 110. Who is correct?</h3>
+<label class="correct option"><input class="correct" type="radio" name="q55">Student A, because 10 + 19×5 = 105</label>
+<label class="option"><input type="radio" name="q55">Student B, because 20×5 = 110</label>
+<label class="option"><input type="radio" name="q55">Both are correct</label>
+<label class="option"><input type="radio" name="q55">Neither is correct; the answer is 100</label>
+<div class="answer">✓ Correct Answer: Student A. The 20th term is 10 + 19×5 = 105.</div>
+</div>
+
+</section>
+
+<div class="score-card">
+<div>Your Final Score</div>
+<div class="score-number"></div>
+<p>Keep practising — aim for 55/55!</p>
+</div>
+
+</div>
+
+<footer>
+Class 7 Mathematics • Chapter 8 • Half-Yearly Question Bank
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Mathematics | Chapter 2 - Introduction to Linear Polynomials</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:white;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:5px 0;
+    color:#dbeafe;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:white;
+    padding:13px 16px;
+    border-radius:12px;
+}
+
+.question{
+    background:white;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:15px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:8px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:8px;
+}
+
+.answer{
+    display:none;
+    margin-top:12px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+/* SCORE */
+.quiz{
+    counter-reset:score;
+}
+
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* MATCH QUESTIONS */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.match .answer{
+    display:none;
+}
+
+.match:has(input:checked) .answer{
+    display:block;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:white;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+}
+
+.score-number{
+    font-size:30px;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+.note{
+    background:#dbeafe;
+    border-left:5px solid #2563eb;
+    padding:14px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.drag{
+    border:2px dashed #94a3b8;
+    background:#f8fafc;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#475569;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Class 7 Mathematics</h1>
+    <p>Chapter 2 — Introduction to Linear Polynomials</p>
+    <p>Half-Yearly Examination Question Bank & Revision Test</p>
+</header>
+
+<div class="wrap quiz">
+
+<div class="note">
+    <strong>Instructions:</strong> Attempt all 55 questions. Select an option to reveal the answer.
+    Each normal question carries 1 mark. Each Match the Following question carries 1 mark only when all four pairs are correct.
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SECTION A : MCQ -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION A — Multiple Choice Questions (15)</h2>
+
+<div class="question">
+<h3>Q1. Which expression is a linear polynomial in x?</h3>
+<label class="option"><input type="radio" name="q1">4x² + 3</label>
+<label class="option"><input type="radio" name="q1" class="correct">7x − 5</label>
+<label class="option"><input type="radio" name="q1">x³ − 2x</label>
+<label class="option"><input type="radio" name="q1">6/x + 1</label>
+<div class="answer">Correct Answer: <strong>7x − 5</strong>. Its highest power of x is 1.</div>
+</div>
+
+<div class="question">
+<h3>Q2. In the polynomial 9x − 13, what is the coefficient of x?</h3>
+<label class="option"><input type="radio" name="q2">−13</label>
+<label class="option"><input type="radio" name="q2">13</label>
+<label class="option"><input type="radio" name="q2" class="correct">9</label>
+<label class="option"><input type="radio" name="q2">−9</label>
+<div class="answer">Correct Answer: <strong>9</strong>. The number multiplying x is its coefficient.</div>
+</div>
+
+<div class="question">
+<h3>Q3. How many terms does 5x − 8 have?</h3>
+<label class="option"><input type="radio" name="q3">1</label>
+<label class="option"><input type="radio" name="q3" class="correct">2</label>
+<label class="option"><input type="radio" name="q3">3</label>
+<label class="option"><input type="radio" name="q3">4</label>
+<div class="answer">Correct Answer: <strong>2</strong>. The terms are 5x and −8.</div>
+</div>
+
+<div class="question">
+<h3>Q4. Which pair consists of like terms?</h3>
+<label class="option"><input type="radio" name="q4">6x and 6y</label>
+<label class="option"><input type="radio" name="q4">4 and 4x</label>
+<label class="option"><input type="radio" name="q4" class="correct">−7x and 12x</label>
+<label class="option"><input type="radio" name="q4">3x and 3x²</label>
+<div class="answer">Correct Answer: <strong>−7x and 12x</strong>. Both contain x to the first power.</div>
+</div>
+
+<div class="question">
+<h3>Q5. What is the constant term in 11x + 4?</h3>
+<label class="option"><input type="radio" name="q5">11</label>
+<label class="option"><input type="radio" name="q5" class="correct">4</label>
+<label class="option"><input type="radio" name="q5">15</label>
+<label class="option"><input type="radio" name="q5">x</label>
+<div class="answer">Correct Answer: <strong>4</strong>. It does not contain the variable.</div>
+</div>
+
+<div class="question">
+<h3>Q6. What is the value of 6x − 7 when x = 3?</h3>
+<label class="option"><input type="radio" name="q6">9</label>
+<label class="option"><input type="radio" name="q6">10</label>
+<label class="option"><input type="radio" name="q6" class="correct">11</label>
+<label class="option"><input type="radio" name="q6">12</label>
+<div class="answer">Correct Answer: <strong>11</strong>. 6(3) − 7 = 18 − 7 = 11.</div>
+</div>
+
+<div class="question">
+<h3>Q7. Which expression represents “five more than three times x”?</h3>
+<label class="option"><input type="radio" name="q7">5x + 3</label>
+<label class="option"><input type="radio" name="q7" class="correct">3x + 5</label>
+<label class="option"><input type="radio" name="q7">3(x + 5)</label>
+<label class="option"><input type="radio" name="q7">5x − 3</label>
+<div class="answer">Correct Answer: <strong>3x + 5</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q8. Simplify: 8a + 5a − 3.</h3>
+<label class="option"><input type="radio" name="q8">13a</label>
+<label class="option"><input type="radio" name="q8" class="correct">13a − 3</label>
+<label class="option"><input type="radio" name="q8">10a</label>
+<label class="option"><input type="radio" name="q8">13a + 3</label>
+<div class="answer">Correct Answer: <strong>13a − 3</strong>. Like terms 8a and 5a combine to give 13a.</div>
+</div>
+
+<div class="question">
+<h3>Q9. Which expression has exactly three terms?</h3>
+<label class="option"><input type="radio" name="q9">7p − 2</label>
+<label class="option"><input type="radio" name="q9">9p</label>
+<label class="option"><input type="radio" name="q9" class="correct">4p + 6 − 2q</label>
+<label class="option"><input type="radio" name="q9">12 − p</label>
+<div class="answer">Correct Answer: <strong>4p + 6 − 2q</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q10. Which of the following is equivalent to 12x − 9x + 4?</h3>
+<label class="option"><input type="radio" name="q10">3x − 4</label>
+<label class="option"><input type="radio" name="q10" class="correct">3x + 4</label>
+<label class="option"><input type="radio" name="q10">21x + 4</label>
+<label class="option"><input type="radio" name="q10">3x + 13</label>
+<div class="answer">Correct Answer: <strong>3x + 4</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q11. If y = −2, what is the value of 4y + 9?</h3>
+<label class="option"><input type="radio" name="q11">−17</label>
+<label class="option"><input type="radio" name="q11">−1</label>
+<label class="option"><input type="radio" name="q11" class="correct">1</label>
+<label class="option"><input type="radio" name="q11">17</label>
+<div class="answer">Correct Answer: <strong>1</strong>. 4(−2) + 9 = −8 + 9 = 1.</div>
+</div>
+
+<div class="question">
+<h3>Q12. Which expression represents the perimeter of a rectangle with length x + 3 cm and width 2 cm?</h3>
+<label class="option"><input type="radio" name="q12">x + 5</label>
+<label class="option"><input type="radio" name="q12">2x + 3</label>
+<label class="option"><input type="radio" name="q12" class="correct">2x + 10</label>
+<label class="option"><input type="radio" name="q12">x + 10</label>
+<div class="answer">Correct Answer: <strong>2x + 10</strong>. P = 2[(x + 3) + 2] = 2x + 10.</div>
+</div>
+
+<div class="question">
+<h3>Q13. Which statement about 15 − 2m is correct?</h3>
+<label class="option"><input type="radio" name="q13">Its coefficient of m is 15</label>
+<label class="option"><input type="radio" name="q13" class="correct">Its constant term is 15</label>
+<label class="option"><input type="radio" name="q13">It has degree 2</label>
+<label class="option"><input type="radio" name="q13">It has three terms</label>
+<div class="answer">Correct Answer: <strong>Its constant term is 15</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q14. If 5x + k becomes 18 when x = 2, what is k?</h3>
+<label class="option"><input type="radio" name="q14">6</label>
+<label class="option"><input type="radio" name="q14">7</label>
+<label class="option"><input type="radio" name="q14" class="correct">8</label>
+<label class="option"><input type="radio" name="q14">9</label>
+<div class="answer">Correct Answer: <strong>8</strong>. 5(2) + k = 18, so k = 8.</div>
+</div>
+
+<div class="question">
+<h3>Q15. Which expression is NOT a linear polynomial?</h3>
+<label class="option"><input type="radio" name="q15">3x + 1</label>
+<label class="option"><input type="radio" name="q15">−8x + 6</label>
+<label class="option"><input type="radio" name="q15">x − 11</label>
+<label class="option"><input type="radio" name="q15" class="correct">5x² + 2</label>
+<div class="answer">Correct Answer: <strong>5x² + 2</strong>. Its highest power is 2, not 1.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- TRUE FALSE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION B — True / False (10)</h2>
+
+<div class="question">
+<h3>Q16. The expression 7x + 2 is a linear polynomial.</h3>
+<label class="option"><input type="radio" name="q16" class="correct">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. The highest power of x is 1.</div>
+</div>
+
+<div class="question">
+<h3>Q17. In 9p − 4, the number −4 is the coefficient of p.</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input type="radio" name="q17" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. The coefficient is 9; −4 is the constant term.</div>
+</div>
+
+<div class="question">
+<h3>Q18. 5a and −11a are like terms.</h3>
+<label class="option"><input type="radio" name="q18" class="correct">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. Both have the same variable part a.</div>
+</div>
+
+<div class="question">
+<h3>Q19. The polynomial 4x − 3 has three terms.</h3>
+<label class="option"><input type="radio" name="q19">True</label>
+<label class="option"><input type="radio" name="q19" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. It has two terms: 4x and −3.</div>
+</div>
+
+<div class="question">
+<h3>Q20. In 12y, the coefficient of y is 12.</h3>
+<label class="option"><input type="radio" name="q20" class="correct">True</label>
+<label class="option"><input type="radio" name="q20">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q21. The expressions 3x and 3x² are like terms.</h3>
+<label class="option"><input type="radio" name="q21">True</label>
+<label class="option"><input type="radio" name="q21" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. Their powers are different.</div>
+</div>
+
+<div class="question">
+<h3>Q22. The value of 2n + 5 for n = 4 is 13.</h3>
+<label class="option"><input type="radio" name="q22" class="correct">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. 2(4) + 5 = 13.</div>
+</div>
+
+<div class="question">
+<h3>Q23. 6x + 4x − 7 simplifies to 10x − 7.</h3>
+<label class="option"><input type="radio" name="q23" class="correct">True</label>
+<label class="option"><input type="radio" name="q23">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q24. A constant term must always be positive.</h3>
+<label class="option"><input type="radio" name="q24">True</label>
+<label class="option"><input type="radio" name="q24" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. A constant can be positive, negative or zero.</div>
+</div>
+
+<div class="question">
+<h3>Q25. 2x + 3y is a linear polynomial in two variables.</h3>
+<label class="option"><input type="radio" name="q25" class="correct">True</label>
+<label class="option"><input type="radio" name="q25">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. Each variable has power 1 and the total expression is linear.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- ASSERTION REASON -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION C — Assertion & Reasoning (5)</h2>
+
+<div class="question">
+<h3>Q26. Assertion (A): 7x − 4 is a linear polynomial.<br>
+Reason (R): The highest power of x in the expression is 1.</h3>
+<label class="option"><input type="radio" name="q26" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q26">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q26">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q26">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>. Degree 1 is exactly why the polynomial is linear.</div>
+</div>
+
+<div class="question">
+<h3>Q27. Assertion (A): 5x and 5x² are unlike terms.<br>
+Reason (R): Their variable parts have different powers.</h3>
+<label class="option"><input type="radio" name="q27" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q27">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q27">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q27">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q28. Assertion (A): The constant term of 3y − 8 is −8.<br>
+Reason (R): A constant term contains no variable.</h3>
+<label class="option"><input type="radio" name="q28" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q28">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q28">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q28">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q29. Assertion (A): 4x + 9x can be combined.<br>
+Reason (R): Both terms have x with the same power.</h3>
+<label class="option"><input type="radio" name="q29" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q29">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q29">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q29">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>. They are like terms, so their coefficients can be added.</div>
+</div>
+
+<div class="question">
+<h3>Q30. Assertion (A): 6x² + 2 is a linear polynomial.<br>
+Reason (R): The expression contains a variable with exponent 2.</h3>
+<label class="option"><input type="radio" name="q30">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q30">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q30">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q30" class="correct">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>D</strong>. The reason is true, but power 2 means the polynomial is not linear.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- FILL IN -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION D — Fill in the Blanks (5)</h2>
+
+<div class="question">
+<h3>Q31. In 14x − 9, the coefficient of x is ______.</h3>
+<label class="option"><input type="radio" name="q31">−14</label>
+<label class="option"><input type="radio" name="q31" class="correct">14</label>
+<label class="option"><input type="radio" name="q31">9</label>
+<label class="option"><input type="radio" name="q31">−9</label>
+<div class="answer">Correct Answer: <strong>14</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q32. The degree of the polynomial 8z + 3 is ______.</h3>
+<label class="option"><input type="radio" name="q32">0</label>
+<label class="option"><input type="radio" name="q32" class="correct">1</label>
+<label class="option"><input type="radio" name="q32">2</label>
+<label class="option"><input type="radio" name="q32">3</label>
+<div class="answer">Correct Answer: <strong>1</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q33. When p = 5, the value of 3p − 2 is ______.</h3>
+<label class="option"><input type="radio" name="q33">11</label>
+<label class="option"><input type="radio" name="q33">12</label>
+<label class="option"><input type="radio" name="q33" class="correct">13</label>
+<label class="option"><input type="radio" name="q33">15</label>
+<div class="answer">Correct Answer: <strong>13</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q34. The simplified form of 9a − 4a + 6 is ______.</h3>
+<label class="option"><input type="radio" name="q34">5a − 6</label>
+<label class="option"><input type="radio" name="q34" class="correct">5a + 6</label>
+<label class="option"><input type="radio" name="q34">13a + 6</label>
+<label class="option"><input type="radio" name="q34">5a</label>
+<div class="answer">Correct Answer: <strong>5a + 6</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q35. A polynomial containing only one term is called a ______.</h3>
+<label class="option"><input type="radio" name="q35">binomial</label>
+<label class="option"><input type="radio" name="q35">trinomial</label>
+<label class="option"><input type="radio" name="q35" class="correct">monomial</label>
+<label class="option"><input type="radio" name="q35">quadratic</label>
+<div class="answer">Correct Answer: <strong>monomial</strong>.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- MATCH -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION E — Match the Following (5)</h2>
+
+<div class="question match m1">
+<h3>Q36. Match each expression with its number of terms.</h3>
+
+<div class="match-row">
+A. 7x
+<select class="m1a">
+<option>Choose</option>
+<option class="correct">1 term</option>
+<option>2 terms</option>
+<option>3 terms</option>
+<option>4 terms</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 3y − 5
+<select class="m1b">
+<option>Choose</option>
+<option>1 term</option>
+<option class="correct">2 terms</option>
+<option>3 terms</option>
+<option>4 terms</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 2a + b − 6
+<select class="m1c">
+<option>Choose</option>
+<option>1 term</option>
+<option>2 terms</option>
+<option class="correct">3 terms</option>
+<option>4 terms</option>
+</select>
+</div>
+
+<div class="match-row">
+D. p + q + r + 1
+<select class="m1d">
+<option>Choose</option>
+<option>1 term</option>
+<option>2 terms</option>
+<option>3 terms</option>
+<option class="correct">4 terms</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–1, B–2, C–3, D–4.</strong></div>
+</div>
+
+
+<div class="question match m2">
+<h3>Q37. Match each polynomial with its coefficient of the variable.</h3>
+
+<div class="match-row">
+A. 8m − 1
+<select class="m2a">
+<option>Choose</option>
+<option class="correct">8</option>
+<option>−3</option>
+<option>11</option>
+<option>5</option>
+</select>
+</div>
+
+<div class="match-row">
+B. −3n + 7
+<select class="m2b">
+<option>Choose</option>
+<option>8</option>
+<option class="correct">−3</option>
+<option>11</option>
+<option>5</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 11q + 2
+<select class="m2c">
+<option>Choose</option>
+<option>8</option>
+<option>−3</option>
+<option class="correct">11</option>
+<option>5</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 5r − 6
+<select class="m2d">
+<option>Choose</option>
+<option>8</option>
+<option>−3</option>
+<option>11</option>
+<option class="correct">5</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–8, B–−3, C–11, D–5.</strong></div>
+</div>
+
+
+<div class="question match m3">
+<h3>Q38. Match each expression with its value for the given variable.</h3>
+
+<div class="match-row">
+A. 2x + 1, x = 4
+<select class="m3a">
+<option>Choose</option>
+<option class="correct">9</option>
+<option>13</option>
+<option>15</option>
+<option>7</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 3y − 2, y = 5
+<select class="m3b">
+<option>Choose</option>
+<option>9</option>
+<option class="correct">13</option>
+<option>15</option>
+<option>7</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 5p, p = 3
+<select class="m3c">
+<option>Choose</option>
+<option>9</option>
+<option>13</option>
+<option class="correct">15</option>
+<option>7</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 4q − 1, q = 2
+<select class="m3d">
+<option>Choose</option>
+<option>9</option>
+<option>13</option>
+<option>15</option>
+<option class="correct">7</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–9, B–13, C–15, D–7.</strong></div>
+</div>
+
+
+<div class="question match m4">
+<h3>Q39. Match each verbal description with its algebraic expression.</h3>
+
+<div class="match-row">
+A. 4 more than x
+<select class="m4a">
+<option>Choose</option>
+<option class="correct">x + 4</option>
+<option>4x</option>
+<option>x − 4</option>
+<option>4 − x</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 4 times x
+<select class="m4b">
+<option>Choose</option>
+<option>x + 4</option>
+<option class="correct">4x</option>
+<option>x − 4</option>
+<option>4 − x</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 4 less than x
+<select class="m4c">
+<option>Choose</option>
+<option>x + 4</option>
+<option>4x</option>
+<option class="correct">x − 4</option>
+<option>4 − x</option>
+</select>
+</div>
+
+<div class="match-row">
+D. x less than 4
+<select class="m4d">
+<option>Choose</option>
+<option>x + 4</option>
+<option>4x</option>
+<option>x − 4</option>
+<option class="correct">4 − x</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–x+4, B–4x, C–x−4, D–4−x.</strong></div>
+</div>
+
+
+<div class="question match m5">
+<h3>Q40. Match each expression with its simplified form.</h3>
+
+<div class="match-row">
+A. 4x + 3x
+<select class="m5a">
+<option>Choose</option>
+<option class="correct">7x</option>
+<option>2x + 5</option>
+<option>9x − 1</option>
+<option>6x + 2</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 8a − 6a + 5
+<select class="m5b">
+<option>Choose</option>
+<option>7x</option>
+<option class="correct">2a + 5</option>
+<option>9x − 1</option>
+<option>6x + 2</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 12p − 3p − 1
+<select class="m5c">
+<option>Choose</option>
+<option>7x</option>
+<option>2a + 5</option>
+<option class="correct">9p − 1</option>
+<option>6x + 2</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 2m + 4m + 2
+<select class="m5d">
+<option>Choose</option>
+<option>7x</option>
+<option>2a + 5</option>
+<option>9p − 1</option>
+<option class="correct">6m + 2</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–7x, B–2a+5, C–9p−1, D–6m+2.</strong></div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- DRAG STYLE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION F — Drag & Drop Style Questions (5)</h2>
+
+<div class="question drag">
+<h3>Q41. Drag/select the expression that is a linear polynomial.</h3>
+<label class="option"><input type="radio" name="q41">7x² + 1</label>
+<label class="option"><input type="radio" name="q41" class="correct">9x − 4</label>
+<label class="option"><input type="radio" name="q41">x³ + 2</label>
+<label class="option"><input type="radio" name="q41">5/x</label>
+<div class="answer">Correct Answer: <strong>9x − 4</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Move/select the pair of like terms.</h3>
+<label class="option"><input type="radio" name="q42">6a and 6b</label>
+<label class="option"><input type="radio" name="q42">4x and 4x²</label>
+<label class="option"><input type="radio" name="q42" class="correct">−9p and 2p</label>
+<label class="option"><input type="radio" name="q42">3 and 3x</label>
+<div class="answer">Correct Answer: <strong>−9p and 2p</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Select the simplified form to place with 5b + 7b − 2.</h3>
+<label class="option"><input type="radio" name="q43">12b + 2</label>
+<label class="option"><input type="radio" name="q43" class="correct">12b − 2</label>
+<label class="option"><input type="radio" name="q43">2b − 12</label>
+<label class="option"><input type="radio" name="q43">35b − 2</label>
+<div class="answer">Correct Answer: <strong>12b − 2</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Sort the following by selecting the expression with exactly two unlike terms.</h3>
+<label class="option"><input type="radio" name="q44">7x + 3x</label>
+<label class="option"><input type="radio" name="q44">8a − 2a</label>
+<label class="option"><input type="radio" name="q44" class="correct">5m + 7n</label>
+<label class="option"><input type="radio" name="q44">4p + 9p</label>
+<div class="answer">Correct Answer: <strong>5m + 7n</strong>. m and n are different variable parts.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Select the expression that represents the total of x, 3x and 5.</h3>
+<label class="option"><input type="radio" name="q45">x + 8</label>
+<label class="option"><input type="radio" name="q45" class="correct">4x + 5</label>
+<label class="option"><input type="radio" name="q45">3x + 5</label>
+<label class="option"><input type="radio" name="q45">5x + 3</label>
+<div class="answer">Correct Answer: <strong>4x + 5</strong>. x + 3x + 5 = 4x + 5.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- HOTS -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION G — HOTS / Higher Order Thinking (10)</h2>
+
+<div class="question">
+<h3>Q46. A number is represented by n. Another number is 7 greater than it. What is the sum of the two numbers in simplified form?</h3>
+<label class="option"><input type="radio" name="q46">2n</label>
+<label class="option"><input type="radio" name="q46" class="correct">2n + 7</label>
+<label class="option"><input type="radio" name="q46">n + 7</label>
+<label class="option"><input type="radio" name="q46">7n + 2</label>
+<div class="answer">Correct Answer: <strong>2n + 7</strong>. The numbers are n and n+7, so their sum is 2n+7.</div>
+</div>
+
+<div class="question">
+<h3>Q47. Riya simplifies 6x + 4 − 2x + 9 as 4x + 13. Aman gets 4x − 5. Who is correct and why?</h3>
+<label class="option"><input type="radio" name="q47" class="correct">Riya, because like terms combine to 4x and constants give 13</label>
+<label class="option"><input type="radio" name="q47">Aman, because 4 − 9 = −5</label>
+<label class="option"><input type="radio" name="q47">Both are correct</label>
+<label class="option"><input type="radio" name="q47">Neither is correct</label>
+<div class="answer">Correct Answer: <strong>Riya</strong>. 6x−2x = 4x and 4+9 = 13.</div>
+</div>
+
+<div class="question">
+<h3>Q48. The perimeter of a square is represented by 4x + 12 cm. Find the side length in terms of x.</h3>
+<label class="option"><input type="radio" name="q48">x + 12</label>
+<label class="option"><input type="radio" name="q48">4x + 3</label>
+<label class="option"><input type="radio" name="q48" class="correct">x + 3</label>
+<label class="option"><input type="radio" name="q48">2x + 6</label>
+<div class="answer">Correct Answer: <strong>x + 3</strong>. A square has four equal sides, so divide 4x+12 by 4.</div>
+</div>
+
+<div class="question">
+<h3>Q49. Two expressions are A = 5x + 8 and B = 3x + 14. For which value of x are they equal?</h3>
+<label class="option"><input type="radio" name="q49">1</label>
+<label class="option"><input type="radio" name="q49">2</label>
+<label class="option"><input type="radio" name="q49" class="correct">3</label>
+<label class="option"><input type="radio" name="q49">4</label>
+<div class="answer">Correct Answer: <strong>3</strong>. 5x + 8 = 3x + 14 gives 2x = 6, so x = 3.</div>
+</div>
+
+<div class="question">
+<h3>Q50. A shop charges ₹20 as a fixed packing fee and ₹35 for each notebook. Which expression gives the total cost of n notebooks?</h3>
+<label class="option"><input type="radio" name="q50">20n + 35</label>
+<label class="option"><input type="radio" name="q50" class="correct">35n + 20</label>
+<label class="option"><input type="radio" name="q50">55n</label>
+<label class="option"><input type="radio" name="q50">35 + 20n</label>
+<div class="answer">Correct Answer: <strong>35n + 20</strong>. ₹35 is charged for each notebook and ₹20 is fixed.</div>
+</div>
+
+<div class="question">
+<h3>Q51. If 3x + 5 = 20, what is the value of x?</h3>
+<label class="option"><input type="radio" name="q51">3</label>
+<label class="option"><input type="radio" name="q51">4</label>
+<label class="option"><input type="radio" name="q51" class="correct">5</label>
+<label class="option"><input type="radio" name="q51">6</label>
+<div class="answer">Correct Answer: <strong>5</strong>. 3x = 15, therefore x = 5.</div>
+</div>
+
+<div class="question">
+<h3>Q52. The expression 2x + 3y + 4 is changed by replacing x with 5 and y with 2. What value is obtained?</h3>
+<label class="option"><input type="radio" name="q52">16</label>
+<label class="option"><input type="radio" name="q52">17</label>
+<label class="option"><input type="radio" name="q52" class="correct">20</label>
+<label class="option"><input type="radio" name="q52">22</label>
+<div class="answer">Correct Answer: <strong>20</strong>. 2(5)+3(2)+4 = 10+6+4 = 20.</div>
+</div>
+
+<div class="question">
+<h3>Q53. A rectangle has length 3x + 2 and width x + 4. Find its perimeter.</h3>
+<label class="option"><input type="radio" name="q53">4x + 6</label>
+<label class="option"><input type="radio" name="q53" class="correct">8x + 12</label>
+<label class="option"><input type="radio" name="q53">6x + 8</label>
+<label class="option"><input type="radio" name="q53">8x + 6</label>
+<div class="answer">Correct Answer: <strong>8x + 12</strong>. P = 2[(3x+2)+(x+4)] = 8x+12.</div>
+</div>
+
+<div class="question">
+<h3>Q54. A student says, “3x + 4 and 4 + 3x are different polynomials because their terms are written in a different order.” Evaluate the statement.</h3>
+<label class="option"><input type="radio" name="q54">The student is correct because order changes the value</label>
+<label class="option"><input type="radio" name="q54" class="correct">The student is incorrect because both expressions have the same value</label>
+<label class="option"><input type="radio" name="q54">Only the first is linear</label>
+<label class="option"><input type="radio" name="q54">Only the second is a polynomial</label>
+<div class="answer">Correct Answer: <strong>The student is incorrect</strong>. Addition is commutative, so 3x+4 = 4+3x.</div>
+</div>
+
+<div class="question">
+<h3>Q55. Find the value of k if the expression 7x + k has value 30 when x = 4.</h3>
+<label class="option"><input type="radio" name="q55">1</label>
+<label class="option"><input type="radio" name="q55" class="correct">2</label>
+<label class="option"><input type="radio" name="q55">3</label>
+<label class="option"><input type="radio" name="q55">4</label>
+<div class="answer">Correct Answer: <strong>2</strong>. 7(4)+k=30, so 28+k=30 and k=2.</div>
+</div>
+
+</section>
+
+
+<!-- SCORE -->
+<div class="score-card">
+    <div>YOUR FINAL SCORE</div>
+    <div class="score-number"></div>
+    <p>Chapter 2 — Introduction to Linear Polynomials</p>
+</div>
+
+</div>
+
+<footer>
+    Class 7 Mathematics • Chapter 2 • Half-Yearly Examination Preparation
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Mathematics | Chapter 3 - The World of Numbers</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:5px 0;
+    color:#dbeafe;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:#fff;
+    padding:13px 16px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:15px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:8px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:8px;
+}
+
+.answer{
+    display:none;
+    margin-top:12px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.quiz{
+    counter-reset:score;
+}
+
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* MATCH SCORING */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.match .answer{
+    display:none;
+}
+
+.match:has(select:valid) .answer{
+    display:block;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+select{
+    margin-left:12px;
+    padding:7px;
+    border-radius:7px;
+    border:1px solid #94a3b8;
+    font-weight:700;
+}
+
+.drag{
+    border:2px dashed #94a3b8;
+    background:#f8fafc;
+}
+
+.note{
+    background:#dbeafe;
+    border-left:5px solid #2563eb;
+    padding:14px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+}
+
+.score-number{
+    font-size:30px;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#475569;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Class 7 Mathematics</h1>
+    <p>Chapter 3 — The World of Numbers</p>
+    <p>Half-Yearly Examination Question Bank & Revision Test</p>
+</header>
+
+<div class="wrap quiz">
+
+<div class="note">
+<strong>Instructions:</strong> Attempt all 55 questions.
+Select an option to reveal the answer.
+Each normal question carries 1 mark.
+Each Match the Following question carries 1 mark only when all four pairs are correct.
+</div>
+
+
+<!-- ================================================= -->
+<!-- SECTION A : MCQs -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION A — Multiple Choice Questions (15)</h2>
+
+<div class="question">
+<h3>Q1. Which of the following is the greatest number?</h3>
+<label class="option"><input type="radio" name="q1">7,89,456</label>
+<label class="option"><input type="radio" name="q1">7,98,456</label>
+<label class="option"><input type="radio" name="q1" class="correct">8,01,245</label>
+<label class="option"><input type="radio" name="q1">7,99,999</label>
+<div class="answer">Correct Answer: <strong>8,01,245</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q2. What is the place value of 6 in 46,32,781?</h3>
+<label class="option"><input type="radio" name="q2">6,000</label>
+<label class="option"><input type="radio" name="q2" class="correct">6,00,000</label>
+<label class="option"><input type="radio" name="q2">60,000</label>
+<label class="option"><input type="radio" name="q2">6,00000</label>
+<div class="answer">Correct Answer: <strong>6,00,000</strong>. The digit 6 is in the lakh place.</div>
+</div>
+
+<div class="question">
+<h3>Q3. Which is the correct expanded form of 5,07,304?</h3>
+<label class="option"><input type="radio" name="q3" class="correct">5,00,000 + 7,000 + 300 + 4</label>
+<label class="option"><input type="radio" name="q3">5,00,000 + 700 + 300 + 4</label>
+<label class="option"><input type="radio" name="q3">5,00,000 + 70,000 + 300 + 4</label>
+<label class="option"><input type="radio" name="q3">50,00,000 + 7,000 + 300 + 4</label>
+<div class="answer">Correct Answer: <strong>5,00,000 + 7,000 + 300 + 4</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q4. Which number is represented by 9 × 10,000 + 4 × 1,000 + 6 × 10 + 2?</h3>
+<label class="option"><input type="radio" name="q4">94,602</label>
+<label class="option"><input type="radio" name="q4" class="correct">94,062</label>
+<label class="option"><input type="radio" name="q4">94,620</label>
+<label class="option"><input type="radio" name="q4">90,462</label>
+<div class="answer">Correct Answer: <strong>94,062</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q5. What is the smallest 6-digit number?</h3>
+<label class="option"><input type="radio" name="q5">99,999</label>
+<label class="option"><input type="radio" name="q5" class="correct">1,00,000</label>
+<label class="option"><input type="radio" name="q5">1,00,001</label>
+<label class="option"><input type="radio" name="q5">10,000</label>
+<div class="answer">Correct Answer: <strong>1,00,000</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q6. Which number comes immediately after 99,999?</h3>
+<label class="option"><input type="radio" name="q6">99,998</label>
+<label class="option"><input type="radio" name="q6" class="correct">1,00,000</label>
+<label class="option"><input type="radio" name="q6">99,999</label>
+<label class="option"><input type="radio" name="q6">1,00,001</label>
+<div class="answer">Correct Answer: <strong>1,00,000</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q7. Which number is divisible by 5?</h3>
+<label class="option"><input type="radio" name="q7">23,417</label>
+<label class="option"><input type="radio" name="q7">58,432</label>
+<label class="option"><input type="radio" name="q7" class="correct">76,315</label>
+<label class="option"><input type="radio" name="q7">91,728</label>
+<div class="answer">Correct Answer: <strong>76,315</strong>. Its last digit is 5.</div>
+</div>
+
+<div class="question">
+<h3>Q8. Which of these numbers is divisible by 3?</h3>
+<label class="option"><input type="radio" name="q8">4,217</label>
+<label class="option"><input type="radio" name="q8" class="correct">5,436</label>
+<label class="option"><input type="radio" name="q8">7,241</label>
+<label class="option"><input type="radio" name="q8">8,002</label>
+<div class="answer">Correct Answer: <strong>5,436</strong>. Sum of digits = 18, which is divisible by 3.</div>
+</div>
+
+<div class="question">
+<h3>Q9. What is the remainder when 47 is divided by 6?</h3>
+<label class="option"><input type="radio" name="q9">0</label>
+<label class="option"><input type="radio" name="q9">4</label>
+<label class="option"><input type="radio" name="q9" class="correct">5</label>
+<label class="option"><input type="radio" name="q9">6</label>
+<div class="answer">Correct Answer: <strong>5</strong>. 47 = 6 × 7 + 5.</div>
+</div>
+
+<div class="question">
+<h3>Q10. Which number is a common multiple of 4 and 6?</h3>
+<label class="option"><input type="radio" name="q10">18</label>
+<label class="option"><input type="radio" name="q10" class="correct">24</label>
+<label class="option"><input type="radio" name="q10">28</label>
+<label class="option"><input type="radio" name="q10">30</label>
+<div class="answer">Correct Answer: <strong>24</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q11. Which number is prime?</h3>
+<label class="option"><input type="radio" name="q11">21</label>
+<label class="option"><input type="radio" name="q11">27</label>
+<label class="option"><input type="radio" name="q11" class="correct">29</label>
+<label class="option"><input type="radio" name="q11">35</label>
+<div class="answer">Correct Answer: <strong>29</strong>. It has exactly two factors: 1 and 29.</div>
+</div>
+
+<div class="question">
+<h3>Q12. Which pair contains only composite numbers?</h3>
+<label class="option"><input type="radio" name="q12">11 and 15</label>
+<label class="option"><input type="radio" name="q12">17 and 21</label>
+<label class="option"><input type="radio" name="q12" class="correct">18 and 27</label>
+<label class="option"><input type="radio" name="q12">19 and 23</label>
+<div class="answer">Correct Answer: <strong>18 and 27</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q13. What is the greatest 4-digit number divisible by 10?</h3>
+<label class="option"><input type="radio" name="q13" class="correct">9,990</label>
+<label class="option"><input type="radio" name="q13">9,980</label>
+<label class="option"><input type="radio" name="q13">9,970</label>
+<label class="option"><input type="radio" name="q13">9,999</label>
+<div class="answer">Correct Answer: <strong>9,990</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q14. Which statement about zero is correct?</h3>
+<label class="option"><input type="radio" name="q14">Zero is a prime number</label>
+<label class="option"><input type="radio" name="q14">Zero is a composite number</label>
+<label class="option"><input type="radio" name="q14" class="correct">Zero is neither prime nor composite</label>
+<label class="option"><input type="radio" name="q14">Zero has exactly two factors</label>
+<div class="answer">Correct Answer: <strong>Zero is neither prime nor composite</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q15. If a number is divisible by both 2 and 3, it must also be divisible by:</h3>
+<label class="option"><input type="radio" name="q15">4</label>
+<label class="option"><input type="radio" name="q15">5</label>
+<label class="option"><input type="radio" name="q15" class="correct">6</label>
+<label class="option"><input type="radio" name="q15">9</label>
+<div class="answer">Correct Answer: <strong>6</strong>.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- TRUE FALSE -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION B — True / False (10)</h2>
+
+<div class="question">
+<h3>Q16. Every multiple of 10 ends in zero.</h3>
+<label class="option"><input type="radio" name="q16" class="correct">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q17. 1 is a prime number.</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input type="radio" name="q17" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. A prime number has exactly two factors, while 1 has only one.</div>
+</div>
+
+<div class="question">
+<h3>Q18. Every even number is divisible by 2.</h3>
+<label class="option"><input type="radio" name="q18" class="correct">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q19. 3,456 is divisible by 9 because the sum of its digits is 18.</h3>
+<label class="option"><input type="radio" name="q19" class="correct">True</label>
+<label class="option"><input type="radio" name="q19">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q20. A number ending in 5 is always divisible by 10.</h3>
+<label class="option"><input type="radio" name="q20">True</label>
+<label class="option"><input type="radio" name="q20" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. Such a number is divisible by 5, not necessarily by 10.</div>
+</div>
+
+<div class="question">
+<h3>Q21. The smallest prime number is 2.</h3>
+<label class="option"><input type="radio" name="q21" class="correct">True</label>
+<label class="option"><input type="radio" name="q21">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q22. Every composite number has more than two factors.</h3>
+<label class="option"><input type="radio" name="q22" class="correct">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q23. 84 is divisible by both 4 and 7.</h3>
+<label class="option"><input type="radio" name="q23" class="correct">True</label>
+<label class="option"><input type="radio" name="q23">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. 84 ÷ 4 = 21 and 84 ÷ 7 = 12.</div>
+</div>
+
+<div class="question">
+<h3>Q24. The number 72 has exactly four factors.</h3>
+<label class="option"><input type="radio" name="q24">True</label>
+<label class="option"><input type="radio" name="q24" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. 72 has more than four factors.</div>
+</div>
+
+<div class="question">
+<h3>Q25. If a number is divisible by 6, it must be divisible by both 2 and 3.</h3>
+<label class="option"><input type="radio" name="q25" class="correct">True</label>
+<label class="option"><input type="radio" name="q25">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- ASSERTION REASON -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION C — Assertion & Reasoning (5)</h2>
+
+<div class="question">
+<h3>
+Q26. Assertion (A): 4,725 is divisible by 5.<br>
+Reason (R): A number ending in 0 or 5 is divisible by 5.
+</h3>
+<label class="option"><input type="radio" name="q26" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q26">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q26">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q26">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q27. Assertion (A): 48 is divisible by 6.<br>
+Reason (R): 48 is divisible by both 2 and 3.
+</h3>
+<label class="option"><input type="radio" name="q27" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q27">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q27">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q27">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>. Divisibility by both 2 and 3 gives divisibility by 6.</div>
+</div>
+
+<div class="question">
+<h3>
+Q28. Assertion (A): 1 is neither prime nor composite.<br>
+Reason (R): 1 has exactly one factor.
+</h3>
+<label class="option"><input type="radio" name="q28" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q28">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q28">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q28">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q29. Assertion (A): 3,240 is divisible by 10.<br>
+Reason (R): Its last digit is 4.
+</h3>
+<label class="option"><input type="radio" name="q29">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q29">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q29" class="correct">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q29">D — A is false, but R is true</label>
+</div>
+
+<div class="question">
+<h3>
+Q30. Assertion (A): 37 is a prime number.<br>
+Reason (R): 37 has no factor other than 1 and 37.
+</h3>
+<label class="option"><input type="radio" name="q30" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q30">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q30">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q30">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- FILL IN THE BLANKS -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION D — Fill in the Blanks (5)</h2>
+
+<div class="question">
+<h3>Q31. The smallest whole number is ______.</h3>
+<label class="option"><input type="radio" name="q31">1</label>
+<label class="option"><input type="radio" name="q31" class="correct">0</label>
+<label class="option"><input type="radio" name="q31">−1</label>
+<label class="option"><input type="radio" name="q31">10</label>
+<div class="answer">Correct Answer: <strong>0</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q32. The number of zeros in one lakh is ______.</h3>
+<label class="option"><input type="radio" name="q32">4</label>
+<label class="option"><input type="radio" name="q32" class="correct">5</label>
+<label class="option"><input type="radio" name="q32">6</label>
+<label class="option"><input type="radio" name="q32">7</label>
+<div class="answer">Correct Answer: <strong>5</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q33. The smallest prime number is ______.</h3>
+<label class="option"><input type="radio" name="q33">0</label>
+<label class="option"><input type="radio" name="q33">1</label>
+<label class="option"><input type="radio" name="q33" class="correct">2</label>
+<label class="option"><input type="radio" name="q33">3</label>
+<div class="answer">Correct Answer: <strong>2</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q34. The remainder when 58 is divided by 7 is ______.</h3>
+<label class="option"><input type="radio" name="q34">0</label>
+<label class="option"><input type="radio" name="q34" class="correct">2</label>
+<label class="option"><input type="radio" name="q34">4</label>
+<label class="option"><input type="radio" name="q34">6</label>
+<div class="answer">Correct Answer: <strong>2</strong>. 58 = 7 × 8 + 2.</div>
+</div>
+
+<div class="question">
+<h3>Q35. A number having exactly two factors is called a ______ number.</h3>
+<label class="option"><input type="radio" name="q35">composite</label>
+<label class="option"><input type="radio" name="q35" class="correct">prime</label>
+<label class="option"><input type="radio" name="q35">even</label>
+<label class="option"><input type="radio" name="q35">odd</label>
+<div class="answer">Correct Answer: <strong>prime</strong>.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- MATCH -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION E — Match the Following (5)</h2>
+
+<div class="question match m1">
+<h3>Q36. Match each number with its correct property.</h3>
+
+<div class="match-row">
+A. 17
+<select required class="m1a">
+<option value="">Choose</option>
+<option class="correct" value="a">Prime</option>
+<option value="b">Composite</option>
+<option value="c">Multiple of 10</option>
+<option value="d">Even</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 24
+<select required class="m1b">
+<option value="">Choose</option>
+<option value="a">Prime</option>
+<option class="correct" value="b">Composite</option>
+<option value="c">Multiple of 10</option>
+<option value="d">Odd</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 70
+<select required class="m1c">
+<option value="">Choose</option>
+<option value="a">Prime</option>
+<option value="b">Composite</option>
+<option class="correct" value="c">Multiple of 10</option>
+<option value="d">Odd</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 31
+<select required class="m1d">
+<option value="">Choose</option>
+<option value="a">Composite</option>
+<option value="b">Even</option>
+<option value="c">Multiple of 10</option>
+<option class="correct" value="d">Prime</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–Prime, B–Composite, C–Multiple of 10, D–Prime.</strong></div>
+</div>
+
+
+<div class="question match m2">
+<h3>Q37. Match each place-value position with its value.</h3>
+
+<div class="match-row">
+A. Ones
+<select required class="m2a">
+<option value="">Choose</option>
+<option class="correct">10⁰</option>
+<option>10¹</option>
+<option>10²</option>
+<option>10³</option>
+</select>
+</div>
+
+<div class="match-row">
+B. Tens
+<select required class="m2b">
+<option value="">Choose</option>
+<option>10⁰</option>
+<option class="correct">10¹</option>
+<option>10²</option>
+<option>10³</option>
+</select>
+</div>
+
+<div class="match-row">
+C. Hundreds
+<select required class="m2c">
+<option value="">Choose</option>
+<option>10⁰</option>
+<option>10¹</option>
+<option class="correct">10²</option>
+<option>10³</option>
+</select>
+</div>
+
+<div class="match-row">
+D. Thousands
+<select required class="m2d">
+<option value="">Choose</option>
+<option>10⁰</option>
+<option>10¹</option>
+<option>10²</option>
+<option class="correct">10³</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>Ones–10⁰, Tens–10¹, Hundreds–10², Thousands–10³.</strong></div>
+</div>
+
+
+<div class="question match m3">
+<h3>Q38. Match each number with its greatest digit.</h3>
+
+<div class="match-row">
+A. 4,275
+<select required class="m3a">
+<option value="">Choose</option>
+<option class="correct">7</option>
+<option>9</option>
+<option>8</option>
+<option>6</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 8,391
+<select required class="m3b">
+<option value="">Choose</option>
+<option>7</option>
+<option>9</option>
+<option class="correct">9</option>
+<option>6</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 6,824
+<select required class="m3c">
+<option value="">Choose</option>
+<option>7</option>
+<option>9</option>
+<option>8</option>
+<option class="correct">8</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 5,613
+<select required class="m3d">
+<option value="">Choose</option>
+<option>7</option>
+<option>9</option>
+<option>8</option>
+<option class="correct">6</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–7, B–9, C–8, D–6.</strong></div>
+</div>
+
+
+<div class="question match m4">
+<h3>Q39. Match each number with its divisibility property.</h3>
+
+<div class="match-row">
+A. 2,340
+<select required class="m4a">
+<option value="">Choose</option>
+<option class="correct">Divisible by 10</option>
+<option>Divisible by 3 only</option>
+<option>Not divisible by 2</option>
+<option>Prime</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 2,418
+<select required class="m4b">
+<option value="">Choose</option>
+<option>Divisible by 10</option>
+<option class="correct">Divisible by 3</option>
+<option>Not divisible by 2</option>
+<option>Prime</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 2,417
+<select required class="m4c">
+<option value="">Choose</option>
+<option>Divisible by 10</option>
+<option>Divisible by 3</option>
+<option class="correct">Not divisible by 2</option>
+<option>Multiple of 5</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 2,419
+<select required class="m4d">
+<option value="">Choose</option>
+<option>Divisible by 10</option>
+<option>Divisible by 3</option>
+<option>Not divisible by 2</option>
+<option class="correct">Prime</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–Divisible by 10, B–Divisible by 3, C–Not divisible by 2, D–Prime.</strong></div>
+</div>
+
+
+<div class="question match m5">
+<h3>Q40. Match each operation with its result.</h3>
+
+<div class="match-row">
+A. 125 + 75
+<select required class="m5a">
+<option value="">Choose</option>
+<option class="correct">200</option>
+<option>150</option>
+<option>250</option>
+<option>300</option>
+</select>
+</div>
+
+<div class="match-row">
+B. 450 − 125
+<select required class="m5b">
+<option value="">Choose</option>
+<option>200</option>
+<option class="correct">325</option>
+<option>375</option>
+<option>425</option>
+</select>
+</div>
+
+<div class="match-row">
+C. 25 × 8
+<select required class="m5c">
+<option value="">Choose</option>
+<option>150</option>
+<option>175</option>
+<option class="correct">200</option>
+<option>225</option>
+</select>
+</div>
+
+<div class="match-row">
+D. 360 ÷ 6
+<select required class="m5d">
+<option value="">Choose</option>
+<option>40</option>
+<option class="correct">60</option>
+<option>70</option>
+<option>80</option>
+</select>
+</div>
+
+<div class="answer">Correct matching: <strong>A–200, B–325, C–200, D–60.</strong></div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- DRAG STYLE -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION F — Drag & Drop Style Questions (5)</h2>
+
+<div class="question drag">
+<h3>Q41. Select the number that belongs in the “prime numbers” group.</h3>
+<label class="option"><input type="radio" name="q41">39</label>
+<label class="option"><input type="radio" name="q41" class="correct">43</label>
+<label class="option"><input type="radio" name="q41">51</label>
+<label class="option"><input type="radio" name="q41">57</label>
+<div class="answer">Correct Answer: <strong>43</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Move/select the number that belongs to the multiples of 8.</h3>
+<label class="option"><input type="radio" name="q42">42</label>
+<label class="option"><input type="radio" name="q42">54</label>
+<label class="option"><input type="radio" name="q42" class="correct">56</label>
+<label class="option"><input type="radio" name="q42">62</label>
+<div class="answer">Correct Answer: <strong>56</strong>. 8 × 7 = 56.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Select the number that can be placed in the divisibility-by-9 group.</h3>
+<label class="option"><input type="radio" name="q43">4,312</label>
+<label class="option"><input type="radio" name="q43" class="correct">7,218</label>
+<label class="option"><input type="radio" name="q43">5,421</label>
+<label class="option"><input type="radio" name="q43">6,302</label>
+<div class="answer">Correct Answer: <strong>7,218</strong>. Digit sum = 18.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Select the number that completes the pattern: 125, 250, 375, ______.</h3>
+<label class="option"><input type="radio" name="q44">450</label>
+<label class="option"><input type="radio" name="q44">475</label>
+<label class="option"><input type="radio" name="q44" class="correct">500</label>
+<label class="option"><input type="radio" name="q44">525</label>
+<div class="answer">Correct Answer: <strong>500</strong>. Each term increases by 125.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Choose the number that has exactly three positive factors.</h3>
+<label class="option"><input type="radio" name="q45">12</label>
+<label class="option"><input type="radio" name="q45">16</label>
+<label class="option"><input type="radio" name="q45" class="correct">25</label>
+<label class="option"><input type="radio" name="q45">30</label>
+<div class="answer">Correct Answer: <strong>25</strong>. Its factors are 1, 5 and 25.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- HOTS -->
+<!-- ================================================= -->
+
+<section>
+<h2>SECTION G — HOTS / Higher Order Thinking (10)</h2>
+
+<div class="question">
+<h3>Q46. Using the digits 2, 5, 7 and 9 exactly once, form the greatest possible 4-digit number.</h3>
+<label class="option"><input type="radio" name="q46">9,527</label>
+<label class="option"><input type="radio" name="q46" class="correct">9,752</label>
+<label class="option"><input type="radio" name="q46">7,952</label>
+<label class="option"><input type="radio" name="q46">7,925</label>
+<div class="answer">Correct Answer: <strong>9,752</strong>. Arrange the digits from greatest to smallest.</div>
+</div>
+
+<div class="question">
+<h3>Q47. A school has 3,875 students in one year and 4,126 students the next year. By how many students did the number increase?</h3>
+<label class="option"><input type="radio" name="q47">151</label>
+<label class="option"><input type="radio" name="q47">201</label>
+<label class="option"><input type="radio" name="q47" class="correct">251</label>
+<label class="option"><input type="radio" name="q47">351</label>
+<div class="answer">Correct Answer: <strong>251</strong>. 4,126 − 3,875 = 251.</div>
+</div>
+
+<div class="question">
+<h3>Q48. Find the smallest number greater than 100 that is divisible by both 8 and 12.</h3>
+<label class="option"><input type="radio" name="q48">104</label>
+<label class="option"><input type="radio" name="q48">108</label>
+<label class="option"><input type="radio" name="q48" class="correct">120</label>
+<label class="option"><input type="radio" name="q48">124</label>
+<div class="answer">Correct Answer: <strong>120</strong>. It is the first common multiple of 8 and 12 greater than 100.</div>
+</div>
+
+<div class="question">
+<h3>Q49. A number is divisible by 2, 5 and 3. Which is the smallest possible positive number satisfying all three conditions?</h3>
+<label class="option"><input type="radio" name="q49">10</label>
+<label class="option"><input type="radio" name="q49">15</label>
+<label class="option"><input type="radio" name="q49" class="correct">30</label>
+<label class="option"><input type="radio" name="q49">60</label>
+<div class="answer">Correct Answer: <strong>30</strong>. It is divisible by 2, 3 and 5.</div>
+</div>
+
+<div class="question">
+<h3>Q50. A four-digit number has 7 in the thousands place, 0 in the hundreds place, 4 in the tens place and 9 in the ones place. What is the number?</h3>
+<label class="option"><input type="radio" name="q50" class="correct">7,049</label>
+<label class="option"><input type="radio" name="q50">7,409</label>
+<label class="option"><input type="radio" name="q50">7,490</label>
+<label class="option"><input type="radio" name="q50">7,940</label>
+<div class="answer">Correct Answer: <strong>7,049</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q51. Ravi says that 91 is prime because it is odd. Is his reasoning correct?</h3>
+<label class="option"><input type="radio" name="q51">Yes, every odd number is prime</label>
+<label class="option"><input type="radio" name="q51" class="correct">No, 91 = 7 × 13, so it is composite</label>
+<label class="option"><input type="radio" name="q51">Yes, because 91 has no factor 2</label>
+<label class="option"><input type="radio" name="q51">No, because all odd numbers are divisible by 5</label>
+<div class="answer">Correct Answer: <strong>No, 91 = 7 × 13</strong>. Oddness alone does not make a number prime.</div>
+</div>
+
+<div class="question">
+<h3>Q52. A number has digits 4, 6 and 8. Each digit is used once. Which arrangement gives the greatest number divisible by 2?</h3>
+<label class="option"><input type="radio" name="q52">468</label>
+<label class="option"><input type="radio" name="q52">684</label>
+<label class="option"><input type="radio" name="q52" class="correct">864</label>
+<label class="option"><input type="radio" name="q52">846</label>
+<div class="answer">Correct Answer: <strong>864</strong>. It is the greatest arrangement and ends in an even digit.</div>
+</div>
+
+<div class="question">
+<h3>Q53. Three bells ring every 6, 8 and 12 minutes. If they ring together at 9:00 a.m., after how many minutes will they ring together again?</h3>
+<label class="option"><input type="radio" name="q53">12</label>
+<label class="option"><input type="radio" name="q53">18</label>
+<label class="option"><input type="radio" name="q53" class="correct">24</label>
+<label class="option"><input type="radio" name="q53">36</label>
+<div class="answer">Correct Answer: <strong>24 minutes</strong>. 24 is the least common multiple of 6, 8 and 12.</div>
+</div>
+
+<div class="question">
+<h3>Q54. A number leaves remainder 3 when divided by 5. Which of the following could be that number?</h3>
+<label class="option"><input type="radio" name="q54">42</label>
+<label class="option"><input type="radio" name="q54" class="correct">48</label>
+<label class="option"><input type="radio" name="q54">50</label>
+<label class="option"><input type="radio" name="q54">52</label>
+<div class="answer">Correct Answer: <strong>48</strong>. 48 = 5 × 9 + 3.</div>
+</div>
+
+<div class="question">
+<h3>Q55. Find the smallest 5-digit number that is divisible by both 5 and 9.</h3>
+<label class="option"><input type="radio" name="q55">10,005</label>
+<label class="option"><input type="radio" name="q55">10,015</label>
+<label class="option"><input type="radio" name="q55" class="correct">10,035</label>
+<label class="option"><input type="radio" name="q55">10,045</label>
+<div class="answer">Correct Answer: <strong>10,035</strong>. It ends in 5 and its digit sum is 9, so it is divisible by both 5 and 9.</div>
+</div>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- SCORE -->
+<!-- ================================================= -->
+
+<div class="score-card">
+    <div>YOUR FINAL SCORE</div>
+    <div class="score-number"></div>
+    <p>Chapter 3 — The World of Numbers</p>
+</div>
+
+</div>
+
+<footer>
+Class 7 Mathematics • Chapter 3 • Half-Yearly Examination Preparation
+</footer>
+
+</body>
+</html>

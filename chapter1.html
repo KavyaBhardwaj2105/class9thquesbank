@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 - Orienting Yourself: The Use of Coordinates</title>
+
+<style>
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+    line-height:1.55;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:0;
+    color:#dbeafe;
+    font-size:16px;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+.intro{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:15px;
+    padding:18px;
+    margin-bottom:25px;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:#fff;
+    padding:13px 17px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:15px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 14px;
+    font-size:17px;
+}
+
+.option{
+    display:block;
+    padding:10px 13px;
+    margin:7px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:9px;
+}
+
+.answer{
+    display:none;
+    margin-top:13px;
+    padding:13px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.drag{
+    border:2px dashed #64748b;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.match-row b{
+    display:block;
+    margin-bottom:8px;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:17px;
+    text-align:center;
+    margin-top:35px;
+    box-shadow:0 5px 20px #00000030;
+}
+
+.score-card p{
+    margin:5px 0 0;
+    color:#cbd5e1;
+}
+
+.score-number{
+    font-size:32px;
+    margin-top:5px;
+}
+
+.note{
+    background:#fff7ed;
+    border-left:5px solid #f97316;
+    padding:14px;
+    border-radius:10px;
+}
+
+.quiz{
+    counter-reset:score;
+}
+
+/* Every normal question = 1 mark when correct option is selected */
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* Match questions = 1 mark only when all four are correct */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+.small{
+    font-size:14px;
+    color:#475569;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Chapter 1 — Orienting Yourself: The Use of Coordinates</h1>
+    <p>Mathematics Question Bank | Half-Yearly Examination Preparation</p>
+</header>
+
+<div class="wrap quiz">
+
+<div class="intro">
+    <div class="note">
+        <b>Instructions:</b> Select any option. Whether your selected answer is right or wrong,
+        the correct answer and explanation will appear automatically.
+        <br><br>
+        <b>Total Questions:</b> 55 &nbsp; | &nbsp;
+        <b>Maximum Score:</b> 55
+    </div>
+</div>
+
+
+<!-- ========================================================= -->
+<!-- SECTION A : MCQ -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section A — Multiple Choice Questions (15)</h2>
+
+<div class="question">
+<h3>Q1. In an ordered pair (−4, 7), which number represents the horizontal position?</h3>
+
+<label class="option"><input type="radio" name="q1">7</label>
+<label class="option"><input type="radio" name="q1" class="correct">−4</label>
+<label class="option"><input type="radio" name="q1">11</label>
+<label class="option"><input type="radio" name="q1">−11</label>
+
+<div class="answer">
+<b>Correct Answer: −4.</b> The first coordinate gives the horizontal position.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q2. A point is 5 units to the right of the origin and 3 units below it. What are its coordinates?</h3>
+
+<label class="option"><input type="radio" name="q2">(−5, 3)</label>
+<label class="option"><input type="radio" name="q2">(3, 5)</label>
+<label class="option"><input type="radio" name="q2" class="correct">(5, −3)</label>
+<label class="option"><input type="radio" name="q2">(−3, 5)</label>
+
+<div class="answer">
+<b>Correct Answer: (5, −3).</b> Right means positive x and below means negative y.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q3. Which point lies on the vertical axis?</h3>
+
+<label class="option"><input type="radio" name="q3">(6, 0)</label>
+<label class="option"><input type="radio" name="q3" class="correct">(0, −8)</label>
+<label class="option"><input type="radio" name="q3">(−4, 3)</label>
+<label class="option"><input type="radio" name="q3">(7, 5)</label>
+
+<div class="answer">
+<b>Correct Answer: (0, −8).</b> Every point on the vertical axis has x-coordinate 0.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q4. Which point is closest to the origin among the following?</h3>
+
+<label class="option"><input type="radio" name="q4">(−6, 0)</label>
+<label class="option"><input type="radio" name="q4">(3, 4)</label>
+<label class="option"><input type="radio" name="q4" class="correct">(1, −2)</label>
+<label class="option"><input type="radio" name="q4">(0, 5)</label>
+
+<div class="answer">
+<b>Correct Answer: (1, −2).</b> Its distance from the origin is √5, smaller than the distances of the other points.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q5. If a point moves from (−2, 4) to (5, 4), how far has it moved horizontally?</h3>
+
+<label class="option"><input type="radio" name="q5">3 units</label>
+<label class="option"><input type="radio" name="q5">5 units</label>
+<label class="option"><input type="radio" name="q5" class="correct">7 units</label>
+<label class="option"><input type="radio" name="q5">9 units</label>
+
+<div class="answer">
+<b>Correct Answer: 7 units.</b> The y-coordinate stays 4, while x changes from −2 to 5: 5 − (−2) = 7.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q6. Which point has the same vertical position as (−7, 6)?</h3>
+
+<label class="option"><input type="radio" name="q6">(2, 4)</label>
+<label class="option"><input type="radio" name="q6">(−3, −6)</label>
+<label class="option"><input type="radio" name="q6" class="correct">(9, 6)</label>
+<label class="option"><input type="radio" name="q6">(6, 9)</label>
+
+<div class="answer">
+<b>Correct Answer: (9, 6).</b> Points with the same y-coordinate lie on the same horizontal level.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q7. A point has coordinates (−9, −2). In which direction is it from the origin?</h3>
+
+<label class="option"><input type="radio" name="q7">Right and above</label>
+<label class="option"><input type="radio" name="q7">Right and below</label>
+<label class="option"><input type="radio" name="q7">Left and above</label>
+<label class="option"><input type="radio" name="q7" class="correct">Left and below</label>
+
+<div class="answer">
+<b>Correct Answer: Left and below.</b> Both coordinates are negative.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q8. The point (0, 12) is located:</h3>
+
+<label class="option"><input type="radio" name="q8">12 units right of the origin</label>
+<label class="option"><input type="radio" name="q8" class="correct">12 units above the origin</label>
+<label class="option"><input type="radio" name="q8">12 units left of the origin</label>
+<label class="option"><input type="radio" name="q8">12 units below the origin</label>
+
+<div class="answer">
+<b>Correct Answer: 12 units above the origin.</b>
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q9. Which point is a reflection of (4, −7) across the horizontal axis?</h3>
+
+<label class="option"><input type="radio" name="q9">(−4, −7)</label>
+<label class="option"><input type="radio" name="q9">(−4, 7)</label>
+<label class="option"><input type="radio" name="q9" class="correct">(4, 7)</label>
+<label class="option"><input type="radio" name="q9">(7, 4)</label>
+
+<div class="answer">
+<b>Correct Answer: (4, 7).</b> Reflection across the horizontal axis changes the sign of y only.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q10. If A = (−3, 5) and B = (−3, −4), what can be concluded?</h3>
+
+<label class="option"><input type="radio" name="q10">A and B lie on the same horizontal line</label>
+<label class="option"><input type="radio" name="q10" class="correct">A and B lie on the same vertical line</label>
+<label class="option"><input type="radio" name="q10">A and B are both on the horizontal axis</label>
+<label class="option"><input type="radio" name="q10">A and B are both at the origin</label>
+
+<div class="answer">
+<b>Correct Answer: Same vertical line.</b> Their x-coordinate is −3 in both cases.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q11. A point is moved 6 units left from (8, −1). What is its new position?</h3>
+
+<label class="option"><input type="radio" name="q11">(14, −1)</label>
+<label class="option"><input type="radio" name="q11">(8, 5)</label>
+<label class="option"><input type="radio" name="q11" class="correct">(2, −1)</label>
+<label class="option"><input type="radio" name="q11">(2, 5)</label>
+
+<div class="answer">
+<b>Correct Answer: (2, −1).</b> Moving left decreases the x-coordinate by 6.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q12. Which pair represents two points that are equally far from the vertical axis?</h3>
+
+<label class="option"><input type="radio" name="q12">(2, 5) and (−2, −5)</label>
+<label class="option"><input type="radio" name="q12" class="correct">(−6, 4) and (6, −9)</label>
+<label class="option"><input type="radio" name="q12">(3, 7) and (−5, 2)</label>
+<label class="option"><input type="radio" name="q12">(0, 4) and (4, 0)</label>
+
+<div class="answer">
+<b>Correct Answer: (−6, 4) and (6, −9).</b> Their horizontal distances from the vertical axis are both 6 units.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q13. A rectangular garden has corners P(2,1), Q(8,1), R(8,5). What are the coordinates of the fourth corner?</h3>
+
+<label class="option"><input type="radio" name="q13" class="correct">(2,5)</label>
+<label class="option"><input type="radio" name="q13">(5,2)</label>
+<label class="option"><input type="radio" name="q13">(8,5)</label>
+<label class="option"><input type="radio" name="q13">(2,−5)</label>
+
+<div class="answer">
+<b>Correct Answer: (2,5).</b> The fourth corner must have x = 2 and y = 5.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q14. A point (a, −6) lies 4 units to the left of the y-axis. Find a.</h3>
+
+<label class="option"><input type="radio" name="q14">4</label>
+<label class="option"><input type="radio" name="q14" class="correct">−4</label>
+<label class="option"><input type="radio" name="q14">−6</label>
+<label class="option"><input type="radio" name="q14">6</label>
+
+<div class="answer">
+<b>Correct Answer: −4.</b> Four units left of the vertical axis means x = −4.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q15. Which statement about the point (−5, 0) is correct?</h3>
+
+<label class="option"><input type="radio" name="q15">It is 5 units above the origin</label>
+<label class="option"><input type="radio" name="q15">It is 5 units below the origin</label>
+<label class="option"><input type="radio" name="q15" class="correct">It is 5 units left of the origin</label>
+<label class="option"><input type="radio" name="q15">It is 5 units right of the origin</label>
+
+<div class="answer">
+<b>Correct Answer: 5 units left of the origin.</b>
+</div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION B : TRUE FALSE -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section B — True / False (10)</h2>
+
+<div class="question">
+<h3>Q16. The origin is represented by the ordered pair (0,0).</h3>
+
+<label class="option"><input type="radio" name="q16" class="correct">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+
+<div class="answer"><b>Correct Answer: True.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q17. In an ordered pair, the second coordinate always describes horizontal movement.</h3>
+
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input type="radio" name="q17" class="correct">False</label>
+
+<div class="answer">
+<b>Correct Answer: False.</b> The first coordinate represents horizontal position and the second represents vertical position.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q18. Every point whose x-coordinate is zero lies on the vertical axis.</h3>
+
+<label class="option"><input type="radio" name="q18" class="correct">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+
+<div class="answer"><b>Correct Answer: True.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q19. The points (−4,3) and (4,3) have the same vertical position.</h3>
+
+<label class="option"><input type="radio" name="q19" class="correct">True</label>
+<label class="option"><input type="radio" name="q19">False</label>
+
+<div class="answer">
+<b>Correct Answer: True.</b> Both have y = 3.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q20. Moving upward by 5 units changes only the x-coordinate.</h3>
+
+<label class="option"><input type="radio" name="q20">True</label>
+<label class="option"><input type="radio" name="q20" class="correct">False</label>
+
+<div class="answer">
+<b>Correct Answer: False.</b> Vertical movement changes the y-coordinate.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q21. The points (7,−2) and (7,8) lie on the same vertical line.</h3>
+
+<label class="option"><input type="radio" name="q21" class="correct">True</label>
+<label class="option"><input type="radio" name="q21">False</label>
+
+<div class="answer">
+<b>Correct Answer: True.</b> Their x-coordinate is the same.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q22. A point with both coordinates negative lies to the left and below the origin.</h3>
+
+<label class="option"><input type="radio" name="q22" class="correct">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+
+<div class="answer"><b>Correct Answer: True.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q23. The points (−8,0) and (0,−8) represent the same location.</h3>
+
+<label class="option"><input type="radio" name="q23">True</label>
+<label class="option"><input type="radio" name="q23" class="correct">False</label>
+
+<div class="answer">
+<b>Correct Answer: False.</b> They lie on different axes and represent different positions.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q24. Reflecting a point across the vertical axis changes the sign of its x-coordinate.</h3>
+
+<label class="option"><input type="radio" name="q24" class="correct">True</label>
+<label class="option"><input type="radio" name="q24">False</label>
+
+<div class="answer"><b>Correct Answer: True.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q25. The point (−3,4) is farther from the y-axis than the point (5,−1).</h3>
+
+<label class="option"><input type="radio" name="q25">True</label>
+<label class="option"><input type="radio" name="q25" class="correct">False</label>
+
+<div class="answer">
+<b>Correct Answer: False.</b> Distances from the y-axis are 3 and 5 units respectively.
+</div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION C : ASSERTION REASON -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section C — Assertion & Reasoning (5)</h2>
+
+<p class="small">
+<b>Choose:</b><br>
+A — Both Assertion and Reason are true, and Reason correctly explains Assertion.<br>
+B — Both are true, but Reason does not correctly explain Assertion.<br>
+C — Assertion is true, but Reason is false.<br>
+D — Assertion is false, but Reason is true.
+</p>
+
+
+<div class="question">
+<h3>
+Q26. Assertion (A): The point (0,−9) lies on the vertical axis.<br>
+Reason (R): Every point on the vertical axis has x-coordinate zero.
+</h3>
+
+<label class="option"><input type="radio" name="q26" class="correct">A</label>
+<label class="option"><input type="radio" name="q26">B</label>
+<label class="option"><input type="radio" name="q26">C</label>
+<label class="option"><input type="radio" name="q26">D</label>
+
+<div class="answer"><b>Correct Answer: A.</b></div>
+</div>
+
+
+<div class="question">
+<h3>
+Q27. Assertion (A): The points (3,5) and (3,−2) lie on the same vertical line.<br>
+Reason (R): Points having equal x-coordinates have the same horizontal position.
+</h3>
+
+<label class="option"><input type="radio" name="q27" class="correct">A</label>
+<label class="option"><input type="radio" name="q27">B</label>
+<label class="option"><input type="radio" name="q27">C</label>
+<label class="option"><input type="radio" name="q27">D</label>
+
+<div class="answer">
+<b>Correct Answer: A.</b> Equal x-coordinates place points on the same vertical line.
+</div>
+</div>
+
+
+<div class="question">
+<h3>
+Q28. Assertion (A): The point (−6,−4) lies to the right of the origin.<br>
+Reason (R): A negative x-coordinate indicates a position to the left of the vertical axis.
+</h3>
+
+<label class="option"><input type="radio" name="q28">A</label>
+<label class="option"><input type="radio" name="q28">B</label>
+<label class="option"><input type="radio" name="q28">C</label>
+<label class="option"><input type="radio" name="q28" class="correct">D</label>
+
+<div class="answer">
+<b>Correct Answer: D.</b> The assertion is false, while the reason is true.
+</div>
+</div>
+
+
+<div class="question">
+<h3>
+Q29. Assertion (A): The points (−2,7) and (5,7) are on the same horizontal line.<br>
+Reason (R): Their y-coordinates are equal.
+</h3>
+
+<label class="option"><input type="radio" name="q29" class="correct">A</label>
+<label class="option"><input type="radio" name="q29">B</label>
+<label class="option"><input type="radio" name="q29">C</label>
+<label class="option"><input type="radio" name="q29">D</label>
+
+<div class="answer"><b>Correct Answer: A.</b></div>
+</div>
+
+
+<div class="question">
+<h3>
+Q30. Assertion (A): Reflecting (−5,3) across the horizontal axis gives (5,−3).<br>
+Reason (R): Reflection across the horizontal axis changes the sign of the y-coordinate only.
+</h3>
+
+<label class="option"><input type="radio" name="q30">A</label>
+<label class="option"><input type="radio" name="q30">B</label>
+<label class="option"><input type="radio" name="q30">C</label>
+<label class="option"><input type="radio" name="q30" class="correct">D</label>
+
+<div class="answer">
+<b>Correct Answer: D.</b> The correct reflection is (−5,−3). The reason is true.
+</div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION D : FILL IN THE BLANKS -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section D — Fill in the Blanks (5)</h2>
+
+
+<div class="question">
+<h3>Q31. The point where the horizontal and vertical axes meet is called the ______.</h3>
+
+<label class="option"><input type="radio" name="q31">quadrant</label>
+<label class="option"><input type="radio" name="q31">coordinate</label>
+<label class="option"><input type="radio" name="q31" class="correct">origin</label>
+<label class="option"><input type="radio" name="q31">endpoint</label>
+
+<div class="answer"><b>Correct Answer: Origin.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q32. The ordered pair (0,−11) lies on the ______ axis.</h3>
+
+<label class="option"><input type="radio" name="q32">horizontal</label>
+<label class="option"><input type="radio" name="q32" class="correct">vertical</label>
+<label class="option"><input type="radio" name="q32">diagonal</label>
+<label class="option"><input type="radio" name="q32">number</label>
+
+<div class="answer"><b>Correct Answer: Vertical.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q33. Moving 4 units downward changes the y-coordinate by ______.</h3>
+
+<label class="option"><input type="radio" name="q33">+4</label>
+<label class="option"><input type="radio" name="q33" class="correct">−4</label>
+<label class="option"><input type="radio" name="q33">0</label>
+<label class="option"><input type="radio" name="q33">+8</label>
+
+<div class="answer"><b>Correct Answer: −4.</b></div>
+</div>
+
+
+<div class="question">
+<h3>Q34. The distance of the point (−9,4) from the vertical axis is ______ units.</h3>
+
+<label class="option"><input type="radio" name="q34">4</label>
+<label class="option"><input type="radio" name="q34">5</label>
+<label class="option"><input type="radio" name="q34" class="correct">9</label>
+<label class="option"><input type="radio" name="q34">13</label>
+
+<div class="answer">
+<b>Correct Answer: 9.</b> Distance from the vertical axis depends on the absolute value of x.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q35. In the coordinate pair (−8,13), the number 13 is the ______ coordinate.</h3>
+
+<label class="option"><input type="radio" name="q35">first</label>
+<label class="option"><input type="radio" name="q35" class="correct">second</label>
+<label class="option"><input type="radio" name="q35">horizontal</label>
+<label class="option"><input type="radio" name="q35">origin</label>
+
+<div class="answer"><b>Correct Answer: Second.</b></div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION E : MATCH -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section E — Match the Following (5)</h2>
+
+
+<div class="question match m1">
+
+<h3>Q36. Match each point with its location relative to the origin.</h3>
+
+<div class="match-row">
+<b>(a) (4,6)</b>
+<label><input type="radio" name="m1a">left and below</label>
+<label><input type="radio" name="m1a" class="correct">right and above</label>
+<label><input type="radio" name="m1a">right and below</label>
+<label><input type="radio" name="m1a">left and above</label>
+</div>
+
+<div class="match-row">
+<b>(b) (−3,8)</b>
+<label><input type="radio" name="m1b">right and above</label>
+<label><input type="radio" name="m1b">right and below</label>
+<label><input type="radio" name="m1b" class="correct">left and above</label>
+<label><input type="radio" name="m1b">left and below</label>
+</div>
+
+<div class="match-row">
+<b>(c) (7,−5)</b>
+<label><input type="radio" name="m1c">left and above</label>
+<label><input type="radio" name="m1c" class="correct">right and below</label>
+<label><input type="radio" name="m1c">right and above</label>
+<label><input type="radio" name="m1c">on the origin</label>
+</div>
+
+<div class="match-row">
+<b>(d) (−2,−9)</b>
+<label><input type="radio" name="m1d">right and above</label>
+<label><input type="radio" name="m1d">right and below</label>
+<label><input type="radio" name="m1d">left and above</label>
+<label><input type="radio" name="m1d" class="correct">left and below</label>
+</div>
+
+<div class="answer">
+<b>Correct Match:</b> (a) right & above, (b) left & above, (c) right & below, (d) left & below.
+</div>
+
+</div>
+
+
+<div class="question match m2">
+
+<h3>Q37. Match each coordinate condition with the correct description.</h3>
+
+<div class="match-row">
+<b>(a) x = 0</b>
+<label><input type="radio" name="m2a" class="correct">Point lies on vertical axis</label>
+<label><input type="radio" name="m2a">Point lies on horizontal axis</label>
+<label><input type="radio" name="m2a">Point is always to the right</label>
+<label><input type="radio" name="m2a">Point is always above</label>
+</div>
+
+<div class="match-row">
+<b>(b) y = 0</b>
+<label><input type="radio" name="m2b">Point lies on vertical axis</label>
+<label><input type="radio" name="m2b" class="correct">Point lies on horizontal axis</label>
+<label><input type="radio" name="m2b">Point is always below</label>
+<label><input type="radio" name="m2b">Point is always left</label>
+</div>
+
+<div class="match-row">
+<b>(c) x &gt; 0</b>
+<label><input type="radio" name="m2c">Point is left of vertical axis</label>
+<label><input type="radio" name="m2c">Point is below horizontal axis</label>
+<label><input type="radio" name="m2c" class="correct">Point is right of vertical axis</label>
+<label><input type="radio" name="m2c">Point is on the origin</label>
+</div>
+
+<div class="match-row">
+<b>(d) y &lt; 0</b>
+<label><input type="radio" name="m2d">Point is above horizontal axis</label>
+<label><input type="radio" name="m2d">Point is right of vertical axis</label>
+<label><input type="radio" name="m2d" class="correct">Point is below horizontal axis</label>
+<label><input type="radio" name="m2d">Point is on the vertical axis</label>
+</div>
+
+<div class="answer">
+<b>Correct Match:</b> x=0 → vertical axis; y=0 → horizontal axis; x&gt;0 → right; y&lt;0 → below.
+</div>
+
+</div>
+
+
+<div class="question match m3">
+
+<h3>Q38. Match each movement with its effect on coordinates.</h3>
+
+<div class="match-row">
+<b>(a) Move 5 units right</b>
+<label><input type="radio" name="m3a" class="correct">Increase x by 5</label>
+<label><input type="radio" name="m3a">Decrease x by 5</label>
+<label><input type="radio" name="m3a">Increase y by 5</label>
+<label><input type="radio" name="m3a">Decrease y by 5</label>
+</div>
+
+<div class="match-row">
+<b>(b) Move 3 units left</b>
+<label><input type="radio" name="m3b">Increase x by 3</label>
+<label><input type="radio" name="m3b" class="correct">Decrease x by 3</label>
+<label><input type="radio" name="m3b">Increase y by 3</label>
+<label><input type="radio" name="m3b">Decrease y by 3</label>
+</div>
+
+<div class="match-row">
+<b>(c) Move 7 units up</b>
+<label><input type="radio" name="m3c">Increase x by 7</label>
+<label><input type="radio" name="m3c">Decrease x by 7</label>
+<label><input type="radio" name="m3c" class="correct">Increase y by 7</label>
+<label><input type="radio" name="m3c">Decrease y by 7</label>
+</div>
+
+<div class="match-row">
+<b>(d) Move 2 units down</b>
+<label><input type="radio" name="m3d">Increase x by 2</label>
+<label><input type="radio" name="m3d">Decrease x by 2</label>
+<label><input type="radio" name="m3d">Increase y by 2</label>
+<label><input type="radio" name="m3d" class="correct">Decrease y by 2</label>
+</div>
+
+<div class="answer">
+<b>Correct Match:</b> right → x+5; left → x−3; up → y+7; down → y−2.
+</div>
+
+</div>
+
+
+<div class="question match m4">
+
+<h3>Q39. Match the pair of points with their relationship.</h3>
+
+<div class="match-row">
+<b>(a) (−4,2) and (6,2)</b>
+<label><input type="radio" name="m4a" class="correct">Same horizontal line</label>
+<label><input type="radio" name="m4a">Same vertical line</label>
+<label><input type="radio" name="m4a">Both on vertical axis</label>
+<label><input type="radio" name="m4a">Same point</label>
+</div>
+
+<div class="match-row">
+<b>(b) (5,−3) and (5,8)</b>
+<label><input type="radio" name="m4b">Same horizontal line</label>
+<label><input type="radio" name="m4b" class="correct">Same vertical line</label>
+<label><input type="radio" name="m4b">Both on horizontal axis</label>
+<label><input type="radio" name="m4b">Same point</label>
+</div>
+
+<div class="match-row">
+<b>(c) (0,−6) and (0,4)</b>
+<label><input type="radio" name="m4c">Same horizontal line</label>
+<label><input type="radio" name="m4c" class="correct">Both lie on vertical axis</label>
+<label><input type="radio" name="m4c">Both lie on horizontal axis</label>
+<label><input type="radio" name="m4c">Same point</label>
+</div>
+
+<div class="match-row">
+<b>(d) (−7,0) and (3,0)</b>
+<label><input type="radio" name="m4d">Both lie on vertical axis</label>
+<label><input type="radio" name="m4d" class="correct">Both lie on horizontal axis</label>
+<label><input type="radio" name="m4d">Same vertical line</label>
+<label><input type="radio" name="m4d">Same point</label>
+</div>
+
+<div class="answer">
+<b>Correct Match:</b> (a) horizontal, (b) vertical, (c) vertical axis, (d) horizontal axis.
+</div>
+
+</div>
+
+
+<div class="question match m5">
+
+<h3>Q40. Match each point with its distance from the indicated axis.</h3>
+
+<div class="match-row">
+<b>(a) (−8,5) from vertical axis</b>
+<label><input type="radio" name="m5a">5 units</label>
+<label><input type="radio" name="m5a" class="correct">8 units</label>
+<label><input type="radio" name="m5a">13 units</label>
+<label><input type="radio" name="m5a">3 units</label>
+</div>
+
+<div class="match-row">
+<b>(b) (4,−9) from horizontal axis</b>
+<label><input type="radio" name="m5b">4 units</label>
+<label><input type="radio" name="m5b" class="correct">9 units</label>
+<label><input type="radio" name="m5b">13 units</label>
+<label><input type="radio" name="m5b">5 units</label>
+</div>
+
+<div class="match-row">
+<b>(c) (−3,7) from vertical axis</b>
+<label><input type="radio" name="m5c">7 units</label>
+<label><input type="radio" name="m5c" class="correct">3 units</label>
+<label><input type="radio" name="m5c">10 units</label>
+<label><input type="radio" name="m5c">4 units</label>
+</div>
+
+<div class="match-row">
+<b>(d) (6,−2) from horizontal axis</b>
+<label><input type="radio" name="m5d">6 units</label>
+<label><input type="radio" name="m5d">8 units</label>
+<label><input type="radio" name="m5d" class="correct">2 units</label>
+<label><input type="radio" name="m5d">4 units</label>
+</div>
+
+<div class="answer">
+<b>Correct Match:</b> (a) 8 units, (b) 9 units, (c) 3 units, (d) 2 units.
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION F : DRAG STYLE -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section F — Drag & Drop Style Questions (5)</h2>
+
+<p class="small">
+These are designed as drag-card style selections for the HTML/CSS-only version.
+</p>
+
+
+<div class="question drag">
+<h3>Q41. Place/select the coordinate reached by starting at (−6,2) and moving 9 units right.</h3>
+
+<label class="option"><input type="radio" name="q41">(-15,2)</label>
+<label class="option"><input type="radio" name="q41">(-3,2)</label>
+<label class="option"><input type="radio" name="q41" class="correct">(3,2)</label>
+<label class="option"><input type="radio" name="q41">(3,11)</label>
+
+<div class="answer">
+<b>Correct Answer: (3,2).</b> The x-coordinate increases from −6 to 3.
+</div>
+</div>
+
+
+<div class="question drag">
+<h3>Q42. Select the coordinate obtained by moving 6 units downward from (−1,5).</h3>
+
+<label class="option"><input type="radio" name="q42">(-1,11)</label>
+<label class="option"><input type="radio" name="q42" class="correct">(-1,-1)</label>
+<label class="option"><input type="radio" name="q42">(-7,5)</label>
+<label class="option"><input type="radio" name="q42">(5,-1)</label>
+
+<div class="answer">
+<b>Correct Answer: (−1,−1).</b> Downward movement decreases y by 6.
+</div>
+</div>
+
+
+<div class="question drag">
+<h3>Q43. Select the point that is the reflection of (−7,4) in the vertical axis.</h3>
+
+<label class="option"><input type="radio" name="q43">(-7,-4)</label>
+<label class="option"><input type="radio" name="q43" class="correct">(7,4)</label>
+<label class="option"><input type="radio" name="q43">(7,-4)</label>
+<label class="option"><input type="radio" name="q43">(4,-7)</label>
+
+<div class="answer">
+<b>Correct Answer: (7,4).</b> Reflection in the vertical axis changes x only.
+</div>
+</div>
+
+
+<div class="question drag">
+<h3>Q44. A point starts at (2,−3). It moves 4 units left and then 8 units up. Select its final position.</h3>
+
+<label class="option"><input type="radio" name="q44">(6,5)</label>
+<label class="option"><input type="radio" name="q44" class="correct">(-2,5)</label>
+<label class="option"><input type="radio" name="q44">(-2,-11)</label>
+<label class="option"><input type="radio" name="q44">(10,5)</label>
+
+<div class="answer">
+<b>Correct Answer: (−2,5).</b> First x: 2−4=−2. Then y: −3+8=5.
+</div>
+</div>
+
+
+<div class="question drag">
+<h3>Q45. Which point can be reached from (−3,−5) by moving 10 units right and 2 units down?</h3>
+
+<label class="option"><input type="radio" name="q45">(7,−3)</label>
+<label class="option"><input type="radio" name="q45">(−13,−7)</label>
+<label class="option"><input type="radio" name="q45" class="correct">(7,−7)</label>
+<label class="option"><input type="radio" name="q45">(−3,7)</label>
+
+<div class="answer">
+<b>Correct Answer: (7,−7).</b> x = −3+10 = 7 and y = −5−2 = −7.
+</div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SECTION G : HOTS -->
+<!-- ========================================================= -->
+
+<section>
+
+<h2>Section G — HOTS / Application Based Questions (10)</h2>
+
+
+<div class="question">
+<h3>Q46. A robot starts at (−4,3). It moves 7 units right, 5 units down, and then 2 units left. Where does it stop?</h3>
+
+<label class="option"><input type="radio" name="q46">(−1,−2)</label>
+<label class="option"><input type="radio" name="q46" class="correct">(1,−2)</label>
+<label class="option"><input type="radio" name="q46">(5,−2)</label>
+<label class="option"><input type="radio" name="q46">(1,6)</label>
+<div class="answer">
+<b>Correct Answer: (1,−2).</b>
+x: −4+7−2=1; y: 3−5=−2.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q47. Points A(−2,6), B(5,6), C(5,−1) are three vertices of a rectangle. Find the fourth vertex D.</h3>
+
+<label class="option"><input type="radio" name="q47" class="correct">(−2,−1)</label>
+<label class="option"><input type="radio" name="q47">(2,−1)</label>
+<label class="option"><input type="radio" name="q47">(−2,1)</label>
+<label class="option"><input type="radio" name="q47">(5,−6)</label>
+<div class="answer">
+<b>Correct Answer: (−2,−1).</b> D must have x = −2 like A and y = −1 like C.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q48. A treasure map marks the school at (−3,4) and the library at (6,4). A student walks directly along the same horizontal path. How many units does the student travel?</h3>
+
+<label class="option"><input type="radio" name="q48">3 units</label>
+<label class="option"><input type="radio" name="q48">6 units</label>
+<label class="option"><input type="radio" name="q48" class="correct">9 units</label>
+<label class="option"><input type="radio" name="q48">10 units</label>
+
+<div class="answer">
+<b>Correct Answer: 9 units.</b> The y-coordinate is unchanged, so distance = 6−(−3)=9.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q49. A point P is equally far from both axes and lies in the region left of the vertical axis and above the horizontal axis. Which could be P?</h3>
+
+<label class="option"><input type="radio" name="q49">(4,4)</label>
+<label class="option"><input type="radio" name="q49" class="correct">(-6,6)</label>
+<label class="option"><input type="radio" name="q49">(-6,3)</label>
+<label class="option"><input type="radio" name="q49">(3,-6)</label>
+
+<div class="answer">
+<b>Correct Answer: (−6,6).</b> It is left, above, and its distances from both axes are 6 units.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q50. A point starts at (8,−2). After an unknown horizontal movement, it becomes (−5,−2). How many units and in which direction did it move?</h3>
+
+<label class="option"><input type="radio" name="q50">3 units left</label>
+<label class="option"><input type="radio" name="q50">13 units right</label>
+<label class="option"><input type="radio" name="q50" class="correct">13 units left</label>
+<label class="option"><input type="radio" name="q50">13 units up</label>
+
+<div class="answer">
+<b>Correct Answer: 13 units left.</b> The horizontal change is −5−8=−13.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q51. A rectangular playground has opposite corners A(−6,−4) and C(3,5), with sides parallel to the axes. What is the length of its horizontal side?</h3>
+
+<label class="option"><input type="radio" name="q51">7 units</label>
+<label class="option"><input type="radio" name="q51">8 units</label>
+<label class="option"><input type="radio" name="q51" class="correct">9 units</label>
+<label class="option"><input type="radio" name="q51">11 units</label>
+
+<div class="answer">
+<b>Correct Answer: 9 units.</b> Horizontal length = 3−(−6)=9.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q52. A point X is 5 units from the vertical axis and 8 units below the horizontal axis. It is also to the left of the vertical axis. What are its coordinates?</h3>
+
+<label class="option"><input type="radio" name="q52">(5,−8)</label>
+<label class="option"><input type="radio" name="q52" class="correct">(-5,-8)</label>
+<label class="option"><input type="radio" name="q52">(-8,-5)</label>
+<label class="option"><input type="radio" name="q52">(5,8)</label>
+
+<div class="answer">
+<b>Correct Answer: (−5,−8).</b> Left gives x=−5 and below gives y=−8.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q53. A point A(−2,−3) is reflected first across the vertical axis and then across the horizontal axis. Where does it finally lie?</h3>
+
+<label class="option"><input type="radio" name="q53">(-2,3)</label>
+<label class="option"><input type="radio" name="q53">(2,-3)</label>
+<label class="option"><input type="radio" name="q53" class="correct">(2,3)</label>
+<label class="option"><input type="radio" name="q53">(-3,2)</label>
+
+<div class="answer">
+<b>Correct Answer: (2,3).</b> Vertical reflection changes x: (2,−3). Horizontal reflection changes y: (2,3).
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q54. A delivery route goes from A(−5,2) to B(−5,−6) and then to C(4,−6). What is the total distance travelled if movement follows the axes?</h3>
+
+<label class="option"><input type="radio" name="q54">9 units</label>
+<label class="option"><input type="radio" name="q54">13 units</label>
+<label class="option"><input type="radio" name="q54" class="correct">17 units</label>
+<label class="option"><input type="radio" name="q54">19 units</label>
+
+<div class="answer">
+<b>Correct Answer: 17 units.</b>
+A→B = 8 units and B→C = 9 units. Total = 8+9 = 17 units.
+</div>
+</div>
+
+
+<div class="question">
+<h3>Q55. Four points are given: A(−4,3), B(2,3), C(2,−5), D(−4,−5). Which statement best describes the figure formed?</h3>
+
+<label class="option"><input type="radio" name="q55">A triangle with one curved side</label>
+<label class="option"><input type="radio" name="q55" class="correct">A rectangle whose sides are parallel to the coordinate axes</label>
+<label class="option"><input type="radio" name="q55">A line segment</label>
+<label class="option"><input type="radio" name="q55">A square of side 8 units</label>
+
+<div class="answer">
+<b>Correct Answer: A rectangle whose sides are parallel to the coordinate axes.</b>
+Horizontal sides have equal y-values and vertical sides have equal x-values. Its dimensions are 6 × 8, so it is not a square.
+</div>
+</div>
+
+</section>
+
+
+<!-- ========================================================= -->
+<!-- SCORE -->
+<!-- ========================================================= -->
+
+<div class="score-card">
+    <div>FINAL SCORE</div>
+    <div class="score-number"></div>
+    <p>Chapter 1 — Orienting Yourself: The Use of Coordinates</p>
+</div>
+
+</div>
+
+</body>
+</html>

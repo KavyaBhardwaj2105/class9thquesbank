@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Mathematics | Chapter 4 - Exploring Algebraic Identities</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:5px 0;
+    color:#dbeafe;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:white;
+    padding:13px 16px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:15px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:8px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:8px;
+}
+
+.answer{
+    display:none;
+    margin-top:12px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.quiz{
+    counter-reset:score;
+}
+
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* MATCH SCORING */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.match .answer{
+    display:none;
+}
+
+.match:has(input:checked) .answer{
+    display:block;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.drag{
+    border:2px dashed #94a3b8;
+    background:#f8fafc;
+}
+
+.note{
+    background:#dbeafe;
+    border-left:5px solid #2563eb;
+    padding:14px;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+}
+
+.score-number{
+    font-size:30px;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#475569;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Class 7 Mathematics</h1>
+<p>Chapter 4 — Exploring Algebraic Identities</p>
+<p>Half-Yearly Examination Question Bank & Revision Test</p>
+</header>
+
+<div class="wrap quiz">
+
+<div class="note">
+<strong>Instructions:</strong>
+Attempt all 55 questions. Select an option to reveal the answer.
+Each normal question carries 1 mark.
+Each Match the Following question carries 1 mark only when all four pairs are correct.
+</div>
+
+
+<!-- ===================================================== -->
+<!-- SECTION A : MCQ -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION A — Multiple Choice Questions (15)</h2>
+
+<div class="question">
+<h3>Q1. Which identity represents the square of a sum?</h3>
+<label class="option"><input type="radio" name="q1">a² − 2ab + b²</label>
+<label class="option"><input type="radio" name="q1" class="correct">a² + 2ab + b²</label>
+<label class="option"><input type="radio" name="q1">a² − b²</label>
+<label class="option"><input type="radio" name="q1">a² + b²</label>
+<div class="answer">Correct Answer: <strong>a² + 2ab + b²</strong>. This is the identity (a+b)².</div>
+</div>
+
+<div class="question">
+<h3>Q2. The expansion of (x + 5)² is:</h3>
+<label class="option"><input type="radio" name="q2">x² + 5x + 25</label>
+<label class="option"><input type="radio" name="q2" class="correct">x² + 10x + 25</label>
+<label class="option"><input type="radio" name="q2">x² + 25</label>
+<label class="option"><input type="radio" name="q2">x² + 10x + 5</label>
+<div class="answer">Correct Answer: <strong>x² + 10x + 25</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q3. Which expression is equivalent to (p − 4)²?</h3>
+<label class="option"><input type="radio" name="q3">p² + 8p + 16</label>
+<label class="option"><input type="radio" name="q3" class="correct">p² − 8p + 16</label>
+<label class="option"><input type="radio" name="q3">p² − 16</label>
+<label class="option"><input type="radio" name="q3">p² + 16</label>
+<div class="answer">Correct Answer: <strong>p² − 8p + 16</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q4. What is the middle term in the expansion of (y + 7)²?</h3>
+<label class="option"><input type="radio" name="q4">y²</label>
+<label class="option"><input type="radio" name="q4">49</label>
+<label class="option"><input type="radio" name="q4" class="correct">14y</label>
+<label class="option"><input type="radio" name="q4">7y</label>
+<div class="answer">Correct Answer: <strong>14y</strong>. The middle term is 2 × y × 7.</div>
+</div>
+
+<div class="question">
+<h3>Q5. Which identity can be used to simplify (m + n)(m − n)?</h3>
+<label class="option"><input type="radio" name="q5">(a+b)²</label>
+<label class="option"><input type="radio" name="q5">(a−b)²</label>
+<label class="option"><input type="radio" name="q5" class="correct">(a+b)(a−b)=a²−b²</label>
+<label class="option"><input type="radio" name="q5">a²+2ab+b²</label>
+<div class="answer">Correct Answer: <strong>a² − b²</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q6. Simplify: (x + 3)(x − 3).</h3>
+<label class="option"><input type="radio" name="q6">x² + 9</label>
+<label class="option"><input type="radio" name="q6" class="correct">x² − 9</label>
+<label class="option"><input type="radio" name="q6">x² − 6x + 9</label>
+<label class="option"><input type="radio" name="q6">x² + 6x + 9</label>
+<div class="answer">Correct Answer: <strong>x² − 9</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q7. What is the value of 51² using an identity?</h3>
+<label class="option"><input type="radio" name="q7">2,501</label>
+<label class="option"><input type="radio" name="q7" class="correct">2,601</label>
+<label class="option"><input type="radio" name="q7">2,551</label>
+<label class="option"><input type="radio" name="q7">2,701</label>
+<div class="answer">Correct Answer: <strong>2,601</strong>. 51² = (50+1)² = 2500+100+1.</div>
+</div>
+
+<div class="question">
+<h3>Q8. Which expression equals a² − 2ab + b²?</h3>
+<label class="option"><input type="radio" name="q8">(a+b)²</label>
+<label class="option"><input type="radio" name="q8" class="correct">(a−b)²</label>
+<label class="option"><input type="radio" name="q8">(a+b)(a−b)</label>
+<label class="option"><input type="radio" name="q8">a²+b²</label>
+<div class="answer">Correct Answer: <strong>(a−b)²</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q9. Find the missing term: (x + 4)² = x² + ______ + 16.</h3>
+<label class="option"><input type="radio" name="q9">4x</label>
+<label class="option"><input type="radio" name="q9" class="correct">8x</label>
+<label class="option"><input type="radio" name="q9">16x</label>
+<label class="option"><input type="radio" name="q9">12x</label>
+<div class="answer">Correct Answer: <strong>8x</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q10. Which pair of expressions are always equal?</h3>
+<label class="option"><input type="radio" name="q10">a²+b² and (a+b)²</label>
+<label class="option"><input type="radio" name="q10" class="correct">(a+b)² and a²+2ab+b²</label>
+<label class="option"><input type="radio" name="q10">a²−b² and (a−b)²</label>
+<label class="option"><input type="radio" name="q10">2ab and (a+b)²</label>
+<div class="answer">Correct Answer: <strong>(a+b)² and a²+2ab+b²</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q11. What is (20 + 3)²?</h3>
+<label class="option"><input type="radio" name="q11">429</label>
+<label class="option"><input type="radio" name="q11" class="correct">529</label>
+<label class="option"><input type="radio" name="q11">489</label>
+<label class="option"><input type="radio" name="q11">539</label>
+<div class="answer">Correct Answer: <strong>529</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q12. Which expression gives the product of (r + 6) and (r − 6)?</h3>
+<label class="option"><input type="radio" name="q12">r² + 12r + 36</label>
+<label class="option"><input type="radio" name="q12">r² − 12r + 36</label>
+<label class="option"><input type="radio" name="q12" class="correct">r² − 36</label>
+<label class="option"><input type="radio" name="q12">r² + 36</label>
+<div class="answer">Correct Answer: <strong>r² − 36</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q13. If a = 8 and b = 2, what is the value of (a − b)²?</h3>
+<label class="option"><input type="radio" name="q13">36</label>
+<label class="option"><input type="radio" name="q13">64</label>
+<label class="option"><input type="radio" name="q13" class="correct">36</label>
+<label class="option"><input type="radio" name="q13">100</label>
+<div class="answer">Correct Answer: <strong>36</strong>. (8−2)² = 6² = 36.</div>
+</div>
+
+<div class="question">
+<h3>Q14. Which term makes x² + 12x + ______ a perfect square?</h3>
+<label class="option"><input type="radio" name="q14">12</label>
+<label class="option"><input type="radio" name="q14">24</label>
+<label class="option"><input type="radio" name="q14" class="correct">36</label>
+<label class="option"><input type="radio" name="q14">144</label>
+<div class="answer">Correct Answer: <strong>36</strong>. x²+12x+36 = (x+6)².</div>
+</div>
+
+<div class="question">
+<h3>Q15. What is 99²?</h3>
+<label class="option"><input type="radio" name="q15">9,801</label>
+<label class="option"><input type="radio" name="q15" class="correct">9,801</label>
+<label class="option"><input type="radio" name="q15">9,901</label>
+<label class="option"><input type="radio" name="q15">9,701</label>
+<div class="answer">Correct Answer: <strong>9,801</strong>. (100−1)² = 10000−200+1.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- TRUE / FALSE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION B — True / False (10)</h2>
+
+<div class="question">
+<h3>Q16. (a+b)² = a² + 2ab + b².</h3>
+<label class="option"><input type="radio" name="q16" class="correct">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q17. (a−b)² = a² − b².</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input type="radio" name="q17" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. (a−b)² = a²−2ab+b².</div>
+</div>
+
+<div class="question">
+<h3>Q18. (p+q)(p−q) = p²−q².</h3>
+<label class="option"><input type="radio" name="q18" class="correct">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q19. The middle term of (x+9)² is 18x.</h3>
+<label class="option"><input type="radio" name="q19" class="correct">True</label>
+<label class="option"><input type="radio" name="q19">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q20. 25² can be calculated using (20+5)².</h3>
+<label class="option"><input type="radio" name="q20" class="correct">True</label>
+<label class="option"><input type="radio" name="q20">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q21. (m+n)² contains the term 2mn.</h3>
+<label class="option"><input type="radio" name="q21" class="correct">True</label>
+<label class="option"><input type="radio" name="q21">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q22. (x−5)² = x²−10x+25.</h3>
+<label class="option"><input type="radio" name="q22" class="correct">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q23. (7+2)(7−2) = 45.</h3>
+<label class="option"><input type="radio" name="q23" class="correct">True</label>
+<label class="option"><input type="radio" name="q23">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. 49−4 = 45.</div>
+</div>
+
+<div class="question">
+<h3>Q24. The identity (a+b)² can be used to calculate 48² quickly.</h3>
+<label class="option"><input type="radio" name="q24" class="correct">True</label>
+<label class="option"><input type="radio" name="q24">False</label>
+<div class="answer">Correct Answer: <strong>True</strong>. 48 = 50−2, so (50−2)² can be used.</div>
+</div>
+
+<div class="question">
+<h3>Q25. In (x+3)², the constant term is 6.</h3>
+<label class="option"><input type="radio" name="q25">True</label>
+<label class="option"><input type="radio" name="q25" class="correct">False</label>
+<div class="answer">Correct Answer: <strong>False</strong>. The constant term is 9.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- ASSERTION & REASON -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION C — Assertion & Reasoning (5)</h2>
+
+<div class="question">
+<h3>
+Q26. Assertion (A): (x+5)² = x²+10x+25.<br>
+Reason (R): The square of a sum is a²+2ab+b².
+</h3>
+<label class="option"><input type="radio" name="q26" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q26">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q26">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q26">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q27. Assertion (A): (y−4)² has a negative middle term.<br>
+Reason (R): The identity (a−b)² contains −2ab.
+</h3>
+<label class="option"><input type="radio" name="q27" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q27">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q27">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q27">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q28. Assertion (A): (p+q)(p−q) has no pq term after simplification.<br>
+Reason (R): The two cross-products +pq and −pq cancel each other.
+</h3>
+<label class="option"><input type="radio" name="q28" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q28">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q28">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q28">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q29. Assertion (A): 49² can be found conveniently using (50−1)².<br>
+Reason (R): 49 is one less than 50.
+</h3>
+<label class="option"><input type="radio" name="q29" class="correct">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q29">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q29">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q29">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>A</strong>.</div>
+</div>
+
+<div class="question">
+<h3>
+Q30. Assertion (A): (a+b)² = a²+b².<br>
+Reason (R): The middle term 2ab must also be included.
+</h3>
+<label class="option"><input type="radio" name="q30">A — Both A and R are true, and R explains A</label>
+<label class="option"><input type="radio" name="q30">B — Both A and R are true, but R does not explain A</label>
+<label class="option"><input type="radio" name="q30">C — A is true, but R is false</label>
+<label class="option"><input type="radio" name="q30" class="correct">D — A is false, but R is true</label>
+<div class="answer">Correct Answer: <strong>D</strong>. The correct expansion contains 2ab.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- FILL IN -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION D — Fill in the Blanks (5)</h2>
+
+<div class="question">
+<h3>Q31. (x+7)² = x² + 14x + ______.</h3>
+<label class="option"><input type="radio" name="q31">7</label>
+<label class="option"><input type="radio" name="q31">14</label>
+<label class="option"><input type="radio" name="q31" class="correct">49</label>
+<label class="option"><input type="radio" name="q31">21</label>
+<div class="answer">Correct Answer: <strong>49</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q32. (z−6)² = z² − 12z + ______.</h3>
+<label class="option"><input type="radio" name="q32">6</label>
+<label class="option"><input type="radio" name="q32" class="correct">36</label>
+<label class="option"><input type="radio" name="q32">12</label>
+<label class="option"><input type="radio" name="q32">18</label>
+<div class="answer">Correct Answer: <strong>36</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q33. (t+9)(t−9) = t² − ______.</h3>
+<label class="option"><input type="radio" name="q33">9</label>
+<label class="option"><input type="radio" name="q33">18</label>
+<label class="option"><input type="radio" name="q33" class="correct">81</label>
+<label class="option"><input type="radio" name="q33">90</label>
+<div class="answer">Correct Answer: <strong>81</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q34. The middle term of (a+11)² is ______.</h3>
+<label class="option"><input type="radio" name="q34">11a</label>
+<label class="option"><input type="radio" name="q34" class="correct">22a</label>
+<label class="option"><input type="radio" name="q34">121a</label>
+<label class="option"><input type="radio" name="q34">33a</label>
+<div class="answer">Correct Answer: <strong>22a</strong>.</div>
+</div>
+
+<div class="question">
+<h3>Q35. 72² can be written as (70+2)², where the value of the middle term is ______.</h3>
+<label class="option"><input type="radio" name="q35">140</label>
+<label class="option"><input type="radio" name="q35">280</label>
+<label class="option"><input type="radio" name="q35" class="correct">280</label>
+<label class="option"><input type="radio" name="q35">490</label>
+<div class="answer">Correct Answer: <strong>280</strong>. Middle term = 2×70×2.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- MATCH -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION E — Match the Following (5)</h2>
+
+<div class="question match m1">
+<h3>Q36. Match each identity with its correct expansion.</h3>
+
+<div class="match-row">
+A. (a+b)²
+<label class="option"><input type="radio" name="m36a" class="m1a correct">a²+2ab+b²</label>
+<label class="option"><input type="radio" name="m36a" class="m1a">a²−2ab+b²</label>
+<label class="option"><input type="radio" name="m36a" class="m1a">a²−b²</label>
+<label class="option"><input type="radio" name="m36a" class="m1a">2a+2b</label>
+</div>
+
+<div class="match-row">
+B. (a−b)²
+<label class="option"><input type="radio" name="m36b" class="m1b">a²+2ab+b²</label>
+<label class="option"><input type="radio" name="m36b" class="m1b correct">a²−2ab+b²</label>
+<label class="option"><input type="radio" name="m36b" class="m1b">a²−b²</label>
+<label class="option"><input type="radio" name="m36b" class="m1b">a²+b²</label>
+</div>
+
+<div class="match-row">
+C. (a+b)(a−b)
+<label class="option"><input type="radio" name="m36c" class="m1c">a²+2ab+b²</label>
+<label class="option"><input type="radio" name="m36c" class="m1c">a²−2ab+b²</label>
+<label class="option"><input type="radio" name="m36c" class="m1c correct">a²−b²</label>
+<label class="option"><input type="radio" name="m36c" class="m1c">a²+b²</label>
+</div>
+
+<div class="match-row">
+D. (a+b)²−2ab
+<label class="option"><input type="radio" name="m36d" class="m1d">a²+2ab</label>
+<label class="option"><input type="radio" name="m36d" class="m1d">a²−b²</label>
+<label class="option"><input type="radio" name="m36d" class="m1d correct">a²+b²</label>
+<label class="option"><input type="radio" name="m36d" class="m1d">b²−a²</label>
+</div>
+
+<div class="answer">Correct matching: <strong>A–a²+2ab+b², B–a²−2ab+b², C–a²−b², D–a²+b².</strong></div>
+</div>
+
+
+<div class="question match m2">
+<h3>Q37. Match each numerical square with its value.</h3>
+
+<div class="match-row">
+A. 21²
+<label class="option"><input type="radio" name="m37a" class="m2a correct">441</label>
+<label class="option"><input type="radio" name="m37a" class="m2a">529</label>
+<label class="option"><input type="radio" name="m37a" class="m2a">625</label>
+<label class="option"><input type="radio" name="m37a" class="m2a">729</label>
+</div>
+
+<div class="match-row">
+B. 23²
+<label class="option"><input type="radio" name="m37b" class="m2b">441</label>
+<label class="option"><input type="radio" name="m37b" class="m2b correct">529</label>
+<label class="option"><input type="radio" name="m37b" class="m2b">625</label>
+<label class="option"><input type="radio" name="m37b" class="m2b">729</label>
+</div>
+
+<div class="match-row">
+C. 25²
+<label class="option"><input type="radio" name="m37c" class="m2c">441</label>
+<label class="option"><input type="radio" name="m37c" class="m2c">529</label>
+<label class="option"><input type="radio" name="m37c" class="m2c correct">625</label>
+<label class="option"><input type="radio" name="m37c" class="m2c">729</label>
+</div>
+
+<div class="match-row">
+D. 27²
+<label class="option"><input type="radio" name="m37d" class="m2d">441</label>
+<label class="option"><input type="radio" name="m37d" class="m2d">529</label>
+<label class="option"><input type="radio" name="m37d" class="m2d">625</label>
+<label class="option"><input type="radio" name="m37d" class="m2d correct">729</label>
+</div>
+
+<div class="answer">Correct matching: <strong>21²–441, 23²–529, 25²–625, 27²–729.</strong></div>
+</div>
+
+
+<div class="question match m3">
+<h3>Q38. Match each expression with its simplified form.</h3>
+
+<div class="match-row">
+A. (x+2)²
+<label class="option"><input type="radio" name="m38a" class="m3a correct">x²+4x+4</label>
+<label class="option"><input type="radio" name="m38a" class="m3a">x²−4x+4</label>
+<label class="option"><input type="radio" name="m38a" class="m3a">x²−4</label>
+<label class="option"><input type="radio" name="m38a" class="m3a">x²+2x+4</label>
+</div>
+
+<div class="match-row">
+B. (y−3)²
+<label class="option"><input type="radio" name="m38b" class="m3b">y²+6y+9</label>
+<label class="option"><input type="radio" name="m38b" class="m3b correct">y²−6y+9</label>
+<label class="option"><input type="radio" name="m38b" class="m3b">y²−9</label>
+<label class="option"><input type="radio" name="m38b" class="m3b">y²+9</label>
+</div>
+
+<div class="match-row">
+C. (p+5)(p−5)
+<label class="option"><input type="radio" name="m38c" class="m3c">p²+25</label>
+<label class="option"><input type="radio" name="m38c" class="m3c">p²+10p+25</label>
+<label class="option"><input type="radio" name="m38c" class="m3c correct">p²−25</label>
+<label class="option"><input type="radio" name="m38c" class="m3c">p²−10p+25</label>
+</div>
+
+<div class="match-row">
+D. (z+6)²
+<label class="option"><input type="radio" name="m38d" class="m3d">z²−12z+36</label>
+<label class="option"><input type="radio" name="m38d" class="m3d">z²−36</label>
+<label class="option"><input type="radio" name="m38d" class="m3d">z²+6z+36</label>
+<label class="option"><input type="radio" name="m38d" class="m3d correct">z²+12z+36</label>
+</div>
+
+<div class="answer">Correct matching: <strong>A–x²+4x+4, B–y²−6y+9, C–p²−25, D–z²+12z+36.</strong></div>
+</div>
+
+
+<div class="question match m4">
+<h3>Q39. Match each number with the identity form used to calculate its square.</h3>
+
+<div class="match-row">
+A. 48²
+<label class="option"><input type="radio" name="m39a" class="m4a correct">(50−2)²</label>
+<label class="option"><input type="radio" name="m39a" class="m4a">(40+8)²</label>
+<label class="option"><input type="radio" name="m39a" class="m4a">(50+2)²</label>
+<label class="option"><input type="radio" name="m39a" class="m4a">(45+3)²</label>
+</div>
+
+<div class="match-row">
+B. 52²
+<label class="option"><input type="radio" name="m39b" class="m4b">(50−2)²</label>
+<label class="option"><input type="radio" name="m39b" class="m4b correct">(50+2)²</label>
+<label class="option"><input type="radio" name="m39b" class="m4b">(40+12)²</label>
+<label class="option"><input type="radio" name="m39b" class="m4b">(60−8)²</label>
+</div>
+
+<div class="match-row">
+C. 99²
+<label class="option"><input type="radio" name="m39c" class="m4c">(100+1)²</label>
+<label class="option"><input type="radio" name="m39c" class="m4c">(90+9)²</label>
+<label class="option"><input type="radio" name="m39c" class="m4c correct">(100−1)²</label>
+<label class="option"><input type="radio" name="m39c" class="m4c">(95+4)²</label>
+</div>
+
+<div class="match-row">
+D. 103²
+<label class="option"><input type="radio" name="m39d" class="m4d">(100−3)²</label>
+<label class="option"><input type="radio" name="m39d" class="m4d correct">(100+3)²</label>
+<label class="option"><input type="radio" name="m39d" class="m4d">(90+13)²</label>
+<label class="option"><input type="radio" name="m39d" class="m4d">(105−2)²</label>
+</div>
+
+<div class="answer">Correct matching: <strong>A–(50−2)², B–(50+2)², C–(100−1)², D–(100+3)².</strong></div>
+</div>
+
+
+<div class="question match m5">
+<h3>Q40. Match each missing constant with the perfect-square expression.</h3>
+
+<div class="match-row">
+A. x²+8x+____
+<label class="option"><input type="radio" name="m40a" class="m5a correct">16</label>
+<label class="option"><input type="radio" name="m40a" class="m5a">8</label>
+<label class="option"><input type="radio" name="m40a" class="m5a">4</label>
+<label class="option"><input type="radio" name="m40a" class="m5a">64</label>
+</div>
+
+<div class="match-row">
+B. y²+10y+____
+<label class="option"><input type="radio" name="m40b" class="m5b">10</label>
+<label class="option"><input type="radio" name="m40b" class="m5b correct">25</label>
+<label class="option"><input type="radio" name="m40b" class="m5b">20</label>
+<label class="option"><input type="radio" name="m40b" class="m5b">100</label>
+</div>
+
+<div class="match-row">
+C. p²−14p+____
+<label class="option"><input type="radio" name="m40c" class="m5c">14</label>
+<label class="option"><input type="radio" name="m40c" class="m5c">28</label>
+<label class="option"><input type="radio" name="m40c" class="m5c correct">49</label>
+<label class="option"><input type="radio" name="m40c" class="m5c">196</label>
+</div>
+
+<div class="match-row">
+D. z²+18z+____
+<label class="option"><input type="radio" name="m40d" class="m5d">18</label>
+<label class="option"><input type="radio" name="m40d" class="m5d">36</label>
+<label class="option"><input type="radio" name="m40d" class="m5d">72</label>
+<label class="option"><input type="radio" name="m40d" class="m5d correct">81</label>
+</div>
+
+<div class="answer">Correct matching: <strong>A–16, B–25, C–49, D–81.</strong></div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- DRAG STYLE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION F — Drag & Drop Style Questions (5)</h2>
+
+<div class="question drag">
+<h3>Q41. Drag/select the correct expansion for (n+6)².</h3>
+<label class="option"><input type="radio" name="q41">n²+6n+36</label>
+<label class="option"><input type="radio" name="q41" class="correct">n²+12n+36</label>
+<label class="option"><input type="radio" name="q41">n²−12n+36</label>
+<label class="option"><input type="radio" name="q41">n²+36</label>
+<div class="answer">Correct Answer: <strong>n²+12n+36</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Place the correct result with (k+8)(k−8).</h3>
+<label class="option"><input type="radio" name="q42">k²+64</label>
+<label class="option"><input type="radio" name="q42" class="correct">k²−64</label>
+<label class="option"><input type="radio" name="q42">k²−16</label>
+<label class="option"><input type="radio" name="q42">k²+16k+64</label>
+<div class="answer">Correct Answer: <strong>k²−64</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Select the expression that is a perfect square.</h3>
+<label class="option"><input type="radio" name="q43">x²+6x+5</label>
+<label class="option"><input type="radio" name="q43" class="correct">x²+10x+25</label>
+<label class="option"><input type="radio" name="q43">x²+8x+12</label>
+<label class="option"><input type="radio" name="q43">x²+4x+7</label>
+<div class="answer">Correct Answer: <strong>x²+10x+25 = (x+5)²</strong>.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Select the correct identity-based value of 97².</h3>
+<label class="option"><input type="radio" name="q44">9,109</label>
+<label class="option"><input type="radio" name="q44">9,209</label>
+<label class="option"><input type="radio" name="q44" class="correct">9,409</label>
+<label class="option"><input type="radio" name="q44">9,609</label>
+<div class="answer">Correct Answer: <strong>9,409</strong>. (100−3)² = 10000−600+9.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Select the missing middle term: (2x+3)² = 4x² + ______ + 9.</h3>
+<label class="option"><input type="radio" name="q45">6x</label>
+<label class="option"><input type="radio" name="q45" class="correct">12x</label>
+<label class="option"><input type="radio" name="q45">18x</label>
+<label class="option"><input type="radio" name="q45">9x</label>
+<div class="answer">Correct Answer: <strong>12x</strong>. 2ab = 2×2x×3 = 12x.</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- HOTS -->
+<!-- ===================================================== -->
+
+<section>
+<h2>SECTION G — HOTS / Higher Order Thinking (10)</h2>
+
+<div class="question">
+<h3>Q46. Without directly multiplying, find 102² using an algebraic identity.</h3>
+<label class="option"><input type="radio" name="q46">10,204</label>
+<label class="option"><input type="radio" name="q46" class="correct">10,404</label>
+<label class="option"><input type="radio" name="q46">10,304</label>
+<label class="option"><input type="radio" name="q46">10,504</label>
+<div class="answer">Correct Answer: <strong>10,404</strong>. (100+2)² = 10000+400+4.</div>
+</div>
+
+<div class="question">
+<h3>Q47. A student writes (x−7)² = x²−49. Identify the missing part of the student's expansion.</h3>
+<label class="option"><input type="radio" name="q47">The term −7x</label>
+<label class="option"><input type="radio" name="q47" class="correct">The terms −14x and +49</label>
+<label class="option"><input type="radio" name="q47">The term +14x only</label>
+<label class="option"><input type="radio" name="q47">Nothing is missing</label>
+<div class="answer">Correct Answer: <strong>−14x and +49</strong>. (x−7)² = x²−14x+49.</div>
+</div>
+
+<div class="question">
+<h3>Q48. If a+b = 15 and ab = 26, find a²+b².</h3>
+<label class="option"><input type="radio" name="q48">169</label>
+<label class="option"><input type="radio" name="q48">196</label>
+<label class="option"><input type="radio" name="q48" class="correct">173</label>
+<label class="option"><input type="radio" name="q48">225</label>
+<div class="answer">Correct Answer: <strong>173</strong>. (a+b)² = a²+2ab+b², so 225 = a²+b²+52.</div>
+</div>
+
+<div class="question">
+<h3>Q49. If a−b = 9 and ab = 10, find a²+b².</h3>
+<label class="option"><input type="radio" name="q49">81</label>
+<label class="option"><input type="radio" name="q49" class="correct">101</label>
+<label class="option"><input type="radio" name="q49">99</label>
+<label class="option"><input type="radio" name="q49">109</label>
+<div class="answer">Correct Answer: <strong>101</strong>. (a−b)² = a²−2ab+b², so 81 = a²+b²−20.</div>
+</div>
+
+<div class="question">
+<h3>Q50. Find 49 × 51 using the difference of squares identity.</h3>
+<label class="option"><input type="radio" name="q50">2,401</label>
+<label class="option"><input type="radio" name="q50" class="correct">2,499</label>
+<label class="option"><input type="radio" name="q50">2,551</label>
+<label class="option"><input type="radio" name="q50">2,601</label>
+<div class="answer">Correct Answer: <strong>2,499</strong>. (50−1)(50+1) = 50²−1² = 2,499.</div>
+</div>
+
+<div class="question">
+<h3>Q51. Find the value of 98² − 2² without calculating the two squares separately.</h3>
+<label class="option"><input type="radio" name="q51">9,400</label>
+<label class="option"><input type="radio" name="q51">9,404</label>
+<label class="option"><input type="radio" name="q51" class="correct">9,600</label>
+<label class="option"><input type="radio" name="q51">9,604</label>
+<div class="answer">Correct Answer: <strong>9,600</strong>. 98²−2² = (98−2)(98+2)=96×100.</div>
+</div>
+
+<div class="question">
+<h3>Q52. A square has side length (x+4) cm. Which expression represents its area?</h3>
+<label class="option"><input type="radio" name="q52">x²+4</label>
+<label class="option"><input type="radio" name="q52" class="correct">x²+8x+16</label>
+<label class="option"><input type="radio" name="q52">x²+16</label>
+<label class="option"><input type="radio" name="q52">2x+8</label>
+<div class="answer">Correct Answer: <strong>x²+8x+16</strong>. Area = (x+4)².</div>
+</div>
+
+<div class="question">
+<h3>Q53. Two square-shaped tiles have side lengths 30 cm and 2 cm. Using an identity, find the difference between their areas.</h3>
+<label class="option"><input type="radio" name="q53">896 cm²</label>
+<label class="option"><input type="radio" name="q53" class="correct">896 cm²</label>
+<label class="option"><input type="radio" name="q53">904 cm²</label>
+<label class="option"><input type="radio" name="q53">900 cm²</label>
+<div class="answer">Correct Answer: <strong>896 cm²</strong>. 30²−2² = (30−2)(30+2)=28×32=896.</div>
+</div>
+
+<div class="question">
+<h3>Q54. If x+3 = 11, determine x²+6x+9 without first finding x² separately.</h3>
+<label class="option"><input type="radio" name="q54">64</label>
+<label class="option"><input type="radio" name="q54" class="correct">121</label>
+<label class="option"><input type="radio" name="q54">132</label>
+<label class="option"><input type="radio" name="q54">144</label>
+<div class="answer">Correct Answer: <strong>121</strong>. x²+6x+9 = (x+3)² = 11².</div>
+</div>
+
+<div class="question">
+<h3>Q55. If x−5 = 12, find x²−10x+25 without finding x first.</h3>
+<label class="option"><input type="radio" name="q55">121</label>
+<label class="option"><input type="radio" name="q55" class="correct">144</label>
+<label class="option"><input type="radio" name="q55">169</label>
+<label class="option"><input type="radio" name="q55">196</label>
+<div class="answer">Correct Answer: <strong>144</strong>. x²−10x+25 = (x−5)² = 12².</div>
+</div>
+
+</section>
+
+
+<!-- ===================================================== -->
+<!-- SCORE -->
+<!-- ===================================================== -->
+
+<div class="score-card">
+<div>YOUR FINAL SCORE</div>
+<div class="score-number"></div>
+<p>Chapter 4 — Exploring Algebraic Identities</p>
+</div>
+
+</div>
+
+<footer>
+Class 7 Mathematics • Chapter 4 • Half-Yearly Examination Preparation
+</footer>
+
+</body>
+</html>

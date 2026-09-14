@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Maths - Chapter 5</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{margin:0 0 8px;font-size:30px}
+header p{margin:0;color:#dbeafe}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+.info{
+    background:#fff;
+    border-left:6px solid #2563eb;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:25px;
+}
+
+section{margin:30px 0}
+
+section>h2{
+    background:#1d4ed8;
+    color:#fff;
+    padding:13px 17px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:14px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:7px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{background:#eff6ff}
+
+input{margin-right:8px}
+
+.answer{
+    display:none;
+    margin-top:13px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.drag{
+    border:2px dashed #64748b;
+    background:#f8fafc;
+}
+
+.drag .option{background:#eef2ff}
+
+.match-intro{
+    background:#eff6ff;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.match-row strong{
+    display:block;
+    margin-bottom:8px;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+    box-shadow:0 8px 25px #0004;
+}
+
+.quiz{counter-reset:score}
+
+.score-number{
+    font-size:30px;
+    margin-top:8px;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+/* Normal questions */
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* Match scoring */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.note{
+    color:#475569;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Class 7 Mathematics</h1>
+<p>Chapter 5 — I’m Up and Down, and Round and Round</p>
+</header>
+
+<div class="wrap">
+
+<div class="info">
+<strong>Half-Yearly Examination Practice</strong><br><br>
+Total Questions: 55 &nbsp; | &nbsp; Total Marks: 55<br>
+Select one answer for every question. Your answer and explanation will appear immediately.
+</div>
+
+<div class="quiz">
+
+<section>
+<h2>Section A — Multiple Choice Questions</h2>
+
+<div class="question">
+<h3>Q1. A lift rises from the 4th floor to the 11th floor. How many floors does it move upward?</h3>
+<label class="option"><input type="radio" name="q1">6</label>
+<label class="option"><input class="correct" type="radio" name="q1">7</label>
+<label class="option"><input type="radio" name="q1">8</label>
+<label class="option"><input type="radio" name="q1">15</label>
+<div class="answer">✓ Correct Answer: 7. 11 − 4 = 7.</div>
+</div>
+
+<div class="question">
+<h3>Q2. The radius of a circular plate is 8 cm. What is its diameter?</h3>
+<label class="option"><input type="radio" name="q2">4 cm</label>
+<label class="option"><input type="radio" name="q2">12 cm</label>
+<label class="option"><input class="correct" type="radio" name="q2">16 cm</label>
+<label class="option"><input type="radio" name="q2">24 cm</label>
+<div class="answer">✓ Correct Answer: 16 cm. Diameter = 2 × radius.</div>
+</div>
+
+<div class="question">
+<h3>Q3. A child walks 9 m north and then 9 m south. What is the final displacement?</h3>
+<label class="option"><input type="radio" name="q3">9 m north</label>
+<label class="option"><input type="radio" name="q3">18 m south</label>
+<label class="option"><input class="correct" type="radio" name="q3">0 m</label>
+<label class="option"><input type="radio" name="q3">18 m north</label>
+<div class="answer">✓ Correct Answer: 0 m. The child returns to the starting point.</div>
+</div>
+
+<div class="question">
+<h3>Q4. What angle represents one-fourth of a complete revolution?</h3>
+<label class="option"><input class="correct" type="radio" name="q4">90°</label>
+<label class="option"><input type="radio" name="q4">60°</label>
+<label class="option"><input type="radio" name="q4">120°</label>
+<label class="option"><input type="radio" name="q4">150°</label>
+<div class="answer">✓ Correct Answer: 90°.</div>
+</div>
+
+<div class="question">
+<h3>Q5. A wheel completes 4 complete rotations. What is the total angle turned?</h3>
+<label class="option"><input type="radio" name="q5">720°</label>
+<label class="option"><input class="correct" type="radio" name="q5">1440°</label>
+<label class="option"><input type="radio" name="q5">1080°</label>
+<label class="option"><input type="radio" name="q5">1800°</label>
+<div class="answer">✓ Correct Answer: 1440°. 4 × 360° = 1440°.</div>
+</div>
+
+<div class="question">
+<h3>Q6. Which angle represents a half turn?</h3>
+<label class="option"><input type="radio" name="q6">45°</label>
+<label class="option"><input type="radio" name="q6">90°</label>
+<label class="option"><input class="correct" type="radio" name="q6">180°</label>
+<label class="option"><input type="radio" name="q6">270°</label>
+<div class="answer">✓ Correct Answer: 180°.</div>
+</div>
+
+<div class="question">
+<h3>Q7. A point moves 15 units right and then 6 units left. What is its net movement?</h3>
+<label class="option"><input type="radio" name="q7">21 units right</label>
+<label class="option"><input class="correct" type="radio" name="q7">9 units right</label>
+<label class="option"><input type="radio" name="q7">9 units left</label>
+<label class="option"><input type="radio" name="q7">21 units left</label>
+<div class="answer">✓ Correct Answer: 9 units right.</div>
+</div>
+
+<div class="question">
+<h3>Q8. A circle has diameter 26 cm. What is its radius?</h3>
+<label class="option"><input type="radio" name="q8">6 cm</label>
+<label class="option"><input class="correct" type="radio" name="q8">13 cm</label>
+<label class="option"><input type="radio" name="q8">18 cm</label>
+<label class="option"><input type="radio" name="q8">52 cm</label>
+<div class="answer">✓ Correct Answer: 13 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q9. A rotating pointer turns through 270°. What fraction of a full turn is this?</h3>
+<label class="option"><input type="radio" name="q9">1/4</label>
+<label class="option"><input type="radio" name="q9">1/2</label>
+<label class="option"><input class="correct" type="radio" name="q9">3/4</label>
+<label class="option"><input type="radio" name="q9">2/3</label>
+<div class="answer">✓ Correct Answer: 3/4.</div>
+</div>
+
+<div class="question">
+<h3>Q10. A student walks 5 m east and then 12 m north. What is the straight-line distance from the starting point?</h3>
+<label class="option"><input type="radio" name="q10">15 m</label>
+<label class="option"><input class="correct" type="radio" name="q10">13 m</label>
+<label class="option"><input type="radio" name="q10">17 m</label>
+<label class="option"><input type="radio" name="q10">7 m</label>
+<div class="answer">✓ Correct Answer: 13 m.</div>
+</div>
+
+<div class="question">
+<h3>Q11. A point moves 18 units downward and then 25 units upward. What is the net movement?</h3>
+<label class="option"><input type="radio" name="q11">43 units upward</label>
+<label class="option"><input type="radio" name="q11">43 units downward</label>
+<label class="option"><input class="correct" type="radio" name="q11">7 units upward</label>
+<label class="option"><input type="radio" name="q11">7 units downward</label>
+<div class="answer">✓ Correct Answer: 7 units upward.</div>
+</div>
+
+<div class="question">
+<h3>Q12. How many degrees are there in two-and-a-half complete turns?</h3>
+<label class="option"><input type="radio" name="q12">720°</label>
+<label class="option"><input type="radio" name="q12">810°</label>
+<label class="option"><input class="correct" type="radio" name="q12">900°</label>
+<label class="option"><input type="radio" name="q12">1080°</label>
+<div class="answer">✓ Correct Answer: 900°.</div>
+</div>
+
+<div class="question">
+<h3>Q13. Which statement is always true for a circle?</h3>
+<label class="option"><input type="radio" name="q13">Radius is three times diameter</label>
+<label class="option"><input type="radio" name="q13">Diameter is equal to radius</label>
+<label class="option"><input class="correct" type="radio" name="q13">Diameter is twice the radius</label>
+<label class="option"><input type="radio" name="q13">Radius is four times diameter</label>
+<div class="answer">✓ Correct Answer: Diameter is twice the radius.</div>
+</div>
+
+<div class="question">
+<h3>Q14. A pointer turns 135°. What part of a full revolution has it completed?</h3>
+<label class="option"><input type="radio" name="q14">1/4</label>
+<label class="option"><input class="correct" type="radio" name="q14">3/8</label>
+<label class="option"><input type="radio" name="q14">1/2</label>
+<label class="option"><input type="radio" name="q14">5/8</label>
+<div class="answer">✓ Correct Answer: 3/8.</div>
+</div>
+
+<div class="question">
+<h3>Q15. A robot moves 7 steps left, 4 steps right and then 10 steps left. What is its final position relative to the start?</h3>
+<label class="option"><input type="radio" name="q15">7 steps left</label>
+<label class="option"><input type="radio" name="q15">13 steps right</label>
+<label class="option"><input class="correct" type="radio" name="q15">13 steps left</label>
+<label class="option"><input type="radio" name="q15">21 steps left</label>
+<div class="answer">✓ Correct Answer: 13 steps left.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section B — True / False</h2>
+
+<div class="question">
+<h3>Q16. A complete revolution measures 360°.</h3>
+<label class="option"><input class="correct" type="radio" name="q16">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q17. A quarter turn is equal to 180°.</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input class="correct" type="radio" name="q17">False</label>
+<div class="answer">✓ Correct Answer: False. It is 90°.</div>
+</div>
+
+<div class="question">
+<h3>Q18. The diameter passes through the centre of a circle.</h3>
+<label class="option"><input class="correct" type="radio" name="q18">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q19. A full turn and two half turns represent the same amount of rotation.</h3>
+<label class="option"><input class="correct" type="radio" name="q19">True</label>
+<label class="option"><input type="radio" name="q19">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q20. If an object returns to its starting point, its displacement is zero.</h3>
+<label class="option"><input class="correct" type="radio" name="q20">True</label>
+<label class="option"><input type="radio" name="q20">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q21. The radius of a circle is always longer than its diameter.</h3>
+<label class="option"><input type="radio" name="q21">True</label>
+<label class="option"><input class="correct" type="radio" name="q21">False</label>
+<div class="answer">✓ Correct Answer: False.</div>
+</div>
+
+<div class="question">
+<h3>Q22. Three half turns make one and a half complete turns.</h3>
+<label class="option"><input class="correct" type="radio" name="q22">True</label>
+<label class="option"><input type="radio" name="q22">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q23. Moving 6 units east and 2 units west results in 8 units east.</h3>
+<label class="option"><input type="radio" name="q23">True</label>
+<label class="option"><input class="correct" type="radio" name="q23">False</label>
+<div class="answer">✓ Correct Answer: False. Net movement is 4 units east.</div>
+</div>
+
+<div class="question">
+<h3>Q24. A three-quarter turn measures 270°.</h3>
+<label class="option"><input class="correct" type="radio" name="q24">True</label>
+<label class="option"><input type="radio" name="q24">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q25. The diameter of a circle with radius 11 cm is 22 cm.</h3>
+<label class="option"><input class="correct" type="radio" name="q25">True</label>
+<label class="option"><input type="radio" name="q25">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section C — Assertion & Reasoning</h2>
+
+<p class="note">
+A = Both A and R are true and R explains A<br>
+B = Both A and R are true but R does not explain A<br>
+C = A is true but R is false<br>
+D = A is false but R is true
+</p>
+
+<div class="question">
+<h3>Q26. Assertion: A complete revolution is 360°.<br>
+Reason: A complete revolution brings an object back to its original orientation.</h3>
+<label class="option"><input type="radio" name="q26">A</label>
+<label class="option"><input class="correct" type="radio" name="q26">B</label>
+<label class="option"><input type="radio" name="q26">C</label>
+<label class="option"><input type="radio" name="q26">D</label>
+<div class="answer">✓ Correct Answer: B. Both are true, but the reason does not explain the numerical measure 360°.</div>
+</div>
+
+<div class="question">
+<h3>Q27. Assertion: A circle with radius 17 cm has diameter 34 cm.<br>
+Reason: Diameter is twice the radius.</h3>
+<label class="option"><input class="correct" type="radio" name="q27">A</label>
+<label class="option"><input type="radio" name="q27">B</label>
+<label class="option"><input type="radio" name="q27">C</label>
+<label class="option"><input type="radio" name="q27">D</label>
+<div class="answer">✓ Correct Answer: A.</div>
+</div>
+
+<div class="question">
+<h3>Q28. Assertion: A quarter turn is 180°.<br>
+Reason: A half turn is 180°.</h3>
+<label class="option"><input type="radio" name="q28">A</label>
+<label class="option"><input type="radio" name="q28">B</label>
+<label class="option"><input type="radio" name="q28">C</label>
+<label class="option"><input class="correct" type="radio" name="q28">D</label>
+<div class="answer">✓ Correct Answer: D. The assertion is false; a quarter turn is 90°. The reason is true.</div>
+</div>
+
+<div class="question">
+<h3>Q29. Assertion: A person travelling 12 m north and then 12 m south has zero displacement.<br>
+Reason: The person's final position is the same as the initial position.</h3>
+<label class="option"><input class="correct" type="radio" name="q29">A</label>
+<label class="option"><input type="radio" name="q29">B</label>
+<label class="option"><input type="radio" name="q29">C</label>
+<label class="option"><input type="radio" name="q29">D</label>
+<div class="answer">✓ Correct Answer: A.</div>
+</div>
+
+<div class="question">
+<h3>Q30. Assertion: Five quarter turns make 450°.<br>
+Reason: One quarter turn is 90°.</h3>
+<label class="option"><input class="correct" type="radio" name="q30">A</label>
+<label class="option"><input type="radio" name="q30">B</label>
+<label class="option"><input type="radio" name="q30">C</label>
+<label class="option"><input type="radio" name="q30">D</label>
+<div class="answer">✓ Correct Answer: A.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section D — Fill in the Blanks</h2>
+
+<div class="question">
+<h3>Q31. The angle made by a half turn is ______.</h3>
+<label class="option"><input type="radio" name="q31">45°</label>
+<label class="option"><input type="radio" name="q31">90°</label>
+<label class="option"><input class="correct" type="radio" name="q31">180°</label>
+<label class="option"><input type="radio" name="q31">270°</label>
+<div class="answer">✓ Correct Answer: 180°.</div>
+</div>
+
+<div class="question">
+<h3>Q32. If the diameter of a circle is 42 cm, its radius is ______ cm.</h3>
+<label class="option"><input type="radio" name="q32">18</label>
+<label class="option"><input class="correct" type="radio" name="q32">21</label>
+<label class="option"><input type="radio" name="q32">24</label>
+<label class="option"><input type="radio" name="q32">84</label>
+<div class="answer">✓ Correct Answer: 21 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q33. A movement of 3/4 of a complete revolution is equal to ______.</h3>
+<label class="option"><input type="radio" name="q33">135°</label>
+<label class="option"><input type="radio" name="q33">180°</label>
+<label class="option"><input class="correct" type="radio" name="q33">270°</label>
+<label class="option"><input type="radio" name="q33">315°</label>
+<div class="answer">✓ Correct Answer: 270°.</div>
+</div>
+
+<div class="question">
+<h3>Q34. A point moves 22 units upward and 15 units downward. Its net movement is ______ units upward.</h3>
+<label class="option"><input type="radio" name="q34">5</label>
+<label class="option"><input class="correct" type="radio" name="q34">7</label>
+<label class="option"><input type="radio" name="q34">9</label>
+<label class="option"><input type="radio" name="q34">37</label>
+<div class="answer">✓ Correct Answer: 7.</div>
+</div>
+
+<div class="question">
+<h3>Q35. One-eighth of a complete turn is equal to ______.</h3>
+<label class="option"><input type="radio" name="q35">30°</label>
+<label class="option"><input class="correct" type="radio" name="q35">45°</label>
+<label class="option"><input type="radio" name="q35">60°</label>
+<label class="option"><input type="radio" name="q35">75°</label>
+<div class="answer">✓ Correct Answer: 45°.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section E — Match the Following</h2>
+
+<div class="match-intro">
+For each row, select the matching answer. <strong>One complete Match question = 1 mark</strong>, only when all four rows are correct.
+</div>
+
+<div class="question match m1">
+<h3>Q36. Match the type of turn with its angle.</h3>
+
+<div class="match-row">
+<strong>A. Quarter turn</strong>
+<label class="option"><input type="radio" name="m1a" class="m1a">45°</label>
+<label class="option"><input type="radio" name="m1a" class="m1a correct">90°</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">180°</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">270°</label>
+</div>
+
+<div class="match-row">
+<strong>B. Half turn</strong>
+<label class="option"><input type="radio" name="m1b" class="m1b">90°</label>
+<label class="option"><input type="radio" name="m1b" class="m1b correct">180°</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">270°</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">360°</label>
+</div>
+
+<div class="match-row">
+<strong>C. Three-quarter turn</strong>
+<label class="option"><input type="radio" name="m1c" class="m1c">90°</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">180°</label>
+<label class="option"><input type="radio" name="m1c" class="m1c correct">270°</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">315°</label>
+</div>
+
+<div class="match-row">
+<strong>D. Full turn</strong>
+<label class="option"><input type="radio" name="m1d" class="m1d">180°</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">270°</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">540°</label>
+<label class="option"><input type="radio" name="m1d" class="m1d correct">360°</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–90°, B–180°, C–270°, D–360°.</div>
+</div>
+
+<div class="question match m2">
+<h3>Q37. Match the radius with its diameter.</h3>
+
+<div class="match-row">
+<strong>A. Radius = 6 cm</strong>
+<label class="option"><input type="radio" name="m2a" class="m2a correct">Diameter = 12 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">Diameter = 6 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">Diameter = 18 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">Diameter = 24 cm</label>
+</div>
+
+<div class="match-row">
+<strong>B. Radius = 11 cm</strong>
+<label class="option"><input type="radio" name="m2b" class="m2b">Diameter = 11 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b correct">Diameter = 22 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">Diameter = 33 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">Diameter = 44 cm</label>
+</div>
+
+<div class="match-row">
+<strong>C. Radius = 15 cm</strong>
+<label class="option"><input type="radio" name="m2c" class="m2c">Diameter = 15 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">Diameter = 25 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c correct">Diameter = 30 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">Diameter = 45 cm</label>
+</div>
+
+<div class="match-row">
+<strong>D. Radius = 20 cm</strong>
+<label class="option"><input type="radio" name="m2d" class="m2d">Diameter = 20 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">Diameter = 30 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">Diameter = 35 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d correct">Diameter = 40 cm</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–12 cm, B–22 cm, C–30 cm, D–40 cm.</div>
+</div>
+
+<div class="question match m3">
+<h3>Q38. Match the movement with its net result.</h3>
+
+<div class="match-row">
+<strong>A. 14 right, 5 left</strong>
+<label class="option"><input type="radio" name="m3a" class="m3a correct">9 right</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">9 left</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">19 right</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">19 left</label>
+</div>
+
+<div class="match-row">
+<strong>B. 16 left, 7 right</strong>
+<label class="option"><input type="radio" name="m3b" class="m3b">9 right</label>
+<label class="option"><input type="radio" name="m3b" class="m3b correct">9 left</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">23 left</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">23 right</label>
+</div>
+
+<div class="match-row">
+<strong>C. 13 up, 8 down</strong>
+<label class="option"><input type="radio" name="m3c" class="m3c">5 down</label>
+<label class="option"><input type="radio" name="m3c" class="m3c correct">5 up</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">21 up</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">21 down</label>
+</div>
+
+<div class="match-row">
+<strong>D. 19 down, 12 up</strong>
+<label class="option"><input type="radio" name="m3d" class="m3d">7 up</label>
+<label class="option"><input type="radio" name="m3d" class="m3d correct">7 down</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">31 down</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">31 up</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–9 right, B–9 left, C–5 up, D–7 down.</div>
+</div>
+
+<div class="question match m4">
+<h3>Q39. Match the fraction of a turn with its angle.</h3>
+
+<div class="match-row">
+<strong>A. 1/3 turn</strong>
+<label class="option"><input type="radio" name="m4a" class="m4a">60°</label>
+<label class="option"><input type="radio" name="m4a" class="m4a correct">120°</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">150°</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">180°</label>
+</div>
+
+<div class="match-row">
+<strong>B. 1/6 turn</strong>
+<label class="option"><input type="radio" name="m4b" class="m4b correct">60°</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">90°</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">120°</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">150°</label>
+</div>
+
+<div class="match-row">
+<strong>C. 5/6 turn</strong>
+<label class="option"><input type="radio" name="m4c" class="m4c">240°</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">270°</label>
+<label class="option"><input type="radio" name="m4c" class="m4c correct">300°</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">330°</label>
+</div>
+
+<div class="match-row">
+<strong>D. 7/8 turn</strong>
+<label class="option"><input type="radio" name="m4d" class="m4d">270°</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">300°</label>
+<label class="option"><input type="radio" name="m4d" class="m4d correct">315°</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">330°</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–120°, B–60°, C–300°, D–315°.</div>
+</div>
+
+<div class="question match m5">
+<h3>Q40. Match the situation with the final position.</h3>
+
+<div class="match-row">
+<strong>A. Start at 5, move +8</strong>
+<label class="option"><input type="radio" name="m5a" class="m5a">11</label>
+<label class="option"><input type="radio" name="m5a" class="m5a correct">13</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">15</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">17</label>
+</div>
+
+<div class="match-row">
+<strong>B. Start at 12, move −7</strong>
+<label class="option"><input type="radio" name="m5b" class="m5b correct">5</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">7</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">19</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">21</label>
+</div>
+
+<div class="match-row">
+<strong>C. Start at −4, move +10</strong>
+<label class="option"><input type="radio" name="m5c" class="m5c">−14</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">−6</label>
+<label class="option"><input type="radio" name="m5c" class="m5c correct">6</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">14</label>
+</div>
+
+<div class="match-row">
+<strong>D. Start at 9, move −14</strong>
+<label class="option"><input type="radio" name="m5d" class="m5d">−23</label>
+<label class="option"><input type="radio" name="m5d" class="m5d correct">−5</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">5</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">23</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–13, B–5, C–6, D–−5.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section F — Drag & Drop Style</h2>
+
+<p class="note">
+CSS-only version: select the value you would drag into the highlighted box.
+</p>
+
+<div class="question drag">
+<h3>Q41. Drag the correct angle: 3/5 of a full turn = [ ? ]</h3>
+<label class="option"><input type="radio" name="q41">180°</label>
+<label class="option"><input class="correct" type="radio" name="q41">216°</label>
+<label class="option"><input type="radio" name="q41">240°</label>
+<label class="option"><input type="radio" name="q41">270°</label>
+<div class="answer">✓ Correct Answer: 216°.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Drag the correct number: Diameter = 50 cm, so Radius = [ ? ]</h3>
+<label class="option"><input type="radio" name="q42">20 cm</label>
+<label class="option"><input class="correct" type="radio" name="q42">25 cm</label>
+<label class="option"><input type="radio" name="q42">30 cm</label>
+<label class="option"><input type="radio" name="q42">40 cm</label>
+<div class="answer">✓ Correct Answer: 25 cm.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Drag the correct final position: Start at 0, move −11, then +6 = [ ? ]</h3>
+<label class="option"><input type="radio" name="q43">−17</label>
+<label class="option"><input class="correct" type="radio" name="q43">−5</label>
+<label class="option"><input type="radio" name="q43">5</label>
+<label class="option"><input type="radio" name="q43">17</label>
+<div class="answer">✓ Correct Answer: −5.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Drag the correct angle: 7/12 of one complete turn = [ ? ]</h3>
+<label class="option"><input type="radio" name="q44">180°</label>
+<label class="option"><input type="radio" name="q44">200°</label>
+<label class="option"><input class="correct" type="radio" name="q44">210°</label>
+<label class="option"><input type="radio" name="q44">240°</label>
+<div class="answer">✓ Correct Answer: 210°.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Drag the correct result: 28 m north followed by 13 m south = [ ? ]</h3>
+<label class="option"><input type="radio" name="q45">15 m south</label>
+<label class="option"><input class="correct" type="radio" name="q45">15 m north</label>
+<label class="option"><input type="radio" name="q45">41 m north</label>
+<label class="option"><input type="radio" name="q45">41 m south</label>
+<div class="answer">✓ Correct Answer: 15 m north.</div>
+</div>
+
+</section>
+
+<section>
+<h2>Section G — HOTS / Higher Order Thinking</h2>
+
+<div class="question">
+<h3>Q46. A robot starts at 2 on a number line. It moves 9 units right, 13 units left and then 6 units right. Where does it finish?</h3>
+<label class="option"><input type="radio" name="q46">−4</label>
+<label class="option"><input class="correct" type="radio" name="q46">4</label>
+<label class="option"><input type="radio" name="q46">8</label>
+<label class="option"><input type="radio" name="q46">18</label>
+<div class="answer">✓ Correct Answer: 4.</div>
+</div>
+
+<div class="question">
+<h3>Q47. A rotating disk turns 120° clockwise and then 150° anticlockwise. What is its net rotation?</h3>
+<label class="option"><input type="radio" name="q47">270° clockwise</label>
+<label class="option"><input type="radio" name="q47">270° anticlockwise</label>
+<label class="option"><input class="correct" type="radio" name="q47">30° anticlockwise</label>
+<label class="option"><input type="radio" name="q47">30° clockwise</label>
+<div class="answer">✓ Correct Answer: 30° anticlockwise.</div>
+</div>
+
+<div class="question">
+<h3>Q48. A circular table has diameter 36 cm. A straight line joining two opposite points through the centre is drawn. What is its length?</h3>
+<label class="option"><input type="radio" name="q48">9 cm</label>
+<label class="option"><input type="radio" name="q48">18 cm</label>
+<label class="option"><input class="correct" type="radio" name="q48">36 cm</label>
+<label class="option"><input type="radio" name="q48">72 cm</label>
+<div class="answer">✓ Correct Answer: 36 cm. The line is the diameter.</div>
+</div>
+
+<div class="question">
+<h3>Q49. A hiker walks 8 km east, 15 km north and then 8 km west. How far north of the starting point is the hiker?</h3>
+<label class="option"><input type="radio" name="q49">7 km</label>
+<label class="option"><input type="radio" name="q49">8 km</label>
+<label class="option"><input class="correct" type="radio" name="q49">15 km</label>
+<label class="option"><input type="radio" name="q49">31 km</label>
+<div class="answer">✓ Correct Answer: 15 km north.</div>
+</div>
+
+<div class="question">
+<h3>Q50. A machine dial has completed 5/8 of a turn. How many degrees remain before one complete turn?</h3>
+<label class="option"><input type="radio" name="q50">120°</label>
+<label class="option"><input class="correct" type="radio" name="q50">135°</label>
+<label class="option"><input type="radio" name="q50">150°</label>
+<label class="option"><input type="radio" name="q50">225°</label>
+<div class="answer">✓ Correct Answer: 135°.</div>
+</div>
+
+<div class="question">
+<h3>Q51. Two circles have radii 9 cm and 16 cm. What is the difference between their diameters?</h3>
+<label class="option"><input type="radio" name="q51">7 cm</label>
+<label class="option"><input type="radio" name="q51">12 cm</label>
+<label class="option"><input class="correct" type="radio" name="q51">14 cm</label>
+<label class="option"><input type="radio" name="q51">18 cm</label>
+<div class="answer">✓ Correct Answer: 14 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q52. A pointer starts facing east. It makes a 270° anticlockwise turn. Which direction does it finally face?</h3>
+<label class="option"><input type="radio" name="q52">North</label>
+<label class="option"><input type="radio" name="q52">West</label>
+<label class="option"><input class="correct" type="radio" name="q52">South</label>
+<label class="option"><input type="radio" name="q52">East</label>
+<div class="answer">✓ Correct Answer: South.</div>
+</div>
+
+<div class="question">
+<h3>Q53. A lift begins at floor 6, goes down 9 floors, then rises 12 floors and finally goes down 4 floors. Which floor does it reach?</h3>
+<label class="option"><input type="radio" name="q53">3rd</label>
+<label class="option"><input class="correct" type="radio" name="q53">5th</label>
+<label class="option"><input type="radio" name="q53">9th</label>
+<label class="option"><input type="radio" name="q53">13th</label>
+<div class="answer">✓ Correct Answer: 5th floor.</div>
+</div>
+
+<div class="question">
+<h3>Q54. A wheel rotates 1¾ turns. Through what total angle has it rotated?</h3>
+<label class="option"><input type="radio" name="q54">540°</label>
+<label class="option"><input type="radio" name="q54">600°</label>
+<label class="option"><input class="correct" type="radio" name="q54">630°</label>
+<label class="option"><input type="radio" name="q54">720°</label>
+<div class="answer">✓ Correct Answer: 630°.</div>
+</div>
+
+<div class="question">
+<h3>Q55. A student walks 7 m north, 24 m east, 7 m south and 24 m west. What is the shortest distance between the student's final and initial positions?</h3>
+<label class="option"><input class="correct" type="radio" name="q55">0 m</label>
+<label class="option"><input type="radio" name="q55">7 m</label>
+<label class="option"><input type="radio" name="q55">24 m</label>
+<label class="option"><input type="radio" name="q55">31 m</label>
+<div class="answer">✓ Correct Answer: 0 m.</div>
+</div>
+
+</section>
+
+<div class="score-card">
+<div>Your Final Score</div>
+<div class="score-number"></div>
+<p>Keep practising — aim for 55/55!</p>
+</div>
+
+</div>
+
+<footer>
+Class 7 Mathematics • Chapter 5 • Half-Yearly Question Bank
+</footer>
+
+</body>
+</html>

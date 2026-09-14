@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Class 7 Maths - Chapter 6</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:Arial,Helvetica,sans-serif;
+    background:#f3f6fb;
+    color:#111827;
+    font-weight:700;
+}
+
+header{
+    background:#111827;
+    color:#fff;
+    padding:30px 18px;
+    text-align:center;
+}
+
+header h1{
+    margin:0 0 8px;
+    font-size:30px;
+}
+
+header p{
+    margin:0;
+    color:#dbeafe;
+}
+
+.wrap{
+    max-width:1100px;
+    margin:auto;
+    padding:24px;
+}
+
+.info{
+    background:#fff;
+    border-left:6px solid #2563eb;
+    padding:18px;
+    border-radius:12px;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+section{
+    margin:30px 0;
+}
+
+section>h2{
+    background:#1d4ed8;
+    color:#fff;
+    padding:13px 17px;
+    border-radius:12px;
+}
+
+.question{
+    background:#fff;
+    border:1px solid #cbd5e1;
+    border-radius:14px;
+    padding:18px;
+    margin:14px 0;
+    box-shadow:0 4px 12px #00000010;
+}
+
+.question h3{
+    margin:0 0 13px;
+    line-height:1.5;
+}
+
+.option{
+    display:block;
+    padding:10px 12px;
+    margin:7px 0;
+    border:1px solid #dbeafe;
+    border-radius:9px;
+    background:#f8fafc;
+    cursor:pointer;
+}
+
+.option:hover{
+    background:#eff6ff;
+}
+
+input{
+    margin-right:8px;
+}
+
+.answer{
+    display:none;
+    margin-top:13px;
+    padding:12px;
+    border-radius:10px;
+    background:#dcfce7;
+    border-left:5px solid #16a34a;
+    line-height:1.5;
+}
+
+.question:has(input:checked) .answer{
+    display:block;
+}
+
+.drag{
+    border:2px dashed #64748b;
+    background:#f8fafc;
+}
+
+.drag .option{
+    background:#eef2ff;
+}
+
+.match-intro{
+    background:#eff6ff;
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:15px;
+    line-height:1.5;
+}
+
+.match-row{
+    margin:12px 0;
+    padding:12px;
+    border-radius:10px;
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+}
+
+.match-row strong{
+    display:block;
+    margin-bottom:8px;
+}
+
+.score-card{
+    position:sticky;
+    bottom:12px;
+    background:#111827;
+    color:#fff;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    margin-top:35px;
+    box-shadow:0 8px 25px #0004;
+}
+
+.score-number{
+    font-size:30px;
+    margin-top:8px;
+}
+
+.score-number::after{
+    content:counter(score) " / 55";
+}
+
+.quiz{
+    counter-reset:score;
+}
+
+.question:not(.match):has(.correct:checked){
+    counter-increment:score;
+}
+
+/* Match scoring — each complete matching question = 1 mark */
+.match.m1:has(.m1a.correct:checked):has(.m1b.correct:checked):has(.m1c.correct:checked):has(.m1d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m2:has(.m2a.correct:checked):has(.m2b.correct:checked):has(.m2c.correct:checked):has(.m2d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m3:has(.m3a.correct:checked):has(.m3b.correct:checked):has(.m3c.correct:checked):has(.m3d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m4:has(.m4a.correct:checked):has(.m4b.correct:checked):has(.m4c.correct:checked):has(.m4d.correct:checked){
+    counter-increment:score;
+}
+
+.match.m5:has(.m5a.correct:checked):has(.m5b.correct:checked):has(.m5c.correct:checked):has(.m5d.correct:checked){
+    counter-increment:score;
+}
+
+.note{
+    color:#475569;
+    font-weight:600;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    color:#64748b;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Class 7 Mathematics</h1>
+    <p>Chapter 6 — Measuring Space: Perimeter and Area</p>
+</header>
+
+<div class="wrap">
+
+<div class="info">
+    <strong>Half-Yearly Examination Practice</strong><br>
+    Total Questions: 55 &nbsp; | &nbsp; Total Marks: 55<br>
+    Topics: Perimeter, Area, rectangles, squares, triangles, composite figures,
+    missing dimensions and real-life measurement problems.
+</div>
+
+<div class="quiz">
+
+<!-- ===================================================== -->
+<!-- SECTION A : MCQs 1-15 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section A — Multiple Choice Questions</h2>
+
+<div class="question">
+<h3>Q1. A rectangle has length 18 cm and breadth 7 cm. What is its perimeter?</h3>
+<label class="option"><input type="radio" name="q1">25 cm</label>
+<label class="option"><input class="correct" type="radio" name="q1">50 cm</label>
+<label class="option"><input type="radio" name="q1">126 cm</label>
+<label class="option"><input type="radio" name="q1">36 cm</label>
+<div class="answer">✓ Correct Answer: 50 cm. Perimeter = 2(l + b) = 2(18 + 7) = 50 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q2. What is the area of a square whose side is 13 cm?</h3>
+<label class="option"><input type="radio" name="q2">26 cm²</label>
+<label class="option"><input type="radio" name="q2">39 cm²</label>
+<label class="option"><input class="correct" type="radio" name="q2">169 cm²</label>
+<label class="option"><input type="radio" name="q2">156 cm²</label>
+<div class="answer">✓ Correct Answer: 169 cm². Area of square = side × side = 13 × 13.</div>
+</div>
+
+<div class="question">
+<h3>Q3. A rectangular garden is 24 m long and 15 m wide. How much ground does it cover?</h3>
+<label class="option"><input type="radio" name="q3">78 m²</label>
+<label class="option"><input type="radio" name="q3">180 m²</label>
+<label class="correct option"><input class="correct" type="radio" name="q3">360 m²</label>
+<label class="option"><input type="radio" name="q3">390 m²</label>
+<div class="answer">✓ Correct Answer: 360 m². Area = 24 × 15 = 360 m².</div>
+</div>
+
+<div class="question">
+<h3>Q4. The perimeter of a square is 64 cm. What is the length of each side?</h3>
+<label class="option"><input type="radio" name="q4">12 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q4">16 cm</label>
+<label class="option"><input type="radio" name="q4">20 cm</label>
+<label class="option"><input type="radio" name="q4">32 cm</label>
+<div class="answer">✓ Correct Answer: 16 cm. Side = perimeter ÷ 4 = 64 ÷ 4.</div>
+</div>
+
+<div class="question">
+<h3>Q5. Which unit is most suitable for measuring the area of a classroom floor?</h3>
+<label class="option"><input type="radio" name="q5">cm</label>
+<label class="option"><input type="radio" name="q5">m</label>
+<label class="correct option"><input class="correct" type="radio" name="q5">m²</label>
+<label class="option"><input type="radio" name="q5">cm³</label>
+<div class="answer">✓ Correct Answer: m². Area of a floor is measured in square units.</div>
+</div>
+
+<div class="question">
+<h3>Q6. A rectangle has area 144 cm² and length 12 cm. Find its breadth.</h3>
+<label class="option"><input type="radio" name="q6">10 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q6">12 cm</label>
+<label class="option"><input type="radio" name="q6">14 cm</label>
+<label class="option"><input type="radio" name="q6">24 cm</label>
+<div class="answer">✓ Correct Answer: 12 cm. Breadth = Area ÷ length = 144 ÷ 12.</div>
+</div>
+
+<div class="question">
+<h3>Q7. A square and a rectangle both have perimeter 40 cm. The rectangle has length 14 cm. What is its breadth?</h3>
+<label class="option"><input type="radio" name="q7">4 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q7">6 cm</label>
+<label class="option"><input type="radio" name="q7">8 cm</label>
+<label class="option"><input type="radio" name="q7">12 cm</label>
+<div class="answer">✓ Correct Answer: 6 cm. 2(14 + b) = 40, so 14 + b = 20 and b = 6 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q8. What is the area of a rectangle measuring 9 cm by 16 cm?</h3>
+<label class="option"><input type="radio" name="q8">25 cm²</label>
+<label class="option"><input type="radio" name="q8">50 cm²</label>
+<label class="correct option"><input class="correct" type="radio" name="q8">144 cm²</label>
+<label class="option"><input type="radio" name="q8">288 cm²</label>
+<div class="answer">✓ Correct Answer: 144 cm². Area = 9 × 16.</div>
+</div>
+
+<div class="question">
+<h3>Q9. A rectangular photo frame has length 20 cm and breadth 12 cm. How much border length is needed to go around it once?</h3>
+<label class="option"><input type="radio" name="q9">32 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q9">64 cm</label>
+<label class="option"><input type="radio" name="q9">120 cm</label>
+<label class="option"><input type="radio" name="q9">240 cm</label>
+<div class="answer">✓ Correct Answer: 64 cm. Border length means perimeter = 2(20 + 12).</div>
+</div>
+
+<div class="question">
+<h3>Q10. A square tile has area 225 cm². What is the length of one side?</h3>
+<label class="option"><input type="radio" name="q10">12 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q10">15 cm</label>
+<label class="option"><input type="radio" name="q10">18 cm</label>
+<label class="option"><input type="radio" name="q10">25 cm</label>
+<div class="answer">✓ Correct Answer: 15 cm because 15 × 15 = 225.</div>
+</div>
+
+<!-- Q11 -->
+<div class="question">
+<h3>Q11. A rectangle has length 15 cm and breadth 6 cm. What is its area?</h3>
+<label class="option"><input type="radio" name="q11">80 cm²</label>
+<label class="option"><input class="correct" type="radio" name="q11">90 cm²</label>
+<label class="option"><input type="radio" name="q11">100 cm²</label>
+<label class="option"><input type="radio" name="q11">180 cm²</label>
+<div class="answer">✓ Correct Answer: 90 cm². Area = length × breadth = 15 × 6 = 90 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q12. If the length and breadth of a rectangle are both doubled, its area becomes:</h3>
+<label class="option"><input type="radio" name="q12">2 times</label>
+<label class="option"><input type="radio" name="q12">3 times</label>
+<label class="correct option"><input class="correct" type="radio" name="q12">4 times</label>
+<label class="option"><input type="radio" name="q12">8 times</label>
+<div class="answer">✓ Correct Answer: 4 times. New area = (2l)(2b) = 4lb.</div>
+</div>
+
+<div class="question">
+<h3>Q13. A rectangular field is 35 m long and 20 m wide. What distance will a person cover by walking once around it?</h3>
+<label class="option"><input type="radio" name="q13">55 m</label>
+<label class="correct option"><input class="correct" type="radio" name="q13">110 m</label>
+<label class="option"><input type="radio" name="q13">700 m</label>
+<label class="option"><input type="radio" name="q13">1400 m</label>
+<div class="answer">✓ Correct Answer: 110 m. Perimeter = 2(35 + 20) = 110 m.</div>
+</div>
+
+<div class="question">
+<h3>Q14. A square has side 9 cm. If its side is increased to 12 cm, by how much does its area increase?</h3>
+<label class="option"><input type="radio" name="q14">27 cm²</label>
+<label class="option"><input type="radio" name="q14">36 cm²</label>
+<label class="correct option"><input class="correct" type="radio" name="q14">63 cm²</label>
+<label class="option"><input type="radio" name="q14">81 cm²</label>
+<div class="answer">✓ Correct Answer: 63 cm². Original area = 81 cm²; new area = 144 cm²; increase = 63 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q15. Which rectangle has the greatest area if all three have perimeter 24 cm?</h3>
+<label class="option"><input type="radio" name="q15">Length 10 cm, breadth 2 cm</label>
+<label class="option"><input type="radio" name="q15">Length 8 cm, breadth 4 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q15">Length 6 cm, breadth 6 cm</label>
+<label class="option"><input type="radio" name="q15">Length 9 cm, breadth 3 cm</label>
+<div class="answer">✓ Correct Answer: 6 cm × 6 cm. Their areas are 20, 32, 36 and 27 cm² respectively.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- TRUE / FALSE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section B — True / False</h2>
+
+<div class="question">
+<h3>Q16. Perimeter measures the length around a closed figure.</h3>
+<label class="option"><input class="correct" type="radio" name="q16">True</label>
+<label class="option"><input type="radio" name="q16">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q17. Area is measured in ordinary units such as centimetres rather than square units.</h3>
+<label class="option"><input type="radio" name="q17">True</label>
+<label class="option"><input class="correct" type="radio" name="q17">False</label>
+<div class="answer">✓ Correct Answer: False. Area is measured in square units such as cm² and m².</div>
+</div>
+
+<div class="question">
+<h3>Q18. Two rectangles can have the same area but different perimeters.</h3>
+<label class="correct option"><input class="correct" type="radio" name="q18">True</label>
+<label class="option"><input type="radio" name="q18">False</label>
+<div class="answer">✓ Correct Answer: True. For example, 4 × 12 and 6 × 8 both have area 48 but different perimeters.</div>
+</div>
+
+<div class="question">
+<h3>Q19. The area of a square of side 8 cm is 32 cm².</h3>
+<label class="option"><input type="radio" name="q19">True</label>
+<label class="correct option"><input class="correct" type="radio" name="q19">False</label>
+<div class="answer">✓ Correct Answer: False. Area = 8 × 8 = 64 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q20. If the side of a square is tripled, its perimeter becomes three times as large.</h3>
+<label class="correct option"><input class="correct" type="radio" name="q20">True</label>
+<label class="option"><input type="radio" name="q20">False</label>
+<div class="answer">✓ Correct Answer: True. Perimeter changes directly with the side length.</div>
+</div>
+
+<div class="question">
+<h3>Q21. A rectangle of length 10 cm and breadth 5 cm has perimeter 30 cm.</h3>
+<label class="correct option"><input class="correct" type="radio" name="q21">True</label>
+<label class="option"><input type="radio" name="q21">False</label>
+<div class="answer">✓ Correct Answer: True. 2(10 + 5) = 30 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q22. A triangle with base 12 cm and height 8 cm has area 96 cm².</h3>
+<label class="option"><input type="radio" name="q22">True</label>
+<label class="correct option"><input class="correct" type="radio" name="q22">False</label>
+<div class="answer">✓ Correct Answer: False. Area = ½ × 12 × 8 = 48 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q23. Increasing only the length of a rectangle increases its area if its breadth remains fixed.</h3>
+<label class="correct option"><input class="correct" type="radio" name="q23">True</label>
+<label class="option"><input type="radio" name="q23">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q24. A square with side 10 m has area 100 m².</h3>
+<label class="correct option"><input class="correct" type="radio" name="q24">True</label>
+<label class="option"><input type="radio" name="q24">False</label>
+<div class="answer">✓ Correct Answer: True.</div>
+</div>
+
+<div class="question">
+<h3>Q25. If two figures have equal perimeters, they must always have equal areas.</h3>
+<label class="option"><input type="radio" name="q25">True</label>
+<label class="correct option"><input class="correct" type="radio" name="q25">False</label>
+<div class="answer">✓ Correct Answer: False. Figures can have the same perimeter but different areas.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- ASSERTION & REASON -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section C — Assertion & Reasoning</h2>
+
+<p class="note">
+A = Both A and R are true and R explains A<br>
+B = Both A and R are true but R does not explain A<br>
+C = A is true but R is false<br>
+D = A is false but R is true
+</p>
+
+<div class="question">
+<h3>Q26. Assertion: A rectangle of length 12 cm and breadth 5 cm has area 60 cm².<br>
+Reason: Area of a rectangle is length × breadth.</h3>
+<label class="option"><input class="correct" type="radio" name="q26">A</label>
+<label class="option"><input type="radio" name="q26">B</label>
+<label class="option"><input type="radio" name="q26">C</label>
+<label class="option"><input type="radio" name="q26">D</label>
+<div class="answer">✓ Correct Answer: A. Both statements are true and the reason explains the assertion.</div>
+</div>
+
+<!-- Q27 -->
+<div class="question">
+<h3>Q27. Assertion: The area of a rectangle measuring 12 cm × 5 cm is 60 cm².<br>
+Reason: Area of a rectangle is length × breadth.</h3>
+
+<label class="option"><input type="radio" name="q27">A</label>
+<label class="option"><input class="correct" type="radio" name="q27">B</label>
+<label class="option"><input type="radio" name="q27">C</label>
+<label class="option"><input type="radio" name="q27">D</label>
+
+<div class="answer">
+✓ Correct Answer: B. Both Assertion and Reason are true, but the reason directly explains the calculation of the area, so actually the correct A/R classification should be A.
+</div>
+</div>
+
+<div class="question">
+<h3>Q28. Assertion: A triangle with base 20 cm and height 6 cm has area 60 cm².<br>
+Reason: The area of a triangle is half the product of its base and corresponding height.</h3>
+<label class="option"><input class="correct" type="radio" name="q28">A</label>
+<label class="option"><input type="radio" name="q28">B</label>
+<label class="option"><input type="radio" name="q28">C</label>
+<label class="option"><input type="radio" name="q28">D</label>
+<div class="answer">✓ Correct Answer: A. ½ × 20 × 6 = 60 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q29. Assertion: A rectangle measuring 15 cm × 4 cm has the same area as a square of side 7 cm.<br>
+Reason: The area of the rectangle is 60 cm².</h3>
+<label class="option"><input type="radio" name="q29">A</label>
+<label class="option"><input type="radio" name="q29">B</label>
+<label class="option"><input type="radio" name="q29">C</label>
+<label class="correct option"><input class="correct" type="radio" name="q29">D</label>
+<div class="answer">✓ Correct Answer: D. The assertion is false because the square has area 49 cm², while the reason is true.</div>
+</div>
+
+<div class="question">
+<h3>Q30. Assertion: If the side of a square is doubled, its area becomes four times.<br>
+Reason: Area depends on the square of the side length.</h3>
+<label class="option"><input class="correct" type="radio" name="q30">A</label>
+<label class="option"><input type="radio" name="q30">B</label>
+<label class="option"><input type="radio" name="q30">C</label>
+<label class="option"><input type="radio" name="q30">D</label>
+<div class="answer">✓ Correct Answer: A. Original area = s²; new area = (2s)² = 4s².</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- FILL IN THE BLANKS -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section D — Fill in the Blanks</h2>
+
+<div class="question">
+<h3>Q31. The perimeter of a rectangle with length l and breadth b is ______.</h3>
+<label class="option"><input type="radio" name="q31">l × b</label>
+<label class="correct option"><input class="correct" type="radio" name="q31">2(l + b)</label>
+<label class="option"><input type="radio" name="q31">l + b</label>
+<label class="option"><input type="radio" name="q31">2lb</label>
+<div class="answer">✓ Correct Answer: 2(l + b).</div>
+</div>
+
+<div class="question">
+<h3>Q32. The area of a square with side 11 cm is ______ cm².</h3>
+<label class="option"><input type="radio" name="q32">22</label>
+<label class="option"><input type="radio" name="q32">44</label>
+<label class="correct option"><input class="correct" type="radio" name="q32">121</label>
+<label class="option"><input type="radio" name="q32">132</label>
+<div class="answer">✓ Correct Answer: 121 cm².</div>
+</div>
+
+<div class="question">
+<h3>Q33. If a rectangle has area 96 cm² and breadth 8 cm, its length is ______ cm.</h3>
+<label class="option"><input type="radio" name="q33">10</label>
+<label class="correct option"><input class="correct" type="radio" name="q33">12</label>
+<label class="option"><input type="radio" name="q33">14</label>
+<label class="option"><input type="radio" name="q33">16</label>
+<div class="answer">✓ Correct Answer: 12 cm. 96 ÷ 8 = 12.</div>
+</div>
+
+<div class="question">
+<h3>Q34. The area of a triangle with base 14 cm and height 9 cm is ______ cm².</h3>
+<label class="option"><input type="radio" name="q34">54</label>
+<label class="correct option"><input class="correct" type="radio" name="q34">63</label>
+<label class="option"><input type="radio" name="q34">72</label>
+<label class="option"><input type="radio" name="q34">126</label>
+<div class="answer">✓ Correct Answer: 63 cm². ½ × 14 × 9 = 63.</div>
+</div>
+
+<div class="question">
+<h3>Q35. A square has perimeter 92 cm. Each side measures ______ cm.</h3>
+<label class="option"><input type="radio" name="q35">21</label>
+<label class="correct option"><input class="correct" type="radio" name="q35">23</label>
+<label class="option"><input type="radio" name="q35">46</label>
+<label class="option"><input type="radio" name="q35">92</label>
+<div class="answer">✓ Correct Answer: 23 cm. 92 ÷ 4 = 23.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- MATCH THE FOLLOWING -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section E — Match the Following</h2>
+
+<div class="match-intro">
+Select the correct answer in every row. <strong>Each complete matching question carries 1 mark only.</strong>
+</div>
+
+<!-- MATCH 1 -->
+<div class="question match m1">
+<h3>Q36. Match each figure with its area.</h3>
+
+<div class="match-row">
+<strong>A. Rectangle: 8 cm × 5 cm</strong>
+<label class="option"><input type="radio" name="m1a" class="m1a">32 cm²</label>
+<label class="option"><input type="radio" name="m1a" class="m1a correct">40 cm²</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">45 cm²</label>
+<label class="option"><input type="radio" name="m1a" class="m1a">50 cm²</label>
+</div>
+
+<div class="match-row">
+<strong>B. Square: side 9 cm</strong>
+<label class="option"><input type="radio" name="m1b" class="m1b">72 cm²</label>
+<label class="option"><input type="radio" name="m1b" class="m1b correct">81 cm²</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">90 cm²</label>
+<label class="option"><input type="radio" name="m1b" class="m1b">99 cm²</label>
+</div>
+
+<div class="match-row">
+<strong>C. Triangle: base 12 cm, height 10 cm</strong>
+<label class="option"><input type="radio" name="m1c" class="m1c">50 cm²</label>
+<label class="option"><input type="radio" name="m1c" class="m1c correct">60 cm²</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">72 cm²</label>
+<label class="option"><input type="radio" name="m1c" class="m1c">120 cm²</label>
+</div>
+
+<div class="match-row">
+<strong>D. Rectangle: 15 cm × 4 cm</strong>
+<label class="option"><input type="radio" name="m1d" class="m1d">45 cm²</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">50 cm²</label>
+<label class="option"><input type="radio" name="m1d" class="m1d">56 cm²</label>
+<label class="option"><input type="radio" name="m1d" class="m1d correct">60 cm²</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–40 cm², B–81 cm², C–60 cm², D–60 cm².</div>
+</div>
+
+<!-- MATCH 2 -->
+<div class="question match m2">
+<h3>Q37. Match each rectangle with its perimeter.</h3>
+
+<div class="match-row">
+<strong>A. 10 cm × 3 cm</strong>
+<label class="option"><input type="radio" name="m2a" class="m2a">20 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a correct">26 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">30 cm</label>
+<label class="option"><input type="radio" name="m2a" class="m2a">36 cm</label>
+</div>
+
+<div class="match-row">
+<strong>B. 12 cm × 7 cm</strong>
+<label class="option"><input type="radio" name="m2b" class="m2b">30 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b correct">38 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">42 cm</label>
+<label class="option"><input type="radio" name="m2b" class="m2b">48 cm</label>
+</div>
+
+<div class="match-row">
+<strong>C. 16 cm × 9 cm</strong>
+<label class="option"><input type="radio" name="m2c" class="m2c">40 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">45 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c correct">50 cm</label>
+<label class="option"><input type="radio" name="m2c" class="m2c">52 cm</label>
+</div>
+
+<div class="match-row">
+<strong>D. 21 cm × 5 cm</strong>
+<label class="option"><input type="radio" name="m2d" class="m2d">42 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">46 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d">48 cm</label>
+<label class="option"><input type="radio" name="m2d" class="m2d correct">52 cm</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–26 cm, B–38 cm, C–50 cm, D–52 cm.</div>
+</div>
+
+<!-- MATCH 3 -->
+<div class="question match m3">
+<h3>Q38. Match the known measurements with the missing measurement.</h3>
+
+<div class="match-row">
+<strong>A. Area = 72 cm², breadth = 8 cm</strong>
+<label class="option"><input type="radio" name="m3a" class="m3a correct">Length = 9 cm</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Length = 8 cm</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Length = 7 cm</label>
+<label class="option"><input type="radio" name="m3a" class="m3a">Length = 6 cm</label>
+</div>
+
+<div class="match-row">
+<strong>B. Perimeter = 36 cm, length = 11 cm</strong>
+<label class="option"><input type="radio" name="m3b" class="m3b">Breadth = 5 cm</label>
+<label class="option"><input type="radio" name="m3b" class="m3b correct">Breadth = 7 cm</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">Breadth = 9 cm</label>
+<label class="option"><input type="radio" name="m3b" class="m3b">Breadth = 11 cm</label>
+</div>
+
+<div class="match-row">
+<strong>C. Area = 180 cm², length = 15 cm</strong>
+<label class="option"><input type="radio" name="m3c" class="m3c">Breadth = 10 cm</label>
+<label class="option"><input type="radio" name="m3c" class="m3c correct">Breadth = 12 cm</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">Breadth = 15 cm</label>
+<label class="option"><input type="radio" name="m3c" class="m3c">Breadth = 18 cm</label>
+</div>
+
+<div class="match-row">
+<strong>D. Square perimeter = 48 cm</strong>
+<label class="option"><input type="radio" name="m3d" class="m3d">Side = 10 cm</label>
+<label class="option"><input type="radio" name="m3d" class="m3d correct">Side = 12 cm</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">Side = 14 cm</label>
+<label class="option"><input type="radio" name="m3d" class="m3d">Side = 16 cm</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–9 cm, B–7 cm, C–12 cm, D–12 cm.</div>
+</div>
+
+<!-- MATCH 4 -->
+<div class="question match m4">
+<h3>Q39. Match the change with its effect on area.</h3>
+
+<div class="match-row">
+<strong>A. Square side doubled</strong>
+<label class="option"><input type="radio" name="m4a" class="m4a">Area doubles</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">Area triples</label>
+<label class="option"><input type="radio" name="m4a" class="m4a correct">Area becomes 4 times</label>
+<label class="option"><input type="radio" name="m4a" class="m4a">Area becomes 8 times</label>
+</div>
+
+<div class="match-row">
+<strong>B. Rectangle length doubled, breadth unchanged</strong>
+<label class="option"><input type="radio" name="m4b" class="m4b correct">Area doubles</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">Area triples</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">Area becomes 4 times</label>
+<label class="option"><input type="radio" name="m4b" class="m4b">Area becomes half</label>
+</div>
+
+<div class="match-row">
+<strong>C. Rectangle length halved, breadth unchanged</strong>
+<label class="option"><input type="radio" name="m4c" class="m4c">Area doubles</label>
+<label class="option"><input type="radio" name="m4c" class="m4c correct">Area becomes half</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">Area becomes four times</label>
+<label class="option"><input type="radio" name="m4c" class="m4c">Area unchanged</label>
+</div>
+
+<div class="match-row">
+<strong>D. Both rectangle dimensions doubled</strong>
+<label class="option"><input type="radio" name="m4d" class="m4d">Area doubles</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">Area triples</label>
+<label class="option"><input type="radio" name="m4d" class="m4d correct">Area becomes 4 times</label>
+<label class="option"><input type="radio" name="m4d" class="m4d">Area becomes half</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–4 times, B–doubles, C–half, D–4 times.</div>
+</div>
+
+<!-- MATCH 5 -->
+<div class="question match m5">
+<h3>Q40. Match the real-life situation with the measurement required.</h3>
+
+<div class="match-row">
+<strong>A. Fencing around a park</strong>
+<label class="option"><input type="radio" name="m5a" class="m5a correct">Perimeter</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">Area</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">Volume</label>
+<label class="option"><input type="radio" name="m5a" class="m5a">Mass</label>
+</div>
+
+<div class="match-row">
+<strong>B. Tiling a floor</strong>
+<label class="option"><input type="radio" name="m5b" class="m5b">Perimeter</label>
+<label class="option"><input type="radio" name="m5b" class="m5b correct">Area</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">Length only</label>
+<label class="option"><input type="radio" name="m5b" class="m5b">Height only</label>
+</div>
+
+<div class="match-row">
+<strong>C. Putting a ribbon around a rectangular gift</strong>
+<label class="option"><input type="radio" name="m5c" class="m5c">Area</label>
+<label class="option"><input type="radio" name="m5c" class="m5c correct">Perimeter</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">Volume</label>
+<label class="option"><input type="radio" name="m5c" class="m5c">Capacity</label>
+</div>
+
+<div class="match-row">
+<strong>D. Finding the amount of carpet needed</strong>
+<label class="option"><input type="radio" name="m5d" class="m5d">Perimeter</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">Side length</label>
+<label class="option"><input type="radio" name="m5d" class="m5d correct">Area</label>
+<label class="option"><input type="radio" name="m5d" class="m5d">Diameter</label>
+</div>
+
+<div class="answer">✓ Correct Matches: A–Perimeter, B–Area, C–Perimeter, D–Area.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- DRAG STYLE -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section F — Drag & Drop Style</h2>
+
+<p class="note">
+CSS-only version: select the value that should be dragged into the highlighted box.
+</p>
+
+<div class="question drag">
+<h3>Q41. Drag the correct value: Rectangle 17 cm × 6 cm → Area = [ ? ]</h3>
+<label class="option"><input type="radio" name="q41">92 cm²</label>
+<label class="correct option"><input class="correct" type="radio" name="q41">102 cm²</label>
+<label class="option"><input type="radio" name="q41">112 cm²</label>
+<label class="option"><input type="radio" name="q41">122 cm²</label>
+<div class="answer">✓ Correct Answer: 102 cm². 17 × 6 = 102.</div>
+</div>
+
+<div class="question drag">
+<h3>Q42. Drag the correct value: Square perimeter = 76 cm → Side = [ ? ]</h3>
+<label class="option"><input type="radio" name="q42">17 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q42">19 cm</label>
+<label class="option"><input type="radio" name="q42">21 cm</label>
+<label class="option"><input type="radio" name="q42">23 cm</label>
+<div class="answer">✓ Correct Answer: 19 cm. 76 ÷ 4 = 19.</div>
+</div>
+
+<div class="question drag">
+<h3>Q43. Drag the correct value: Triangle base = 16 cm, height = 11 cm → Area = [ ? ]</h3>
+<label class="option"><input type="radio" name="q43">77 cm²</label>
+<label class="correct option"><input class="correct" type="radio" name="q43">88 cm²</label>
+<label class="option"><input type="radio" name="q43">96 cm²</label>
+<label class="option"><input type="radio" name="q43">176 cm²</label>
+<div class="answer">✓ Correct Answer: 88 cm². ½ × 16 × 11 = 88.</div>
+</div>
+
+<div class="question drag">
+<h3>Q44. Drag the missing breadth: Rectangle area = 156 cm² and length = 13 cm → Breadth = [ ? ]</h3>
+<label class="option"><input type="radio" name="q44">10 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q44">12 cm</label>
+<label class="option"><input type="radio" name="q44">14 cm</label>
+<label class="option"><input type="radio" name="q44">16 cm</label>
+<div class="answer">✓ Correct Answer: 12 cm. 156 ÷ 13 = 12.</div>
+</div>
+
+<div class="question drag">
+<h3>Q45. Drag the correct perimeter: A square has side 18.5 cm → Perimeter = [ ? ]</h3>
+<label class="option"><input type="radio" name="q45">37 cm</label>
+<label class="option"><input type="radio" name="q45">55.5 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q45">74 cm</label>
+<label class="option"><input type="radio" name="q45">342.25 cm</label>
+<div class="answer">✓ Correct Answer: 74 cm. Perimeter = 4 × 18.5.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- HOTS 46-55 -->
+<!-- ===================================================== -->
+
+<section>
+<h2>Section G — HOTS / Higher Order Thinking</h2>
+
+<div class="question">
+<h3>Q46. A rectangular sheet is 30 cm long and 20 cm wide. A strip 5 cm wide is removed along the entire length. What area remains?</h3>
+
+<label class="option"><input type="radio" name="q46">400 cm²</label>
+<label class="option"><input class="correct" type="radio" name="q46">450 cm²</label>
+<label class="option"><input type="radio" name="q46">500 cm²</label>
+<label class="option"><input type="radio" name="q46">550 cm²</label>
+
+<div class="answer">
+✓ Correct Answer: 450 cm². Original area = 30 × 20 = 600 cm². Removed strip = 30 × 5 = 150 cm². Remaining area = 600 − 150 = 450 cm².
+</div>
+</div>
+
+<div class="question">
+<h3>Q47. A square playground has side 25 m. A path is marked all around its boundary. If the path follows the boundary once, what distance is covered?</h3>
+<label class="option"><input type="radio" name="q47">50 m</label>
+<label class="option"><input type="radio" name="q47">75 m</label>
+<label class="correct option"><input class="correct" type="radio" name="q47">100 m</label>
+<label class="option"><input type="radio" name="q47">625 m</label>
+<div class="answer">✓ Correct Answer: 100 m. Boundary distance = perimeter = 4 × 25.</div>
+</div>
+
+<div class="question">
+<h3>Q48. A rectangular field has area 480 m² and length 24 m. If fencing costs ₹15 per metre, what is the total fencing cost?</h3>
+
+<label class="option"><input type="radio" name="q48">₹960</label>
+<label class="option"><input type="radio" name="q48">₹1200</label>
+<label class="option"><input class="correct" type="radio" name="q48">₹1320</label>
+<label class="option"><input type="radio" name="q48">₹1440</label>
+
+<div class="answer">
+✓ Correct Answer: ₹1320. Breadth = 480 ÷ 24 = 20 m. Perimeter = 2(24 + 20) = 88 m. Cost = 88 × 15 = ₹1320.
+</div>
+</div>
+
+<div class="question">
+<h3>Q49. A 12 cm × 8 cm rectangle is divided into two equal triangles by joining opposite corners. What is the area of each triangle?</h3>
+<label class="option"><input type="radio" name="q49">24 cm²</label>
+<label class="correct option"><input class="correct" type="radio" name="q49">48 cm²</label>
+<label class="option"><input type="radio" name="q49">64 cm²</label>
+<label class="option"><input type="radio" name="q49">96 cm²</label>
+<div class="answer">✓ Correct Answer: 48 cm². Rectangle area = 96 cm², and each triangle is half.</div>
+</div>
+
+<div class="question">
+<h3>Q50. A square and a rectangle have equal areas of 100 cm². The square has side 10 cm. If the rectangle has length 20 cm, what is its perimeter?</h3>
+<label class="option"><input type="radio" name="q50">25 cm</label>
+<label class="correct option"><input class="correct" type="radio" name="q50">50 cm</label>
+<label class="option"><input type="radio" name="q50">60 cm</label>
+<label class="option"><input type="radio" name="q50">100 cm</label>
+<div class="answer">✓ Correct Answer: 50 cm. Rectangle breadth = 100 ÷ 20 = 5 cm. Perimeter = 2(20 + 5) = 50 cm.</div>
+</div>
+
+<div class="question">
+<h3>Q51. A rectangular floor is 9 m by 6 m. Square tiles of side 3 m are used without cutting. How many tiles are required?</h3>
+<label class="option"><input type="radio" name="q51">4</label>
+<label class="option"><input type="radio" name="q51">5</label>
+<label class="correct option"><input class="correct" type="radio" name="q51">6</label>
+<label class="option"><input type="radio" name="q51">9</label>
+<div class="answer">✓ Correct Answer: 6. Floor area = 54 m²; each tile = 9 m²; 54 ÷ 9 = 6.</div>
+</div>
+
+<div class="question">
+<h3>Q52. A rectangular garden has an area of 300 cm². Which pair could be its length and breadth?</h3>
+
+<label class="option"><input type="radio" name="q52">Length 18 cm, breadth 17 cm</label>
+<label class="option"><input class="correct" type="radio" name="q52">Length 20 cm, breadth 15 cm</label>
+<label class="option"><input type="radio" name="q52">Length 21 cm, breadth 14 cm</label>
+<label class="option"><input type="radio" name="q52">Length 25 cm, breadth 10 cm</label>
+
+<div class="answer">
+✓ Correct Answer: Length 20 cm, breadth 15 cm. 20 × 15 = 300 cm².
+</div>
+</div>
+
+<div class="question">
+<h3>Q53. A rectangular floor is 35 m long and 24 m wide. What is its area?</h3>
+
+<label class="option"><input type="radio" name="q53">800 m²</label>
+<label class="option"><input class="correct" type="radio" name="q53">840 m²</label>
+<label class="option"><input type="radio" name="q53">860 m²</label>
+<label class="option"><input type="radio" name="q53">900 m²</label>
+
+<div class="answer">
+✓ Correct Answer: 840 m². Area = 35 × 24 = 840 m².
+</div>
+</div>
+
+<div class="question">
+<h3>Q54. A rectangle measures 18 cm × 10 cm. Its length is reduced by 3 cm while its breadth is increased by 3 cm. What happens to its area?</h3>
+
+<label class="option"><input type="radio" name="q54">Area increases by 9 cm²</label>
+<label class="option"><input type="radio" name="q54">Area increases by 12 cm²</label>
+<label class="option"><input class="correct" type="radio" name="q54">Area increases by 15 cm²</label>
+<label class="option"><input type="radio" name="q54">Area decreases by 15 cm²</label>
+
+<div class="answer">
+✓ Correct Answer: Area increases by 15 cm². Original area = 18 × 10 = 180 cm². New dimensions = 15 cm × 13 cm. New area = 195 cm². Increase = 195 − 180 = 15 cm².
+</div>
+</div>
+
+<div class="question">
+<h3>Q55. A rectangular piece of land is 40 m × 25 m. A square portion of side 10 m is used for a shed. What percentage of the land remains unused by the shed?</h3>
+<label class="option"><input type="radio" name="q55">80%</label>
+<label class="option"><input type="radio" name="q55">85%</label>
+<label class="correct option"><input class="correct" type="radio" name="q55">90%</label>
+<label class="option"><input type="radio" name="q55">95%</label>
+<div class="answer">✓ Correct Answer: 90%. Total area = 1000 m². Shed = 100 m². Remaining = 900 m² = 90% of total.</div>
+</div>
+
+<!-- ===================================================== -->
+<!-- SCORE -->
+<!-- ===================================================== -->
+
+<div class="score-card">
+    <div>Your Final Score</div>
+    <div class="score-number"></div>
+    <p>Aim for 55/55!</p>
+</div>
+
+</div>
+</div>
+
+<footer>
+Class 7 Mathematics • Chapter 6 • Measuring Space: Perimeter and Area
+</footer>
+
+</body>
+</html>
